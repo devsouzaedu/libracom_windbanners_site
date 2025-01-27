@@ -300,6 +300,65 @@ footer p {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra para efeito de elevação */
 }
 
+.hidden {
+    display: none;
+}
+
+#promo-popup {
+    position: fixed; /* Para manter o pop-up fixo na tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o pop-up */
+    width: 80%; /* 80% da largura da tela */
+    max-width: 500px; /* Largura máxima */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    display: none; /* Inicialmente invisível */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    z-index: 1000; /* Coloca o pop-up sobre outros elementos */
+    border-radius: 12px; /* Bordas arredondadas */
+  }
+  
+  #promo-popup.flex {
+    display: flex; /* Exibe o pop-up quando a classe 'flex' é adicionada */
+  }
+  
+  #promo-popup .bg-white {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #promo-popup img {
+    width: 80%; /* A imagem ocupará no máximo 80% da largura do pop-up */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 16px; /* Espaçamento entre a imagem e o botão */
+  }
+  
+  @media (max-width: 768px) {
+    #promo-popup {
+      width: 90%; /* Para telas menores, ocupa 90% da largura */
+      max-width: 400px; /* Largura máxima de 400px */
+    }
+  
+    #promo-popup img {
+      width: 70%; /* Para telas menores, a imagem ocupará no máximo 70% da largura do pop-up */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #promo-popup {
+      width: 95%; /* Para telas muito pequenas, ocupa 95% da largura */
+      max-width: 350px; /* Largura máxima de 350px */
+    }
+  
+    #promo-popup img {
+      width: 60%; /* Para telas muito pequenas, a imagem ocupará no máximo 60% da largura do pop-up */
+    }
+  }
+  
+
 .whatsapp-icon {
     width: 30px; /* Largura do ícone */
     height: auto; /* Altura automática para manter a proporção */

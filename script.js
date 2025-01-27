@@ -162,3 +162,23 @@ document.getElementById("userInput").addEventListener("keypress", function (even
     sendMessage();
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("promo-popup");
+  const closeButton = document.getElementById("close-popup");
+
+  // Inicialmente o pop-up está escondido
+  popup.classList.add("hidden");
+
+  // Exibe o pop-up após 4 segundos
+  setTimeout(() => {
+    popup.classList.remove("hidden"); // Remove a classe "hidden" para exibir
+    popup.classList.add("flex"); // Adiciona a classe "flex" para exibir o pop-up
+  }, 6000);
+
+  // Fecha o pop-up ao clicar no botão
+  closeButton.addEventListener("click", () => {
+    popup.classList.add("hidden"); // Adiciona novamente a classe "hidden" para esconder
+    popup.classList.remove("flex"); // Remove a classe "flex" que torna visível o pop-up
+  });
+});

@@ -304,73 +304,58 @@ footer p {
     display: none;
 }
 
-/* Estilos para o Pop-up */
 #promo-popup {
-    display: none; /* Inicialmente oculto */
+    position: fixed; /* Para manter o pop-up fixo na tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o pop-up */
+    width: 90%; /* 80% da largura da tela */
+    max-width: 500px; /* Largura máxima */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    background-color: rgb(0, 0, 0); /* Fundo semitransparente */
+    display: none; /* Inicialmente invisível */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    z-index: 1000; /* Coloca o pop-up sobre outros elementos */
+    border-radius: 12px; /* Bordas arredondadas */
   }
   
-  /* O pop-up */
-  #promo-popup > div {
-    background-color: black; /* Fundo preto puro */
-    padding: 24px; /* Aumentando o padding */
-    border-radius: 20px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombras mais suaves */
-    max-width: 460px; /* Aumentando o tamanho do pop-up em 15% */
-    width: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 1001;
+  #promo-popup.flex {
+    display: flex; /* Exibe o pop-up quando a classe 'flex' é adicionada */
   }
   
-  /* Título */
-  #promo-popup h2 {
-    font-size: 2rem; /* Aumenta o tamanho do título */
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: white;
+  #promo-popup .bg-white {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   
-  /* Imagem */
   #promo-popup img {
-    border-radius: 10px;
-    margin-bottom: 16px;
+    width: 80%; /* A imagem ocupará no máximo 80% da largura do pop-up */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 16px; /* Espaçamento entre a imagem e o botão */
   }
   
-  /* Botão de Fechar */
-  #close-popup {
-    position: absolute;
-    top: 12px; /* Ajusta a posição do botão */
-    right: 12px;
-    background-color: #e53935; /* Cor vermelha */
-    color: white;
-    border-radius: 50%;
-    width: 40px; /* Aumenta o tamanho do botão */
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem; /* Aumenta o tamanho do 'x' */
-    cursor: pointer;
+  @media (max-width: 768px) {
+    #promo-popup {
+      width: 90%; /* Para telas menores, ocupa 90% da largura */
+      max-width: 400px; /* Largura máxima de 400px */
+    }
+  
+    #promo-popup img {
+      width: 70%; /* Para telas menores, a imagem ocupará no máximo 70% da largura do pop-up */
+    }
   }
   
-  #close-popup:hover {
-    background-color: #d32f2f; /* Cor mais escura no hover */
-  }
+  @media (max-width: 480px) {
+    #promo-popup {
+      width: 95%; /* Para telas muito pequenas, ocupa 95% da largura */
+      max-width: 350px; /* Largura máxima de 350px */
+    }
   
-  /* Link Comprar Agora */
-  #promo-popup a {
-    display: inline-block;
-    margin-top: 16px;
-    padding: 12px 24px;
-    background-color: #43a047; /* Cor verde */
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  #promo-popup a:hover {
-    background-color: #388e3c; /* Cor verde mais escura no hover */
+    #promo-popup img {
+      width: 60%; /* Para telas muito pequenas, a imagem ocupará no máximo 60% da largura do pop-up */
+    }
   }
   
 

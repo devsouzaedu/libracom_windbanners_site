@@ -8,12 +8,13 @@ export default function Home() {
       <header className="fixed w-full z-50 bg-blue-900 shadow-md">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center animate-fade-in">
-        <Image
+            <Image
               src="/images/LIBRACOM_png.png"
               alt="Libracom Wind Banners Logo"
               width={150}
               height={50}
               className="mr-4 hover-scale brightness-0 invert"
+              style={{ width: 'auto', height: 'auto' }}
             />
           </div>
           <nav className="hidden md:flex space-x-8 animate-fade-in">
@@ -49,7 +50,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen">
+      <section className="relative min-h-[120vh]">
         <Image
           src="/images/wind_banner_sitebg.webp"
           alt="Wind Banners em Barueri"
@@ -58,28 +59,11 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 gradient-overlay">
-          <div className="container mx-auto px-4 py-20 md:py-0">
-            <div className="flex flex-col md:flex-row items-center justify-between min-h-screen">
+          <div className="container mx-auto px-4 py-32 md:py-12">
+            <div className="flex flex-col md:flex-row items-start justify-between min-h-[110vh]">
               {/* Conteúdo Principal */}
-              <div className="text-white w-full md:w-1/2 mt-16 md:mt-0 animate-fade-in">
-                {/* Card de Imagem Atualizado */}
-                <div className="relative w-48 h-48 mb-8 animate-fade-in">
-                  <div className="absolute inset-0 bg-blue-500/30 rounded-2xl opacity-20 blur-xl"></div>
-                  <div className="relative overflow-hidden bg-white/10 backdrop-blur-sm rounded-2xl transform hover:scale-105 transition-all duration-300 border border-white/20 h-full">
-                    <Image
-                      src="/images/wind_banner_mpd.jpeg"
-                      alt="Wind Banner Destaque"
-                      fill
-                      className="object-cover hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <p className="text-white text-sm font-medium">Wind Banners Profissionais</p>
-                    </div>
-                  </div>
-                </div>
-
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <div className="text-white w-full md:w-1/2 mt-16 md:mt-8 animate-fade-in space-y-8">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent animate-fade-in">
                   Wind Banners<br />Personalizados
                 </h1>
                 <p className="text-lg md:text-xl mb-8 max-w-2xl">
@@ -113,7 +97,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 mb-12">
                   <a
                     href="#produtos"
                     className="btn-primary text-base md:text-lg text-center group animate-fade-in delay-200"
@@ -122,11 +106,11 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
                     </svg>
                     Ver Modelos
-          </a>
-          <a
+                  </a>
+                  <a
                     href="https://wa.me/5511954997799"
-            target="_blank"
-            rel="noopener noreferrer"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-secondary text-base md:text-lg text-center group animate-fade-in delay-300"
                   >
                     <Image
@@ -138,6 +122,59 @@ export default function Home() {
                     />
                     Fazer Pedido
                   </a>
+                </div>
+
+                {/* Nova Galeria Deslizante Corrigida */}
+                <div className="relative overflow-hidden mt-8 mb-12">
+                  <div className="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
+                    <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
+                      <Image
+                        src="/images/wind_banner_mpd.jpeg"
+                        alt="Wind Banner 1"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, 256px"
+                      />
+                    </div>
+                    <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
+                      <Image
+                        src="/images/backdrop_eventos_fundo_palco_banner.png"
+                        alt="Wind Banner 2"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, 256px"
+                      />
+                    </div>
+                    <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
+                      <Image
+                        src="/images/totem_backlight_eventos_totem_iluminado_barueri_alphaville.jpg"
+                        alt="Wind Banner 3"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, 256px"
+                      />
+                    </div>
+                    <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
+                      <Image
+                        src="/images/wind_banner_sitebg.webp"
+                        alt="Wind Banner 4"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, 256px"
+                      />
+                    </div>
+                    <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
+                      <Image
+                        src="/images/wind_banner_mpd.jpeg"
+                        alt="Wind Banner 5"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-300"
+                        sizes="(max-width: 768px) 100vw, 256px"
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-blue-900/50 to-transparent pointer-events-none"></div>
+                  <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-blue-900/50 to-transparent pointer-events-none"></div>
                 </div>
               </div>
 

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://libracom.com.br/sitemap.xml 

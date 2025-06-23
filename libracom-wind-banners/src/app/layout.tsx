@@ -17,12 +17,12 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://libracom.com.br'),
-  title: "Libracom Wind Banners | Barueri e Alphaville - Banners Personalizados",
-  description: "Especialistas em Wind Banners personalizados em Barueri e Alphaville. Todos os modelos e tamanhos disponíveis para sua empresa. Entrega rápida!",
-  keywords: "wind banner, banner personalizado, barueri, alphaville, comunicação visual, publicidade externa, backdrop, totem, eventos",
+  title: "Wind Banner em Barueri e Alphaville | Libracom - Entrega Rápida",
+  description: "Especialistas em Wind Banner personalizado em Barueri e Alphaville. Bandeira de vento para eventos, feiras e ações promocionais. Entrega em 24 horas!",
+  keywords: "wind banner em barueri, bandeira de vento barueri, wind banner alphaville, comprar wind banner barueri, wind banner personalizado sp, impressão de wind banner barueri, bandeira promocional barueri, empresa de wind banner barueri, onde comprar wind banner em barueri, wind banner para eventos barueri, preço de wind banner personalizado, modelo de wind banner pena, diferença entre wind banner e bandeira, qual wind banner dura mais, melhor tipo de banner para eventos externos, base para wind banner com água ou areia, banner de tecido para feiras, divulgação com bandeiras de vento, wind banner resistente ao vento, bandeira para marketing visual em barueri",
   openGraph: {
-    title: "Libracom Wind Banners | Barueri e Alphaville",
-    description: "Wind Banners personalizados para sua empresa. Entrega em Barueri e região.",
+    title: "Wind Banner em Barueri e Alphaville | Entrega em 24h",
+    description: "Wind Banners personalizados para sua empresa e eventos. Bandeiras de vento com melhor qualidade e resistência. Entrega rápida em Barueri e Alphaville.",
     images: ["/images/wind_banner_sitebg.webp"],
     locale: 'pt_BR',
     type: 'website',

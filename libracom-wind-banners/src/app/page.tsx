@@ -18,6 +18,31 @@ export default function Home() {
             />
           </div>
           <nav className="hidden md:flex space-x-8 animate-fade-in">
+            <Link href="/wind-banner-barueri" className="flex items-center text-gray-100 hover:text-white font-medium transition-colors">
+              <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Barueri
+            </Link>
+            <Link href="/wind-banner-personalizado-eventos" className="flex items-center text-gray-100 hover:text-white font-medium transition-colors">
+              <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+              Eventos
+            </Link>
+            <Link href="/wind-banner-vs-bandeira-comum" className="flex items-center text-gray-100 hover:text-white font-medium transition-colors">
+              <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+              </svg>
+              Comparativo
+            </Link>
+            <Link href="/entrega-rapida-24h" className="flex items-center text-gray-100 hover:text-white font-medium transition-colors">
+              <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Entrega 24h
+            </Link>
             <a href="#sobre" className="flex items-center text-gray-100 hover:text-white font-medium transition-colors">
               <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -319,6 +344,10 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
               <ul className="space-y-2">
+                <li><Link href="/wind-banner-barueri" className="text-gray-400 hover:text-white transition-colors">Wind Banner em Barueri</Link></li>
+                <li><Link href="/wind-banner-personalizado-eventos" className="text-gray-400 hover:text-white transition-colors">Wind Banner para Eventos</Link></li>
+                <li><Link href="/wind-banner-vs-bandeira-comum" className="text-gray-400 hover:text-white transition-colors">Wind Banner vs Bandeira</Link></li>
+                <li><Link href="/entrega-rapida-24h" className="text-gray-400 hover:text-white transition-colors">Entrega em 24h</Link></li>
                 <li><a href="#sobre" className="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
                 <li><a href="#contato" className="text-gray-400 hover:text-white transition-colors">Contato</a></li>
               </ul>

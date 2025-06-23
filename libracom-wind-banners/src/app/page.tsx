@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex items-center animate-fade-in">
             <Image
               src="/images/LIBRACOM_png.png"
-              alt="Libracom Wind Banners Logo"
+              alt="Libracom Wind Banners - Logo da empresa especialista em bandeiras de vento em Barueri e Alphaville"
               width={150}
               height={50}
               className="mr-4 hover-scale brightness-0 invert"
@@ -78,7 +78,7 @@ export default function Home() {
       <section className="relative min-h-[120vh]">
         <Image
           src="/images/wind_banner_sitebg.webp"
-          alt="Wind Banners em Barueri"
+          alt="Wind Banners personalizados em Barueri e Alphaville - Bandeiras de vento de alta qualidade para empresas e eventos"
           fill
           className="object-cover brightness-50"
           priority
@@ -155,7 +155,7 @@ export default function Home() {
                     <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
                       <Image
                         src="/images/wind_banner_mpd.jpeg"
-                        alt="Wind Banner 1"
+                        alt="Wind Banner personalizado para empresa MPD - Bandeira de vento em Barueri e Alphaville"
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, 256px"
@@ -164,7 +164,7 @@ export default function Home() {
                     <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
                       <Image
                         src="/images/backdrop_eventos_fundo_palco_banner.png"
-                        alt="Wind Banner 2"
+                        alt="Backdrop para eventos e fundo de palco com banner personalizado em Barueri"
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, 256px"
@@ -173,7 +173,7 @@ export default function Home() {
                     <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
                       <Image
                         src="/images/totem_backlight_eventos_totem_iluminado_barueri_alphaville.jpg"
-                        alt="Wind Banner 3"
+                        alt="Totem backlight iluminado para eventos em Barueri e Alphaville - Material promocional"
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, 256px"
@@ -182,7 +182,7 @@ export default function Home() {
                     <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
                       <Image
                         src="/images/wind_banner_sitebg.webp"
-                        alt="Wind Banner 4"
+                        alt="Wind Banner de alta qualidade em ação - Bandeira de vento resistente para empresas"
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, 256px"
@@ -190,8 +190,8 @@ export default function Home() {
                     </div>
                     <div className="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden snap-center relative">
                       <Image
-                        src="/images/wind_banner_mpd.jpeg"
-                        alt="Wind Banner 5"
+                        src="/images/wind_marabraz_entrega24hs_alphaville.png"
+                        alt="Wind Banner Marabraz com entrega em 24 horas em Alphaville - Exemplo de trabalho realizado"
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, 256px"

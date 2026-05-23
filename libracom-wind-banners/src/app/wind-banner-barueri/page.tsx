@@ -476,7 +476,7 @@ export default function WindBannerBarueri() {
             {/* Brand */}
             <div>
               <Image
-                src="/images/LIBRACOM_png.png"
+                src="/images/libracom_logo_preto_navbar.png"
                 alt="Libracom Wind Banners Logo"
                 width={140}
                 height={45}

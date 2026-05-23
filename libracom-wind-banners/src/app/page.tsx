@@ -868,7 +868,7 @@ export default function Home() {
             {/* Brand details */}
             <div className="md:col-span-1 space-y-4">
               <Image
-                src="/images/LIBRACOM_png.png"
+                src="/images/libracom_logo_preto_navbar.png"
                 alt="Libracom Wind Banners Logo"
                 width={130}
                 height={40}

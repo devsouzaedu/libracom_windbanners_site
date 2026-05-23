@@ -5,7 +5,7 @@ export default function StructuredData() {
     "name": "Libracom Wind Banners",
     "description": "Especialistas em Wind Banner personalizado em Barueri e Alphaville. Bandeira de vento para eventos, feiras e ações promocionais.",
     "url": "https://libracomwindbanner.com.br",
-    "logo": "https://libracomwindbanner.com.br/images/LIBRACOM_png.png",
+    "logo": "https://libracomwindbanner.com.br/images/libracom_logo_preto_navbar.png",
     "image": [
       "https://libracomwindbanner.com.br/images/wind_banner_sitebg.webp",
       "https://libracomwindbanner.com.br/images/wind_banner_mpd.jpeg",

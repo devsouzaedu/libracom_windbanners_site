@@ -38,7 +38,7 @@ export default function Header() {
         {/* Logo - Native dark color on light backdrop */}
         <Link href="/" className="flex items-center group relative">
           <Image
-            src="/images/LIBRACOM_png.png"
+            src="/images/libracom_logo_preto_navbar.png"
             alt="Libracom - Wind Banners e Comunicação Visual em Barueri e Alphaville"
             width={125}
             height={38}

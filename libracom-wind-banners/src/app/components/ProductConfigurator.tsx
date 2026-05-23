@@ -6,13 +6,24 @@ import Image from "next/image";
 const products = [
   {
     id: "wind-banner",
-    name: "Wind Banner",
+    name: "Wind Banner Completo",
     icon: "🏳️",
-    description: "Bandeira de vento com estrutura flexível em fibra de vidro e base reforçada. Perfeita para calçadas, frentes de loja e eventos externos.",
+    description: "Kit completo de alta resistência: tecido de poliéster com dupla face e zero transparência, haste flexível em fibra de vidro e base reforçada.",
     sizes: [
-      { label: "Pequeno - 2,0m", price: 350 },
-      { label: "Médio - 2,60m (Mais Vendido)", price: 400 },
-      { label: "Grande - 3,0m", price: 420 },
+      { label: "Pequeno - 2,0m", price: 320 },
+      { label: "Médio - 2,60m (Mais Vendido)", price: 380 },
+      { label: "Grande - 3,0m", price: 430 },
+    ],
+  },
+  {
+    id: "bandeira-avulsa",
+    name: "Bandeira Avulsa",
+    icon: "🚩",
+    description: "Somente a bandeira impressa em alta resolução, ideal para reposição. Tecido premium zero transparência, compatível com suas hastes existentes.",
+    sizes: [
+      { label: "Reposição - 2,0m", price: 200 },
+      { label: "Reposição - 2,60m", price: 250 },
+      { label: "Reposição - 3,0m", price: 280 },
     ],
   },
   {
@@ -71,9 +82,9 @@ function getDiscount(qty: number): number {
 }
 
 function getDiscountLabel(qty: number): string | null {
-  if (qty >= 10) return "15% OFF - Super Desconto!";
-  if (qty >= 5) return "10% OFF - Lote Ativado!";
-  if (qty >= 3) return "5% OFF - Desconto Progressivo!";
+  if (qty >= 10) return "15% OFF - Lote Atacado";
+  if (qty >= 5) return "10% OFF - Lote Comercial";
+  if (qty >= 3) return "5% OFF - Lote Progressivo";
   return null;
 }
 
@@ -99,30 +110,30 @@ export default function ProductConfigurator() {
   }, [quantity]);
 
   const whatsappMessage = useMemo(() => {
-    const msg = `Olá, Libracom! Estive simulando o meu pedido no configurador interativo do site e gostaria de garantir a promoção:\n\n📦 Produto: ${product.name}\n📐 Modelo/Tamanho: ${size.label}\n🔢 Quantidade: ${quantity}${perUnit ? " m²" : " unidades"}\n💰 Preço Estimado: R$ ${totalPrice.toFixed(2).replace(".", ",")}${discountLabel ? ` (${discountLabel})` : ""}\n🎨 Criação de arte: Inclusa (Grátis!)\n\nPodem me ajudar com a finalização do design e orçamento?`;
+    const msg = `Olá, Libracom! Estive no simulador do site e gostaria de solicitar um orçamento para:\n\n📦 Produto: ${product.name}\n📐 Modelo/Tamanho: ${size.label}\n🔢 Quantidade: ${quantity}${perUnit ? " m²" : " unidades"}\n💰 Preço Estimado: R$ ${totalPrice.toFixed(2).replace(".", ",")}${discountLabel ? ` (${discountLabel})` : ""}\n🎨 Criação de arte: Inclusa (Grátis!)\n\nPoderiam me ajudar com os detalhes e arte para produção?`;
     return `https://wa.me/5511954997799?text=${encodeURIComponent(msg)}`;
   }, [product, size, quantity, totalPrice, discountLabel, perUnit]);
 
   return (
-    <section id="configurador" className="py-24 bg-glow-grid scroll-mt-16">
+    <section id="configurador" className="py-24 bg-white border-t border-slate-100 scroll-mt-16 text-slate-800">
       <div className="container mx-auto px-4">
         {/* Visual Badge Header */}
-        <div className="flex justify-center mb-4">
-          <span className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full border border-cyan-500/30 backdrop-blur-sm">
-            ⚙️ Simulador em Tempo Real
+        <div className="flex justify-center mb-3">
+          <span className="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full border border-blue-100">
+            ⚙️ Simulador de Orçamento
           </span>
         </div>
 
-        <h2 className="section-title text-white">
-          Monte & Simule seu <span className="text-gradient-brand">Pedido Especial</span>
+        <h2 className="section-title text-slate-950 font-heading">
+          Simule seu Pedido e <span className="text-gradient-brand">Garanta o Preço da Promoção</span>
         </h2>
         <p className="section-subtitle">
-          Escolha os parâmetros exatos do seu material promocional, visualize um mockup simulado e garanta descontos progressivos direto com o time comercial
+          Selecione o produto, modelo e quantidade ideal. Visualize o mockup digital correspondente e peça direto pelo WhatsApp!
         </p>
 
         <div className="max-w-5xl mx-auto mt-12">
           {/* Tab buttons */}
-          <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-3 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
             {products.map((p, i) => (
               <button
                 key={p.id}
@@ -132,74 +143,69 @@ export default function ProductConfigurator() {
                   setQuantity(1);
                 }}
                 className={`
-                  px-4 py-3 md:px-6 md:py-3.5 rounded-2xl font-bold text-sm md:text-base transition-all duration-300 flex items-center justify-center gap-2 border
+                  px-5 py-3 rounded-xl font-bold text-xs md:text-sm transition-all duration-200 border flex items-center justify-center gap-2
                   ${selectedProduct === i
-                    ? "bg-gradient-to-r from-blue-600 to-cyan-500 border-blue-400 text-white shadow-lg shadow-blue-500/30 scale-105"
-                    : "glass-card border-white/5 text-slate-300 hover:text-white hover:border-white/20 hover:bg-white/10"
+                    ? "bg-brand-700 border-brand-700 text-white shadow-md shadow-brand-700/10 scale-102"
+                    : "bg-white border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-50"
                   }
                 `}
               >
-                <span className="text-lg md:text-xl">{p.icon}</span>
+                <span>{p.icon}</span>
                 {p.name}
               </button>
             ))}
           </div>
 
           {/* Configurator Box Layout */}
-          <div className="glass-card p-6 md:p-10 border border-white/10 relative overflow-hidden">
-            {/* Background elements */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none z-0"></div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 relative z-10">
+          <div className="bg-slate-50 rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm relative overflow-hidden">
+            
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 relative z-10">
               {/* LEFT: Configuration Options (7 columns) */}
-              <div className="lg:col-span-7 space-y-8">
+              <div className="lg:col-span-7 space-y-6">
+                
                 {/* Product Bio */}
-                <div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-3xl">{product.icon}</span>
-                    <h3 className="text-2xl font-black text-white font-heading">
+                <div className="space-y-2">
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    <span className="text-2xl">{product.icon}</span>
+                    <h3 className="text-xl font-black text-slate-950 font-heading">
                       {product.name}
                     </h3>
-                    <span className="bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
-                      Arte 100% Grátis
+                    <span className="bg-emerald-50 text-emerald-700 border border-emerald-100 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md">
+                      Arte 100% Inclusa
                     </span>
                   </div>
-                  <p className="text-slate-350 text-sm mt-3 leading-relaxed">
+                  <p className="text-slate-500 text-sm leading-relaxed">
                     {product.description}
                   </p>
                 </div>
 
                 {/* Size / Type Selector */}
-                <div>
-                  <div className="flex justify-between items-center mb-3">
-                    <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest">
-                      1. Escolha o Tamanho / Modelo
-                    </label>
-                    <span className="text-xs text-blue-400 font-semibold">Base completa inclusa</span>
-                  </div>
-                  <div className="space-y-3">
+                <div className="space-y-2.5">
+                  <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+                    1. Selecione o Tamanho / Modelo
+                  </label>
+                  <div className="space-y-2">
                     {product.sizes.map((s, i) => (
                       <button
                         key={i}
                         onClick={() => setSelectedSize(i)}
                         className={`
-                          w-full flex items-center justify-between px-5 py-4 rounded-2xl transition-all duration-300 text-left border relative overflow-hidden group
+                          w-full flex items-center justify-between px-5 py-3.5 rounded-xl transition-all duration-200 text-left border relative overflow-hidden group
                           ${selectedSize === i
-                            ? "bg-blue-600/15 border-blue-500/60 text-white shadow-md shadow-blue-500/5"
-                            : "bg-white/5 border-white/5 text-slate-400 hover:bg-white/10 hover:border-white/10 hover:text-white"
+                            ? "bg-white border-brand-700 text-slate-950 shadow-sm"
+                            : "bg-white border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-slate-300"
                           }
                         `}
                       >
                         {selectedSize === i && (
-                          <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-500"></div>
+                          <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-700"></div>
                         )}
-                        <span className="font-bold text-sm md:text-base flex items-center gap-2">
+                        <span className="font-bold text-sm flex items-center gap-2">
                           {selectedSize === i ? "✓ " : ""}
                           {s.label}
                         </span>
                         <div className="text-right">
-                          <span className="text-xs text-slate-500 block">Preço de fábrica</span>
-                          <span className={`font-black text-base md:text-lg ${selectedSize === i ? "text-emerald-400" : "text-slate-300 group-hover:text-white"}`}>
+                          <span className={`font-black text-sm md:text-base ${selectedSize === i ? "text-brand-700" : "text-slate-800"}`}>
                             R$ {s.price.toFixed(2).replace(".", ",")}{perUnit}
                           </span>
                         </div>
@@ -209,16 +215,17 @@ export default function ProductConfigurator() {
                 </div>
 
                 {/* Quantity & Discount Meter */}
-                <div>
-                  <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">
-                    2. Escolha a Quantidade (Desconto Progressivo)
+                <div className="space-y-3">
+                  <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+                    2. Informe a Quantidade (Desconto Progressivo)
                   </label>
-                  <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                  <div className="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+                    
                     {/* Controls */}
-                    <div className="flex items-center gap-3 bg-white/5 border border-white/10 p-1.5 rounded-2xl">
+                    <div className="flex items-center gap-2 bg-white border border-slate-200 p-1.5 rounded-xl">
                       <button
                         onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                        className="w-11 h-11 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xl font-bold transition-all flex items-center justify-center"
+                        className="w-9 h-9 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-800 text-lg font-bold transition-all flex items-center justify-center"
                         type="button"
                       >
                         −
@@ -229,11 +236,11 @@ export default function ProductConfigurator() {
                         max={100}
                         value={quantity}
                         onChange={(e) => setQuantity(Math.max(1, Math.min(100, parseInt(e.target.value) || 1)))}
-                        className="w-16 h-11 text-center bg-transparent text-white text-xl font-bold focus:outline-none"
+                        className="w-12 h-9 text-center bg-transparent text-slate-800 text-base font-bold focus:outline-none"
                       />
                       <button
                         onClick={() => setQuantity(Math.min(100, quantity + 1))}
-                        className="w-11 h-11 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xl font-bold transition-all flex items-center justify-center"
+                        className="w-9 h-9 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-800 text-lg font-bold transition-all flex items-center justify-center"
                         type="button"
                       >
                         +
@@ -241,10 +248,10 @@ export default function ProductConfigurator() {
                     </div>
 
                     {/* Progress Slider Display */}
-                    <div className="flex-1 w-full space-y-2">
+                    <div className="flex-1 w-full space-y-1.5">
                       <div className="flex justify-between text-xs font-bold">
-                        <span className="text-slate-400">Escala de Descontos:</span>
-                        <span className="text-emerald-400">{quantity >= 10 ? "Máximo atingido! 🔥" : "Mais quantidade = Mais Desconto!"}</span>
+                        <span className="text-slate-400">Escala de Desconto:</span>
+                        <span className="text-brand-700">{quantity >= 10 ? "Desconto máximo ativado! 🏆" : "A partir de 3 un."}</span>
                       </div>
                       <div className="discount-progress-container">
                         <div
@@ -256,7 +263,7 @@ export default function ProductConfigurator() {
                   </div>
 
                   {/* Progressive discount badges */}
-                  <div className="mt-4 grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-3 gap-2">
                     {[
                       { min: 3, label: "3+ un: 5% OFF" },
                       { min: 5, label: "5+ un: 10% OFF" },
@@ -267,14 +274,14 @@ export default function ProductConfigurator() {
                         <div
                           key={tier.min}
                           className={`
-                            text-center py-2 px-1 text-[11px] font-bold rounded-xl border transition-all duration-500
+                            text-center py-2 px-1 text-[10px] font-bold rounded-lg border transition-all duration-350
                             ${isActive
-                              ? "bg-gradient-to-r from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/40 animate-pulse"
-                              : "bg-white/5 border-white/5 text-slate-500"
+                              ? "bg-brand-50 text-brand-700 border-brand-100"
+                              : "bg-white border-slate-200 text-slate-400"
                             }
                           `}
                         >
-                          {isActive ? "🏆 " : ""}
+                          {isActive ? "✓ " : ""}
                           {tier.label}
                         </div>
                       );
@@ -284,17 +291,17 @@ export default function ProductConfigurator() {
               </div>
 
               {/* RIGHT: Live Preview & Summary (5 columns) */}
-              <div className="lg:col-span-5 flex flex-col justify-between space-y-6 lg:space-y-0">
+              <div className="lg:col-span-5 flex flex-col justify-between space-y-5 lg:space-y-0">
                 {/* 3D Mockup Visual Display */}
-                <div className="space-y-3">
-                  <span className="block text-xs font-bold text-slate-400 uppercase tracking-widest text-center lg:text-left">
-                    Visualização do Mockup (Simulado)
+                <div className="space-y-2">
+                  <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest text-center lg:text-left">
+                    Mockup Digital Simulado
                   </span>
                   
-                  {/* The Preview frame Box */}
+                  {/* The Preview Box Frame */}
                   <div className="preview-box">
-                    {/* Dynamic Graphic representation based on index */}
-                    {selectedProduct === 0 && (
+                    {/* Waving Wind Banner (For index 0 or 1 - replacement flag) */}
+                    {(selectedProduct === 0 || selectedProduct === 1) && (
                       <div className="mockup-wind-banner">
                         <div className="mockup-wb-pole"></div>
                         <div className="mockup-wb-pole-curve"></div>
@@ -302,16 +309,16 @@ export default function ProductConfigurator() {
                           <span className="text-white text-xs font-black uppercase tracking-wider text-center pt-8">
                             Libracom
                           </span>
-                          <span className="text-white/80 text-[8px] font-bold mt-1 text-center bg-black/20 py-0.5 px-1.5 rounded">
-                            {size.label.split(" ")[0]}
+                          <span className="text-white/80 text-[7.5px] font-black mt-1 text-center bg-black/15 py-0.5 px-1.5 rounded">
+                            {size.label.split(" ")[0] === "Reposição" ? "FLAG" : size.label.split(" ")[0]}
                           </span>
                         </div>
-                        <div className="mockup-wb-base"></div>
+                        {selectedProduct === 0 && <div className="mockup-wb-base"></div>}
                         <div className="mockup-wb-shadow"></div>
                       </div>
                     )}
 
-                    {selectedProduct === 1 && (
+                    {selectedProduct === 2 && (
                       <div className="mockup-roll-up">
                         <div className="mockup-ru-canvas">
                           <div className="mockup-ru-banner-text">LIBRACOM</div>
@@ -327,31 +334,31 @@ export default function ProductConfigurator() {
                       </div>
                     )}
 
-                    {selectedProduct === 2 && (
+                    {selectedProduct === 3 && (
                       <div className="mockup-stickers">
                         <div className="mockup-sticker text-white text-[8px] font-black">Libracom</div>
-                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-cyan-500 to-blue-500">ADESIVO</div>
-                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-emerald-400 to-cyan-500">VINIL</div>
+                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-brand-500 to-brand-700">ADESIVO</div>
+                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-brand-600 to-cyan-500">VINIL</div>
                         <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-yellow-400 to-amber-500">HD</div>
                         <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-purple-500 to-pink-500">CORTE</div>
                         <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-blue-600 to-emerald-400">BRILHO</div>
                       </div>
                     )}
 
-                    {selectedProduct === 3 && (
+                    {selectedProduct === 4 && (
                       <div className="mockup-banner-lona">
                         <div className="mockup-grommet grommet-tl"></div>
                         <div className="mockup-grommet grommet-tr"></div>
                         <div className="mockup-grommet grommet-bl"></div>
                         <div className="mockup-grommet grommet-br"></div>
                         <div className="text-center p-4">
-                          <div className="text-white text-xs font-black uppercase tracking-widest">IMPRESSÃO ULTRA HD</div>
-                          <div className="text-cyan-400 text-[10px] font-bold mt-1 uppercase">Lona Premium</div>
+                          <div className="text-white text-xs font-black uppercase tracking-widest">IMPRESSÃO DIGITAL HD</div>
+                          <div className="text-cyan-300 text-[10px] font-bold mt-1 uppercase">Lona Premium</div>
                         </div>
                       </div>
                     )}
 
-                    {selectedProduct === 4 && (
+                    {selectedProduct === 5 && (
                       <div className="mockup-faixa">
                         <div className="mockup-faixa-pole pole-l"></div>
                         <div className="mockup-faixa-pole pole-r"></div>
@@ -361,7 +368,7 @@ export default function ProductConfigurator() {
                         <div className="mockup-faixa-rope rope-br"></div>
                         <div className="text-center px-4">
                           <div className="text-white text-[10px] font-extrabold uppercase tracking-wide">FAIXA DE ALTO IMPACTO</div>
-                          <div className="text-yellow-300 text-[8px] font-medium tracking-tight mt-0.5">RESISTENTE AO TEMPO - FRENTE DE LOJAS</div>
+                          <div className="text-yellow-300 text-[8px] font-medium tracking-tight mt-0.5">RESISTENTE AO VENTO</div>
                         </div>
                       </div>
                     )}
@@ -369,76 +376,73 @@ export default function ProductConfigurator() {
                 </div>
 
                 {/* Summary details */}
-                <div className="bg-white/5 rounded-2xl p-5 border border-white/10 space-y-3 mt-4">
-                  <div className="flex justify-between text-xs text-slate-400 uppercase tracking-widest">
+                <div className="bg-white rounded-2xl p-4.5 border border-slate-200 space-y-2.5 mt-3 shadow-xs">
+                  <div className="flex justify-between text-[10px] text-slate-400 uppercase tracking-widest font-bold">
                     <span>Resumo</span>
-                    <span className="text-blue-400">Arte Grátis Inclusa!</span>
+                    <span className="text-brand-700">Arte Grátis Inclusa!</span>
                   </div>
 
-                  <div className="space-y-2 text-sm pt-2">
+                  <div className="space-y-1.5 text-xs">
                     <div className="flex justify-between">
-                      <span className="text-slate-400">Material</span>
-                      <span className="text-white font-bold">{product.name}</span>
+                      <span className="text-slate-500">Material</span>
+                      <span className="text-slate-900 font-bold">{product.name}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-400">Dimensão</span>
-                      <span className="text-white font-bold">{size.label.split(" - ")[0]}</span>
+                      <span className="text-slate-500">Dimensão</span>
+                      <span className="text-slate-900 font-bold">{size.label.split(" - ")[0]}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-400">Quantidade</span>
-                      <span className="text-white font-bold">{quantity} {perUnit ? "m²" : "un."}</span>
+                      <span className="text-slate-500">Quantidade</span>
+                      <span className="text-slate-900 font-bold">{quantity} {perUnit ? "m²" : "un."}</span>
                     </div>
 
                     {discountLabel && (
-                      <div className="flex justify-between items-center text-emerald-400 font-bold bg-emerald-500/10 p-2 rounded-xl border border-emerald-500/20">
+                      <div className="flex justify-between items-center text-emerald-700 font-bold bg-emerald-50 p-2 rounded-lg border border-emerald-100 mt-1">
                         <span>Desconto Ativado</span>
-                        <span className="text-xs">{discountLabel.split(" - ")[0]}</span>
+                        <span>{discountLabel.split(" - ")[0]}</span>
                       </div>
                     )}
                   </div>
 
-                  <div className="separator-glow my-3"></div>
+                  <div className="separator-glow my-2.5"></div>
 
                   {/* Calculated Price */}
                   <div className="flex justify-between items-end">
-                    <span className="text-slate-400 text-xs font-bold uppercase tracking-widest pb-1">
+                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest pb-0.5">
                       Total Estimado
                     </span>
                     <div className="text-right">
                       {discountLabel && (
-                        <span className="text-slate-500 text-xs line-through block">
+                        <span className="text-slate-400 text-[10px] line-through block">
                           R$ {(size.price * quantity).toFixed(2).replace(".", ",")}
                         </span>
                       )}
-                      <span className="text-2xl md:text-3xl font-black text-white font-heading tracking-tight">
+                      <span className="text-xl md:text-2xl font-black text-slate-950 font-heading tracking-tight">
                         R$ {totalPrice.toFixed(2).replace(".", ",")}
                       </span>
                     </div>
                   </div>
                 </div>
 
-                {/* Premium WhatsApp Button */}
+                {/* WhatsApp Button */}
                 <a
                   href={whatsappMessage}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-cta w-full justify-center text-sm md:text-base py-3.5 md:py-4 mt-4 animate-pulse-glow group relative overflow-hidden"
+                  className="btn-cta w-full justify-center py-3.5 mt-3 group relative overflow-hidden"
                 >
-                  {/* Subtle sweep */}
-                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-light-sweep"></div>
-                  
                   <Image
                     src="/images/WhatsApp_icon.png"
                     alt="WhatsApp"
-                    width={22}
-                    height={22}
-                    className="mr-2 transition-transform duration-300 group-hover:scale-110"
+                    width={20}
+                    height={20}
+                    className="mr-2 transition-transform duration-200 group-hover:scale-110"
                   />
-                  Garantir Desconto & Chamar no WhatsApp
+                  Garantir Preço & Enviar no WhatsApp
                 </a>
 
-                <p className="text-center text-[10px] text-slate-500 mt-2">
-                  * Valores promocionais de fábrica. Faturamento facilitado para empresas.
+                <p className="text-center text-[9px] text-slate-400 mt-2 font-medium">
+                  * Valores promocionais válidos por tempo limitado. Faturamento corporativo.
                 </p>
               </div>
             </div>

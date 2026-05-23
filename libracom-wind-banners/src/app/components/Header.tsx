@@ -10,7 +10,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 40);
+      setScrolled(window.scrollY > 30);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -27,39 +27,37 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-500 ${
+      className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-slate-950/85 border-b border-white/10 shadow-lg shadow-black/35 py-3 backdrop-blur-md"
-          : "bg-transparent py-5 backdrop-blur-[2px]"
+          ? "bg-white/95 border-b border-slate-200 shadow-sm py-3.5 backdrop-blur-md"
+          : "bg-white/80 border-b border-slate-100 py-5 backdrop-blur-md"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Logo and Glow */}
+        
+        {/* Logo - Native dark color on light backdrop */}
         <Link href="/" className="flex items-center group relative">
-          {/* Logo glow background */}
-          <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          
           <Image
             src="/images/LIBRACOM_png.png"
             alt="Libracom - Wind Banners e Comunicação Visual em Barueri e Alphaville"
-            width={130}
-            height={40}
-            className="brightness-0 invert transition-all duration-300 group-hover:scale-102 drop-shadow-[0_2px_10px_rgba(255,255,255,0.15)]"
+            width={125}
+            height={38}
+            className="transition-transform duration-300 group-hover:scale-102"
             style={{ width: "auto", height: "auto" }}
             priority
           />
         </Link>
 
-        {/* Desktop Nav with animated indicator */}
-        <nav className="hidden lg:flex items-center gap-1.5 bg-white/5 border border-white/5 px-2.5 py-1.5 rounded-full backdrop-blur-sm">
+        {/* Desktop Nav with modern, simple indicators */}
+        <nav className="hidden lg:flex items-center gap-1 bg-slate-50 border border-slate-100 px-2 py-1.5 rounded-xl">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="relative px-4 py-2 text-xs xl:text-sm font-semibold text-slate-300 hover:text-white transition-all duration-300 group"
+              className="relative px-3.5 py-1.5 text-xs xl:text-sm font-bold text-slate-600 hover:text-brand-700 transition-colors duration-200 group"
             >
               {link.label}
-              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-300 transition-all duration-350 group-hover:w-1/2 rounded-full"></span>
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-brand-700 transition-all duration-200 group-hover:w-1/2 rounded-full"></span>
             </a>
           ))}
         </nav>
@@ -70,29 +68,26 @@ export default function Header() {
             href="https://wa.me/5511954997799"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-cta !px-5 !py-2.5 text-xs font-black uppercase tracking-wider relative overflow-hidden group shadow-lg"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 shadow-sm"
           >
-            {/* Light sweep effect */}
-            <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-light-sweep"></div>
-            
             <Image
               src="/images/WhatsApp_icon.png"
               alt="WhatsApp"
-              width={18}
-              height={18}
-              className="mr-1.5 transition-transform duration-300 group-hover:scale-110"
+              width={16}
+              height={16}
+              className="transition-transform duration-200 group-hover:scale-110"
             />
-            <span className="hidden sm:inline">Falar com Consultor</span>
+            <span className="hidden sm:inline">Orçamento Grátis</span>
             <span className="sm:hidden">WhatsApp</span>
           </a>
 
           {/* Mobile Menu Toggle Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-white border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 transition-all"
+            className="lg:hidden p-2 text-slate-600 border border-slate-200 rounded-xl bg-slate-50 hover:bg-slate-100 transition-all"
             aria-label="Menu de Navegação"
           >
-            <svg className="w-5.5 h-5.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -103,22 +98,22 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Nav Menu Drawer */}
+      {/* Mobile Nav Drawer */}
       <div
         className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          mobileMenuOpen ? "max-h-96 opacity-100 border-b border-white/10" : "max-h-0 opacity-0 pointer-events-none"
-        } bg-slate-950/95 backdrop-blur-xl`}
+          mobileMenuOpen ? "max-h-96 opacity-100 border-t border-slate-200" : "max-h-0 opacity-0 pointer-events-none"
+        } bg-white`}
       >
-        <nav className="container mx-auto px-4 py-6 flex flex-col gap-1.5">
+        <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-xl transition-all duration-200 font-bold border border-transparent hover:border-white/5 flex items-center justify-between"
+              className="px-4 py-3.5 text-xs md:text-sm text-slate-700 hover:text-brand-700 hover:bg-slate-50 rounded-xl transition-all duration-200 font-bold border border-transparent flex items-center justify-between"
             >
               <span>{link.label}</span>
-              <span className="text-slate-500">→</span>
+              <span className="text-slate-400">→</span>
             </a>
           ))}
         </nav>

@@ -63,7 +63,7 @@ export default function WindBannerBarueri() {
                 <p className="text-slate-400 text-sm mb-2">Wind Banner a partir de</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-emerald-400 text-lg font-semibold">R$</span>
-                  <span className="text-white text-4xl font-black font-heading">350</span>
+                  <span className="text-white text-4xl font-black font-heading">320</span>
                   <span className="text-slate-400 text-sm">,00 / unidade</span>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function WindBannerBarueri() {
                 </ul>
                 <div className="text-center">
                   <span className="text-xs text-slate-500">a partir de</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 350,00</div>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 320,00</div>
                 </div>
               </div>
             </div>
@@ -206,7 +206,7 @@ export default function WindBannerBarueri() {
                 </ul>
                 <div className="text-center">
                   <span className="text-xs text-slate-500">a partir de</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 400,00</div>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 380,00</div>
                 </div>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function WindBannerBarueri() {
                 </ul>
                 <div className="text-center">
                   <span className="text-xs text-slate-500">a partir de</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 420,00</div>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 430,00</div>
                 </div>
               </div>
             </div>

@@ -208,7 +208,7 @@ export default function EntregaRapida24h() {
                 <div className="flex justify-between items-center">
                   <div>
                     <span className="text-xs text-slate-500">a partir de</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 350</div>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 320</div>
                   </div>
                   <a
                     href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%202m%20com%20entrega%20em%2024h"
@@ -252,7 +252,7 @@ export default function EntregaRapida24h() {
                 <div className="flex justify-between items-center">
                   <div>
                     <span className="text-xs text-slate-500">a partir de</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 400</div>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 380</div>
                   </div>
                   <a
                     href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%202,60m%20com%20entrega%20em%2024h"
@@ -291,7 +291,7 @@ export default function EntregaRapida24h() {
                 <div className="flex justify-between items-center">
                   <div>
                     <span className="text-xs text-slate-500">a partir de</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 420</div>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 430</div>
                   </div>
                   <a
                     href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%203m%20com%20entrega%20em%2024h"

@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 const poppins = Poppins({
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800', '900'],
   subsets: ["latin"],
   variable: '--font-poppins',
   display: 'swap',
@@ -18,14 +18,14 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://libracomwindbanner.com.br'),
-  title: "Wind Banner em Barueri e Alphaville | Libracom - Entrega Rápida",
-  description: "Especialistas em Wind Banner personalizado em Barueri e Alphaville. Bandeira de vento para eventos, feiras e ações promocionais. Entrega em 24 horas!",
-  keywords: "wind banner em barueri, bandeira de vento barueri, wind banner alphaville, comprar wind banner barueri, wind banner personalizado sp, impressão de wind banner barueri, bandeira promocional barueri, empresa de wind banner barueri, onde comprar wind banner em barueri, wind banner para eventos barueri, preço de wind banner personalizado, modelo de wind banner pena, diferença entre wind banner e bandeira, qual wind banner dura mais, melhor tipo de banner para eventos externos, base para wind banner com água ou areia, banner de tecido para feiras, divulgação com bandeiras de vento, wind banner resistente ao vento, bandeira para marketing visual em barueri",
+  title: "Wind Banner, Roll Up, Adesivos e Lonas em Barueri | Libracom - Entrega 24h",
+  description: "Especialistas em Wind Banner personalizado, Roll Up, Adesivos, Banners, Faixas e Lonas em Barueri e Alphaville. Impressão digital Ultra HD. Arte grátis. Entrega em 24 horas!",
+  keywords: "wind banner em barueri, roll up personalizado barueri, adesivo personalizado alphaville, banner personalizado barueri, lona impressa barueri, faixa promocional barueri, bandeira de vento barueri, wind banner alphaville, comprar wind banner barueri, wind banner personalizado sp, impressão de wind banner barueri, bandeira promocional barueri, empresa de wind banner barueri, onde comprar wind banner em barueri, wind banner para eventos barueri, preço de wind banner personalizado, roll up banner para feiras, adesivo vinil personalizado, comunicação visual barueri",
   openGraph: {
-    title: "Wind Banner em Barueri e Alphaville | Entrega em 24h",
-    description: "Wind Banners personalizados para sua empresa e eventos. Bandeiras de vento com melhor qualidade e resistência. Entrega rápida em Barueri e Alphaville.",
+    title: "Wind Banner, Roll Up, Adesivos e Lonas | Libracom Barueri - Entrega 24h",
+    description: "Wind Banners, Roll Ups, Adesivos, Faixas e Lonas personalizados para sua empresa e eventos. Impressão Ultra HD direto de fábrica. Entrega rápida em Barueri e Alphaville.",
     url: 'https://libracomwindbanner.com.br',
-    siteName: 'Libracom Wind Banners',
+    siteName: 'Libracom - Comunicação Visual',
     images: [
       {
         url: '/images/wind_banner_sitebg.webp',
@@ -40,10 +40,10 @@ export const metadata: Metadata = {
         alt: 'Wind Banner de alta qualidade para eventos e empresas',
       },
       {
-        url: '/images/backdrop_eventos_fundo_palco_banner.png',
+        url: '/images/roll_up_banner_em_barueri_alphaville_sao_paulo_entrega_rapida.png',
         width: 1200,
         height: 630,
-        alt: 'Backdrop e banners para eventos em Barueri',
+        alt: 'Roll Up Banner personalizado em Barueri e Alphaville',
       },
     ],
     locale: 'pt_BR',
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Wind Banner em Barueri e Alphaville | Entrega em 24h",
-    description: "Wind Banners personalizados para sua empresa e eventos. Bandeiras de vento com melhor qualidade e resistência.",
+    title: "Wind Banner, Roll Up, Adesivos e Lonas | Libracom Barueri",
+    description: "Comunicação visual completa: Wind Banners, Roll Ups, Adesivos, Faixas e Lonas personalizados com entrega em 24h.",
     images: ['/images/wind_banner_sitebg.webp'],
     creator: '@libracom',
   },

@@ -18,32 +18,26 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://libracomwindbanner.com.br'),
-  title: "Wind Banner, Roll Up, Adesivos e Lonas em Barueri | Libracom - Entrega 24h",
-  description: "Especialistas em Wind Banner personalizado, Roll Up, Adesivos, Banners, Faixas e Lonas em Barueri e Alphaville. Impressão digital Ultra HD. Arte grátis. Entrega em 24 horas!",
-  keywords: "wind banner em barueri, roll up personalizado barueri, adesivo personalizado alphaville, banner personalizado barueri, lona impressa barueri, faixa promocional barueri, bandeira de vento barueri, wind banner alphaville, comprar wind banner barueri, wind banner personalizado sp, impressão de wind banner barueri, bandeira promocional barueri, empresa de wind banner barueri, onde comprar wind banner em barueri, wind banner para eventos barueri, preço de wind banner personalizado, roll up banner para feiras, adesivo vinil personalizado, comunicação visual barueri",
+  title: "Wind Banner Retangular e Quadrado em Barueri | Libracom - Modelo Reto",
+  description: "Especialistas em Wind Banner Retangular e Quadrado (Modelo Reto) em Barueri e Alphaville. Tecido premium com 20% de transparência, haste e base inclusas. Arte grátis e entrega rápida!",
+  keywords: "wind banner retangular, wind banner quadrado, wind banner reto, wind banner em barueri, wind banner personalizado, bandeira de vento, comprar wind banner barueri, wind banner alphaville, preço wind banner reto, wind banner completo, wind banner 2m, wind banner 2.6m, wind banner 3.2m, libracom wind banners, bandeira personalizada barueri, wind banner são paulo, wind banner barueri, wind banner reto",
   openGraph: {
-    title: "Wind Banner, Roll Up, Adesivos e Lonas | Libracom Barueri - Entrega 24h",
-    description: "Wind Banners, Roll Ups, Adesivos, Faixas e Lonas personalizados para sua empresa e eventos. Impressão Ultra HD direto de fábrica. Entrega rápida em Barueri e Alphaville.",
+    title: "Wind Banner Retangular e Quadrado | Libracom Barueri - Modelo Reto",
+    description: "Wind Banners Retangulares e Quadrados (Modelo Reto) para destacar o seu comércio ou evento. Impressão Ultra HD direto de fábrica. Tecido premium 20% de transparência.",
     url: 'https://libracomwindbanner.com.br',
-    siteName: 'Libracom - Comunicação Visual',
+    siteName: 'Libracom - Wind Banners',
     images: [
       {
-        url: '/images/wind_banner_sitebg.webp',
+        url: '/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png',
         width: 1200,
         height: 630,
-        alt: 'Wind Banner personalizado em Barueri e Alphaville - Libracom',
+        alt: 'Wind Banner Retangular e Quadrado em Barueri e Alphaville - Libracom',
       },
       {
-        url: '/images/wind_banner_mpd.jpeg',
+        url: '/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg',
         width: 1200,
         height: 630,
-        alt: 'Wind Banner de alta qualidade para eventos e empresas',
-      },
-      {
-        url: '/images/roll_up_banner_em_barueri_alphaville_sao_paulo_entrega_rapida.png',
-        width: 1200,
-        height: 630,
-        alt: 'Roll Up Banner personalizado em Barueri e Alphaville',
+        alt: 'Wind Banner Modelo Reto para eventos e empresas',
       },
     ],
     locale: 'pt_BR',
@@ -51,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Wind Banner, Roll Up, Adesivos e Lonas | Libracom Barueri",
-    description: "Comunicação visual completa: Wind Banners, Roll Ups, Adesivos, Faixas e Lonas personalizados com entrega em 24h.",
-    images: ['/images/wind_banner_sitebg.webp'],
+    title: "Wind Banner Retangular e Quadrado | Libracom Barueri",
+    description: "Modelos Retos de Wind Banner (Retangular/Quadrado) personalizados com alta definição de cores e entrega rápida.",
+    images: ['/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png'],
     creator: '@libracom',
   },
   robots: {

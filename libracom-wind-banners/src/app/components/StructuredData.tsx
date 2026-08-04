@@ -3,14 +3,12 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Libracom Wind Banners",
-    "description": "Especialistas em Wind Banner personalizado em Barueri e Alphaville. Bandeira de vento para eventos, feiras e ações promocionais.",
+    "description": "Especialistas em Wind Banner Retangular e Quadrado (Modelo Reto) personalizado em Barueri e Alphaville. Bandeiras com 20% de transparência, hastes e bases.",
     "url": "https://libracomwindbanner.com.br",
     "logo": "https://libracomwindbanner.com.br/images/libracom_logo_preto_navbar.png",
     "image": [
-      "https://libracomwindbanner.com.br/images/wind_banner_sitebg.webp",
-      "https://libracomwindbanner.com.br/images/wind_banner_mpd.jpeg",
-      "https://libracomwindbanner.com.br/images/backdrop_eventos_fundo_palco_banner.png",
-      "https://libracomwindbanner.com.br/images/totem_backlight_eventos_totem_iluminado_barueri_alphaville.jpg"
+      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
+      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg"
     ],
     "telephone": "+55 11 95499-7799",
     "address": {
@@ -39,12 +37,12 @@ export default function StructuredData() {
       }
     ],
     "serviceType": [
-      "Wind Banner",
-      "Bandeira de Vento",
-      "Banner Personalizado",
-      "Material Promocional"
+      "Wind Banner Retangular",
+      "Wind Banner Quadrado",
+      "Wind Banner Reto",
+      "Bandeira de Vento"
     ],
-    "priceRange": "R$ 350 - R$ 420",
+    "priceRange": "R$ 150 - R$ 360",
     "openingHours": "Mo-Fr 08:00-18:00",
     "sameAs": [
       "https://wa.me/5511954997799"
@@ -54,12 +52,11 @@ export default function StructuredData() {
   const productData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Wind Banner Personalizado",
-    "description": "Wind Banner de alta qualidade para eventos, feiras e ações promocionais em Barueri e Alphaville",
+    "name": "Wind Banner Retangular e Quadrado (Modelo Reto)",
+    "description": "Wind Banner Modelo Reto (Retangular / Quadrado) personalizado de alta qualidade, completo com base e haste ou somente bandeira avulsa.",
     "image": [
-      "https://libracomwindbanner.com.br/images/wind_banner_sitebg.webp",
-      "https://libracomwindbanner.com.br/images/wind_banner_mpd.jpeg",
-      "https://libracomwindbanner.com.br/images/backdrop_eventos_fundo_palco_banner.png"
+      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
+      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg"
     ],
     "brand": {
       "@type": "Brand",
@@ -67,7 +64,7 @@ export default function StructuredData() {
     },
     "offers": {
       "@type": "Offer",
-      "price": "350",
+      "price": "280",
       "priceCurrency": "BRL",
       "availability": "https://schema.org/InStock",
       "seller": {

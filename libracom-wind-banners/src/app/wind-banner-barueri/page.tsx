@@ -60,10 +60,10 @@ export default function WindBannerBarueri() {
 
               {/* Price highlight */}
               <div className="glass-card inline-block px-6 py-4 mb-8">
-                <p className="text-slate-400 text-sm mb-2">Wind Banner a partir de</p>
+                <p className="text-slate-400 text-sm mb-2">Wind Banner Reto a partir de</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-emerald-400 text-lg font-semibold">R$</span>
-                  <span className="text-white text-4xl font-black font-heading">320</span>
+                  <span className="text-white text-4xl font-black font-heading">280</span>
                   <span className="text-slate-400 text-sm">,00 / unidade</span>
                 </div>
               </div>
@@ -137,9 +137,9 @@ export default function WindBannerBarueri() {
             {/* Wind Banner 2m */}
             <div className="product-card group">
               <div className="p-8 text-center">
-                <span className="text-5xl font-black text-white font-heading">2m</span>
+                <span className="text-5xl font-black text-white font-heading">2,0m</span>
                 <h3 className="text-2xl font-bold mt-3 text-white font-heading">Wind Banner Pequeno</h3>
-                <p className="text-slate-400 mt-1">Ideal para espaços limitados</p>
+                <p className="text-slate-400 mt-1">Ideal para calçadas e entradas menores</p>
               </div>
               <div className="separator-glow mx-6"></div>
               <div className="p-6">
@@ -154,18 +154,18 @@ export default function WindBannerBarueri() {
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Impressão digital de alta qualidade
+                    Tecido premium 20% transparência
                   </li>
                   <li className="flex items-center text-slate-300">
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Base resistente incluída
+                    Base e haste inclusas
                   </li>
                 </ul>
                 <div className="text-center">
-                  <span className="text-xs text-slate-500">a partir de</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 320,00</div>
+                  <span className="text-xs text-slate-500">Kit Completo</span>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 280,00</div>
                 </div>
               </div>
             </div>
@@ -195,26 +195,26 @@ export default function WindBannerBarueri() {
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Impressão digital de alta resolução
+                    Tecido premium 20% transparência
                   </li>
                   <li className="flex items-center text-slate-300">
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Base reforçada para maior estabilidade
+                    Base reforçada e haste inclusas
                   </li>
                 </ul>
                 <div className="text-center">
-                  <span className="text-xs text-slate-500">a partir de</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 380,00</div>
+                  <span className="text-xs text-slate-500">Kit Completo</span>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 320,00</div>
                 </div>
               </div>
             </div>
 
-            {/* Wind Banner 3m */}
+            {/* Wind Banner 3,20m */}
             <div className="product-card group">
               <div className="p-8 text-center">
-                <span className="text-5xl font-black text-white font-heading">3m</span>
+                <span className="text-5xl font-black text-white font-heading">3,20m</span>
                 <h3 className="text-2xl font-bold mt-3 text-white font-heading">Wind Banner Grande</h3>
                 <p className="text-slate-400 mt-1">Máximo impacto visual</p>
               </div>
@@ -231,18 +231,18 @@ export default function WindBannerBarueri() {
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Impressão digital premium
+                    Tecido premium 20% transparência
                   </li>
                   <li className="flex items-center text-slate-300">
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Base extra robusta incluída
+                    Base extra robusta e haste inclusas
                   </li>
                 </ul>
                 <div className="text-center">
-                  <span className="text-xs text-slate-500">a partir de</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 430,00</div>
+                  <span className="text-xs text-slate-500">Kit Completo</span>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 360,00</div>
                 </div>
               </div>
             </div>

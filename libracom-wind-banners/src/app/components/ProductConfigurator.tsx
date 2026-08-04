@@ -3,73 +3,41 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 
-const products = [
+interface ProductSize {
+  label: string;
+  price: number;
+}
+
+interface Product {
+  id: string;
+  name: string;
+  icon: string;
+  description: string;
+  sizes: ProductSize[];
+  perUnit?: string;
+}
+
+const products: Product[] = [
   {
-    id: "wind-banner",
+    id: "wind-banner-completo",
     name: "Wind Banner Completo",
     icon: "🏳️",
-    description: "Kit completo de alta resistência: tecido de poliéster com dupla face e zero transparência, haste flexível em fibra de vidro e base reforçada.",
+    description: "Kit completo (modelo retangular/quadrado): tecido premium com 20% de transparência (estampa visível e legível em ambos os lados), haste flexível de alta durabilidade e base de sustentação inclusas.",
     sizes: [
-      { label: "Pequeno - 2,0m", price: 320 },
-      { label: "Médio - 2,60m (Mais Vendido)", price: 380 },
-      { label: "Grande - 3,0m", price: 430 },
+      { label: "2,0m - Pequeno", price: 280 },
+      { label: "2,60m - Médio (Mais Vendido)", price: 320 },
+      { label: "3,20m - Grande", price: 360 },
     ],
   },
   {
     id: "bandeira-avulsa",
-    name: "Bandeira Avulsa",
+    name: "Somente Bandeira",
     icon: "🚩",
-    description: "Somente a bandeira impressa em alta resolução, ideal para reposição. Tecido premium zero transparência, compatível com suas hastes existentes.",
+    description: "Apenas a bandeira impressa para reposição no formato retangular/quadrado. Tecido de alta gramatura com 20% de transparência para cores vibrantes visíveis de ambos os lados. Não acompanha haste nem base.",
     sizes: [
-      { label: "Reposição - 2,0m", price: 200 },
-      { label: "Reposição - 2,60m", price: 250 },
-      { label: "Reposição - 3,0m", price: 280 },
-    ],
-  },
-  {
-    id: "roll-up",
-    name: "Roll Up",
-    icon: "🎞️",
-    description: "Banner retrátil portátil em alumínio leve com mola de alta tração. Acompanha bolsa de transporte. Perfeito para feiras e recepções.",
-    sizes: [
-      { label: "Standard - 80×200cm", price: 190 },
-      { label: "Corporativo - 100×200cm", price: 230 },
-      { label: "Grande - 120×200cm", price: 280 },
-    ],
-  },
-  {
-    id: "adesivo",
-    name: "Adesivo",
-    icon: "🏷️",
-    description: "Adesivo em Vinil Brilho ou Fosco com recorte digital personalizado de alta precisão. À prova d'água e resistente ao sol.",
-    sizes: [
-      { label: "Folha / m² Avulso", price: 45 },
-      { label: "Grade Comercial (1 a 3m²)", price: 40 },
-      { label: "Lote Industrial (acima de 3m²)", price: 35 },
-    ],
-    perUnit: "/m²",
-  },
-  {
-    id: "banner-lona",
-    name: "Banner / Lona",
-    icon: "🖼️",
-    description: "Impressão digital Ultra HD em lona de alta gramatura com acabamento profissional em bastão e cordão ou ilhós metálico reforçado.",
-    sizes: [
-      { label: "Formato Padrão (até 2m²)", price: 60 },
-      { label: "Grande Formato (2 a 5m²)", price: 55 },
-      { label: "Fachada Comercial (acima de 5m²)", price: 50 },
-    ],
-    perUnit: "/m²",
-  },
-  {
-    id: "faixa",
-    name: "Faixa",
-    icon: "📏",
-    description: "Faixa promocional resistente de alto impacto. Excelente para inaugurações, ofertas temporárias, datas comemorativas e calçadas.",
-    sizes: [
-      { label: "Compacta - 3×0,70m", price: 80 },
-      { label: "Comercial - 4×0,80m", price: 110 },
-      { label: "Expandida - 5×1,00m", price: 150 },
+      { label: "2,0m - Pequeno", price: 150 },
+      { label: "2,60m - Médio", price: 180 },
+      { label: "3,20m - Grande", price: 200 },
     ],
   },
 ];
@@ -300,78 +268,40 @@ export default function ProductConfigurator() {
                   
                   {/* The Preview Box Frame */}
                   <div className="preview-box">
-                    {/* Waving Wind Banner (For index 0 or 1 - replacement flag) */}
-                    {(selectedProduct === 0 || selectedProduct === 1) && (
-                      <div className="mockup-wind-banner">
-                        <div className="mockup-wb-pole"></div>
-                        <div className="mockup-wb-pole-curve"></div>
-                        <div className="mockup-wb-flag">
-                          <span className="text-white text-xs font-black uppercase tracking-wider text-center pt-8">
-                            Libracom
-                          </span>
-                          <span className="text-white/80 text-[7.5px] font-black mt-1 text-center bg-black/15 py-0.5 px-1.5 rounded">
-                            {size.label.split(" ")[0] === "Reposição" ? "FLAG" : size.label.split(" ")[0]}
-                          </span>
-                        </div>
-                        {selectedProduct === 0 && <div className="mockup-wb-base"></div>}
-                        <div className="mockup-wb-shadow"></div>
+                    <div className="mockup-wind-banner">
+                      {/* Straight rectangular pole */}
+                      <div className="mockup-wb-pole" style={{ height: "230px" }}></div>
+                      {/* Top horizontal arm/rod for holding the rectangular flag */}
+                      <div className="absolute left-[30px] top-[24px] w-[65px] h-[3.5px] bg-[#475569] z-10"></div>
+                      
+                      {/* Rectangular Flag */}
+                      <div 
+                        className="mockup-wb-flag" 
+                        style={{ 
+                          borderRadius: "0", 
+                          top: "27px", 
+                          left: "33.5px", 
+                          width: "60px", 
+                          height: "198px", 
+                          opacity: selectedProduct === 1 ? 0.8 : 1,
+                          border: "1px dashed rgba(255, 255, 255, 0.3)"
+                        }}
+                      >
+                        <span className="text-white text-[11px] font-black uppercase tracking-wider text-center pt-8">
+                          Libracom
+                        </span>
+                        <span className="text-white/80 text-[7px] font-black mt-1 text-center bg-black/15 py-0.5 px-1.5 rounded">
+                          {size.label.split(" - ")[0]}
+                        </span>
+                        <span className="text-white/70 text-[5.5px] font-bold mt-2 text-center border-t border-white/20 pt-1">
+                          20% TRANSP.
+                        </span>
                       </div>
-                    )}
-
-                    {selectedProduct === 2 && (
-                      <div className="mockup-roll-up">
-                        <div className="mockup-ru-canvas">
-                          <div className="mockup-ru-banner-text">LIBRACOM</div>
-                          <div className="text-[9px] text-white/50 font-bold mt-2 uppercase tracking-wide">
-                            {size.label.split(" ")[0]}
-                          </div>
-                        </div>
-                        <div className="mockup-ru-base"></div>
-                        <div className="mockup-ru-feet">
-                          <div className="mockup-ru-foot"></div>
-                          <div className="mockup-ru-foot"></div>
-                        </div>
-                      </div>
-                    )}
-
-                    {selectedProduct === 3 && (
-                      <div className="mockup-stickers">
-                        <div className="mockup-sticker text-white text-[8px] font-black">Libracom</div>
-                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-brand-500 to-brand-700">ADESIVO</div>
-                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-brand-600 to-cyan-500">VINIL</div>
-                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-yellow-400 to-amber-500">HD</div>
-                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-purple-500 to-pink-500">CORTE</div>
-                        <div className="mockup-sticker text-white text-[8px] font-black bg-gradient-to-tr from-blue-600 to-emerald-400">BRILHO</div>
-                      </div>
-                    )}
-
-                    {selectedProduct === 4 && (
-                      <div className="mockup-banner-lona">
-                        <div className="mockup-grommet grommet-tl"></div>
-                        <div className="mockup-grommet grommet-tr"></div>
-                        <div className="mockup-grommet grommet-bl"></div>
-                        <div className="mockup-grommet grommet-br"></div>
-                        <div className="text-center p-4">
-                          <div className="text-white text-xs font-black uppercase tracking-widest">IMPRESSÃO DIGITAL HD</div>
-                          <div className="text-cyan-300 text-[10px] font-bold mt-1 uppercase">Lona Premium</div>
-                        </div>
-                      </div>
-                    )}
-
-                    {selectedProduct === 5 && (
-                      <div className="mockup-faixa">
-                        <div className="mockup-faixa-pole pole-l"></div>
-                        <div className="mockup-faixa-pole pole-r"></div>
-                        <div className="mockup-faixa-rope rope-tl"></div>
-                        <div className="mockup-faixa-rope rope-tr"></div>
-                        <div className="mockup-faixa-rope rope-bl"></div>
-                        <div className="mockup-faixa-rope rope-br"></div>
-                        <div className="text-center px-4">
-                          <div className="text-white text-[10px] font-extrabold uppercase tracking-wide">FAIXA DE ALTO IMPACTO</div>
-                          <div className="text-yellow-300 text-[8px] font-medium tracking-tight mt-0.5">RESISTENTE AO VENTO</div>
-                        </div>
-                      </div>
-                    )}
+                      
+                      {/* Base rendered only for Complete Kit */}
+                      {selectedProduct === 0 && <div className="mockup-wb-base"></div>}
+                      <div className="mockup-wb-shadow"></div>
+                    </div>
                   </div>
                 </div>
 

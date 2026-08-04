@@ -187,8 +187,8 @@ export default function EntregaRapida24h() {
             <div className="product-card-light group overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/images/wind_banner_mpd.jpeg"
-                  alt="Wind Banner 2m com entrega em 24h"
+                  src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (5).jpg"
+                  alt="Wind Banner Reto 2m com entrega em 24h"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -201,17 +201,17 @@ export default function EntregaRapida24h() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner 2m</h3>
+                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 2,0m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                  Wind banner de 2 metros de altura, ideal para espaços menores e eventos internos.
+                  Wind banner reto de 2 metros de altura, ideal para calçadas e eventos internos. Tecido 20% transparência.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
-                    <span className="text-xs text-slate-500">a partir de</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 320</div>
+                    <span className="text-xs text-slate-500">Kit Completo</span>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 280</div>
                   </div>
                   <a
-                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%202m%20com%20entrega%20em%2024h"
+                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%202m%20com%20entrega%20em%2024h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary text-sm"
@@ -226,8 +226,8 @@ export default function EntregaRapida24h() {
             <div className="product-card-light group overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/images/wind_banner_mpd.jpeg"
-                  alt="Wind Banner 2,60m com entrega em 24h"
+                  src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png"
+                  alt="Wind Banner Reto 2,60m com entrega em 24h"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -245,17 +245,17 @@ export default function EntregaRapida24h() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner 2,60m</h3>
+                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 2,60m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                  Tamanho médio com excelente visibilidade e custo-benefício. O mais popular.
+                  Tamanho médio retangular com excelente visibilidade e caimento perfeito de tecido. O mais popular.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
-                    <span className="text-xs text-slate-500">a partir de</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 380</div>
+                    <span className="text-xs text-slate-500">Kit Completo</span>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 320</div>
                   </div>
                   <a
-                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%202,60m%20com%20entrega%20em%2024h"
+                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%202,60m%20com%20entrega%20em%2024h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary text-sm"
@@ -266,12 +266,12 @@ export default function EntregaRapida24h() {
               </div>
             </div>
 
-            {/* Wind Banner 3m */}
+            {/* Wind Banner 3,20m */}
             <div className="product-card-light group overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/images/wind_banner_mpd.jpeg"
-                  alt="Wind Banner 3m com entrega em 24h"
+                  src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (3).jpg"
+                  alt="Wind Banner Reto 3,20m com entrega em 24h"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -284,17 +284,17 @@ export default function EntregaRapida24h() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner 3m</h3>
+                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 3,20m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                  Wind banner grande com máximo impacto visual para eventos e feiras.
+                  Wind banner grande retangular com máximo impacto visual para feiras e frentes de comércios.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
-                    <span className="text-xs text-slate-500">a partir de</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 430</div>
+                    <span className="text-xs text-slate-500">Kit Completo</span>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 360</div>
                   </div>
                   <a
-                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%203m%20com%20entrega%20em%2024h"
+                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%203,20m%20com%20entrega%20em%2024h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary text-sm"

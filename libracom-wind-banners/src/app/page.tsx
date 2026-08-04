@@ -9,87 +9,47 @@ import InfiniteBrandSlider from "./components/InfiniteBrandSlider";
 import FAQ from "./components/FAQ";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 
-// New 2026 high-resolution product photos database
+// New high-resolution Rectangular/Square product photos database
 const new2026Photos = [
   {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (10).jpeg",
-    alt: "Wind Banners Promocionais 2026 - Libracom Barueri",
-    label: "Wind Banners Calçada Premium",
+    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
+    alt: "Wind Banner Retangular Modelo Reto - Libracom Barueri",
+    label: "Wind Banner Retangular 2,60m",
     loc: "Barueri, SP",
-    desc: "Acabamento superior de costuras duplas e zero transparência.",
-    whatsappText: "Olá! Gostei das fotos dos Wind Banners de calçada do portfólio (Foto 10) e gostaria de solicitar um orçamento..."
+    desc: "Bandeira retangular premium com cores vivas e caimento impecável.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Retangular de 2,60m no portfólio e gostaria de um orçamento..."
   },
   {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (9).jpeg",
-    alt: "Wind Banner Corporativo 2026 - Libracom Tamboré",
-    label: "Wind Banner Corporativo",
+    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg",
+    alt: "Wind Banner Quadrado Promocional - Libracom Alphaville",
+    label: "Wind Banner Retângulo Destaque",
+    loc: "Alphaville, SP",
+    desc: "Maior área útil do mercado, garantindo excelente visibilidade para logotipos.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Retângulo Destaque no portfólio e gostaria de um orçamento..."
+  },
+  {
+    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (3).jpg",
+    alt: "Wind Banner Reto Completo - Libracom",
+    label: "Wind Banner Reto 3,20m",
     loc: "Tamboré, SP",
-    desc: "Impressão digital Ultra HD de alta fidelidade de cores.",
-    whatsappText: "Olá! Gostei do Wind Banner Corporativo do portfólio (Foto 9) e gostaria de fazer uma cotação para minha marca..."
+    desc: "Modelo completo com haste ultra-resistente e base robusta.",
+    whatsappText: "Olá! Gostei do Wind Banner Reto de 3,20m completo e gostaria de um orçamento..."
   },
   {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (8).jpeg",
-    alt: "Wind Banners Comerciais 2026 - Libracom Alphaville",
-    label: "Wind Banner Destaque Comercial",
-    loc: "Alphaville, SP",
-    desc: "Formato gota de alta visibilidade ideal para frentes de lojas.",
-    whatsappText: "Olá! Vi o Wind Banner de calçada comercial do portfólio (Foto 8) e gostaria de um orçamento..."
-  },
-  {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (7).jpeg",
-    alt: "Wind Banners Premium Zero Transparência 2026",
-    label: "Wind Banner Zero Transparência",
+    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (4).jpg",
+    alt: "Bandeira de Vento Retangular - Libracom",
+    label: "Wind Banner Quadrado Premium",
     loc: "Barueri, SP",
-    desc: "Poliéster especial de alta gramatura com cores vivas em ambos os lados.",
-    whatsappText: "Olá! Vi o Wind Banner com zero transparência do portfólio (Foto 7) e queria fazer uma cotação..."
+    desc: "Tecido especial com 20% de transparência para leitura perfeita de ambos os lados.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Quadrado Premium com 20% de transparência e queria um orçamento..."
   },
   {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (6).jpeg",
-    alt: "Wind Banner Calçada Entrada de Loja 2026",
-    label: "Wind Banner Entrada de Loja",
-    loc: "Alphaville, SP",
-    desc: "Haste reforçada flexível e base resistente.",
-    whatsappText: "Olá! Vi o Wind Banner para entrada de loja do portfólio (Foto 6) e queria um orçamento..."
-  },
-  {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (5).jpeg",
-    alt: "Wind Banner Frente de Comércio 2026",
-    label: "Wind Banner Frente de Comércio",
-    loc: "Barueri, SP",
-    desc: "Chame a atenção dos clientes que passam em frente do seu comércio.",
-    whatsappText: "Olá! Vi o Wind Banner para frente de comércio do portfólio (Foto 5) e gostaria de orçamento..."
-  },
-  {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (4).jpeg",
-    alt: "Wind Banner Evento Corporativo Tamboré 2026",
-    label: "Wind Banner para Eventos",
-    loc: "Tamboré, SP",
-    desc: "Estrutura premium leve e muito fácil de montar.",
-    whatsappText: "Olá! Vi o Wind Banner de eventos do portfólio (Foto 4) e gostaria de cotação..."
-  },
-  {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (3).jpeg",
-    alt: "Wind Banners Dupla Face Alto Impacto 2026",
-    label: "Wind Banner Dupla Face",
-    loc: "Barueri, SP",
-    desc: "Costuras industriais reforçadas com durabilidade prolongada contra chuva.",
-    whatsappText: "Olá! Vi o Wind Banner dupla face de calçada do portfólio (Foto 3) e queria um orçamento..."
-  },
-  {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (2).jpeg",
-    alt: "Wind Banner Impressão Ultra HD 2026",
-    label: "Wind Banner Ultra HD",
-    loc: "Alphaville, SP",
-    desc: "Impressão digital direta de altíssima nitidez de logotipos.",
-    whatsappText: "Olá! Gostei do Wind Banner em alta resolução do portfólio (Foto 2) e gostaria de cotar um parecido..."
-  },
-  {
-    src: "/images/fotos novas 2026 wind banners em barueri libracom (1).jpeg",
-    alt: "Wind Banners Comerciais Barueri 2026",
-    label: "Wind Banner Comercial Clássico",
-    loc: "Barueri, SP",
-    desc: "A melhor e mais barata ferramenta de marketing de calçada.",
-    whatsappText: "Olá, Libracom! Vi o Wind Banner clássico de Barueri no portfólio (Foto 1) e gostaria de cotar um..."
+    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (5).jpg",
+    alt: "Wind Banner Reto Barueri - Libracom",
+    label: "Wind Banner Retangular 2,0m",
+    loc: "São Paulo, SP",
+    desc: "Estrutura compacta ideal para entrada de lojas e calçadas.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Retangular de 2,0m no portfólio e gostaria de cotação..."
   }
 ];
 
@@ -114,13 +74,14 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            
             {/* Left Column - Clean high-contrast copy */}
             <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
               
               {/* Clean Promo Badge */}
               <div className="inline-flex items-center gap-2 bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-xl border border-blue-100 shadow-sm animate-bounce-subtle">
                 <span>🚨 PROMOÇÃO ATIVA:</span>
-                <span className="text-slate-800">Wind Banner a partir de R$ 320,00!</span>
+                <span className="text-slate-800">Wind Banner Reto a partir de R$ 280,00!</span>
               </div>
 
               {/* Minimalist Headline */}
@@ -131,29 +92,42 @@ export default function Home() {
 
               {/* Subheading */}
               <p className="text-base md:text-lg text-slate-500 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                Chame a atenção de quem passa em frente do seu comércio! Wind Banners completos com base e haste, modelo premium com <strong className="text-slate-950 font-bold border-b border-brand-700">acabamento superior e zero transparência</strong>.
+                Chame a atenção de quem passa em frente do seu comércio! Wind Banners nos formatos <strong className="text-slate-950 font-bold border-b border-brand-700">Retangular e Quadrado (Modelo Reto)</strong>. Tecido premium com <strong className="text-slate-950 font-bold border-b border-brand-700">20% de transparência</strong> que garante perfeita visualização de ambos os lados, com cores vivas e excelente caimento para girar com o vento.
               </p>
+
+              {/* Warning Box inside Hero area */}
+              <div className="bg-amber-50/70 border border-amber-200 rounded-2xl p-4 text-left shadow-xs">
+                <div className="flex gap-3">
+                  <span className="text-2xl shrink-0">⚠️</span>
+                  <div>
+                    <h4 className="text-xs font-black uppercase text-amber-800 tracking-wider">Aviso Importante de Linha de Produção</h4>
+                    <p className="text-xs text-amber-700 font-medium mt-1 leading-relaxed">
+                      NÃO fabricamos wind banners nos modelos Gota, Faca, Pena ou Vela. Trabalhamos <strong>exclusivamente com o Modelo Reto (Retangular / Quadrado)</strong>, que oferece até 40% mais área de exibição e leitura de logo do que outros formatos.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
               {/* Promotional Table Card */}
               <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200 max-w-md mx-auto lg:mx-0 shadow-xs">
-                <h3 className="text-xs font-black uppercase text-slate-400 tracking-wider mb-3">Tabela Promocional 2026</h3>
+                <h3 className="text-xs font-black uppercase text-slate-400 tracking-wider mb-3">Tabela de Preços Modelo Reto 2026</h3>
                 <div className="space-y-2.5 text-xs md:text-sm">
                   <div className="flex justify-between items-center text-slate-700">
-                    <span className="font-semibold">Wind Banner Completo 2,0m</span>
-                    <span className="font-black text-slate-900">R$ 320,00</span>
+                    <span className="font-semibold">Kit Completo 2,0m (Haste + Base + Bandeira)</span>
+                    <span className="font-black text-slate-900">R$ 280,00</span>
                   </div>
                   <div className="flex justify-between items-center text-slate-700">
-                    <span className="font-semibold">Wind Banner Completo 2,60m</span>
-                    <span className="font-black text-brand-700">R$ 380,00 <span className="text-[10px] text-slate-400 font-bold uppercase ml-1">Kit Médio</span></span>
+                    <span className="font-semibold">Kit Completo 2,60m (Mais Vendido)</span>
+                    <span className="font-black text-brand-700">R$ 320,00</span>
                   </div>
                   <div className="flex justify-between items-center text-slate-700">
-                    <span className="font-semibold">Wind Banner Completo 3,0m</span>
-                    <span className="font-black text-slate-900">R$ 430,00</span>
+                    <span className="font-semibold">Kit Completo 3,20m</span>
+                    <span className="font-black text-slate-900">R$ 360,00</span>
                   </div>
                   <div className="separator-glow my-2"></div>
                   <div className="flex justify-between items-center text-slate-700 font-bold">
-                    <span>Bandeira Avulsa (Reposição)</span>
-                    <span className="text-emerald-600 font-black">A partir de R$ 200,00</span>
+                    <span>Somente Bandeira Retangular (Reposição)</span>
+                    <span className="text-emerald-600 font-black">A partir de R$ 150,00</span>
                   </div>
                 </div>
               </div>
@@ -161,7 +135,7 @@ export default function Home() {
               {/* Simple CTA Row */}
               <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center lg:justify-start">
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá, Libracom! Gostaria de garantir a promoção especial do Wind Banner Completo com zero transparência a partir de R$ 320,00. Podem me ajudar?")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá, Libracom! Gostaria de garantir a promoção especial do Wind Banner Retangular Modelo Reto a partir de R$ 280,00. Podem me ajudar com a arte?")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-cta px-8 py-4 text-sm font-bold uppercase tracking-wider relative overflow-hidden group shadow-md"
@@ -185,7 +159,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column - Clean Showcase Slider (Melhora Hero + Mais fotos) */}
+            {/* Right Column - Clean Showcase Slider with user's specific photos */}
             <div className="w-full lg:w-1/2 space-y-4">
               <div className="bg-slate-50 border border-slate-200 rounded-3xl p-3 shadow-md relative group">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-200">
@@ -200,7 +174,7 @@ export default function Home() {
                   {/* Info tag overlay */}
                   <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-3.5 rounded-xl border border-slate-100 flex items-center justify-between shadow-sm z-20">
                     <div>
-                      <span className="text-[10px] text-brand-700 uppercase tracking-widest font-black block">Foto real do produto</span>
+                      <span className="text-[10px] text-brand-700 uppercase tracking-widest font-black block">Foto real do produto reto</span>
                       <h4 className="font-bold text-slate-800 text-xs md:text-sm">{heroImage.label}</h4>
                     </div>
                     <span className="text-[10px] bg-slate-100 text-slate-500 font-bold px-2 py-1 rounded">📍 {heroImage.loc}</span>
@@ -226,7 +200,7 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* Thumbnails indicator list (10 new photos preview) */}
+              {/* Thumbnails indicator list (User photos preview) */}
               <div className="flex gap-2 overflow-x-auto py-2 px-1 scrollbar-hide">
                 {new2026Photos.map((photo, index) => (
                   <button
@@ -252,9 +226,22 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-center text-[10px] text-slate-400 font-bold uppercase tracking-wider">
-                💡 Clique nos quadradinhos acima para navegar por todas as 10 novas fotos de 2026!
+                💡 Clique nos quadradinhos acima para navegar por fotos reais do modelo retangular!
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== AVISO PRINCIPAL EM DESTAQUE GERAL ===== */}
+      <section className="py-8 bg-amber-500 text-amber-950 font-black border-y border-amber-600">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-4 text-center md:text-left">
+          <span className="text-3xl">⚠️</span>
+          <div>
+            <h3 className="text-sm md:text-base font-black tracking-wide uppercase">SOMENTE MODELO RETO (RETANGULAR / QUADRADO)</h3>
+            <p className="text-xs font-bold text-amber-900 mt-0.5 leading-relaxed">
+              Não trabalhamos com wind banner modelos Faca, Pena, Vela ou Gota. Nosso foco é 100% no modelo reto, garantindo maior durabilidade e área de exibição da sua marca.
+            </p>
           </div>
         </div>
       </section>
@@ -264,59 +251,70 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-3">
             <span className="bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-100">
-              💎 Nosso Catálogo Comercial
+              💎 Modelos Disponíveis
             </span>
           </div>
           <h2 className="section-title text-slate-950 font-heading">
-            Sinalização de <span className="text-gradient-brand">Alto Padrão</span>
+            Sinalização no <span className="text-gradient-brand">Modelo Reto Premium</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Estruturas reforçadas e acabamento impecável para atrair a atenção do seu público e converter mais vendas
+            Estruturas reforçadas e bandeiras com acabamento impecável e 20% de transparência para atrair a atenção do seu público
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12">
             
             {/* 1. Wind Banner Completo */}
             <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
               <div>
-                <div className="relative h-56 bg-slate-100 overflow-hidden">
+                <div className="relative h-64 bg-slate-100 overflow-hidden">
                   <Image
-                    src="/images/fotos novas 2026 wind banners em barueri libracom (10).jpeg"
-                    alt="Wind Banner Completo 2026 - Bandeira, Haste e Base"
+                    src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png"
+                    alt="Wind Banner Completo - Bandeira Retangular, Haste e Base"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
                   />
                   <div className="absolute top-3 right-3 z-20">
                     <span className="bg-brand-700 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded">
-                      Promoção 2026
+                      Completo
                     </span>
                   </div>
                 </div>
 
-                <div className="p-6 space-y-2">
-                  <h3 className="text-lg font-bold text-slate-900 font-heading">Wind Banner Completo</h3>
+                <div className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold text-slate-900 font-heading">Wind Banner Completo</h3>
                   <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Kit completo contendo haste flexível de fibra de vidro de alta resistência, base reforçada e bandeira impressa em poliéster premium zero transparência.
+                    Kit completo contendo haste flexível em fibra de vidro de alta resistência, base reforçada estável e bandeira impressa em poliéster premium com 20% de transparência.
                   </p>
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1.5">
-                    <li>✓ Modelo Premium costura superior</li>
-                    <li>✓ Zero transparência no tecido</li>
-                    <li>✓ Haste flexível e Base inclusa</li>
+                  
+                  <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+                    <span className="text-[10px] font-black text-slate-400 uppercase block mb-1">Preços dos Kits:</span>
+                    <ul className="text-xs text-slate-700 space-y-1.5 font-semibold">
+                      <li className="flex justify-between"><span>Altura 2,00m</span> <span className="text-slate-900 font-bold">R$ 280,00</span></li>
+                      <li className="flex justify-between"><span>Altura 2,60m</span> <span className="text-brand-700 font-black">R$ 320,00 (Destaque)</span></li>
+                      <li className="flex justify-between"><span>Altura 3,20m</span> <span className="text-slate-900 font-bold">R$ 360,00</span></li>
+                    </ul>
+                  </div>
+
+                  <ul className="text-xs text-slate-400 space-y-1 pt-1">
+                    <li>✓ Modelo Retangular/Quadrado Reto</li>
+                    <li>✓ Tecido especial 20% de transparência</li>
+                    <li>✓ Haste reforçada e Base inclusas</li>
                   </ul>
                 </div>
               </div>
 
               <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
                 <div>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">Completo por</span>
-                  <span className="text-xl font-black text-brand-700 font-heading">R$ 320<span className="text-xs text-slate-400 font-medium">/un</span></span>
+                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">A partir de</span>
+                  <span className="text-xl font-black text-brand-700 font-heading">R$ 280<span className="text-xs text-slate-400 font-medium">/un</span></span>
                 </div>
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar o Wind Banner Completo R$ 320,00 da promoção...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar o Kit Wind Banner Completo Modelo Reto da promoção...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
+                  className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
                 >
                   Pedir no WhatsApp
                 </a>
@@ -326,13 +324,13 @@ export default function Home() {
             {/* 2. Bandeira Avulsa */}
             <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
               <div>
-                <div className="relative h-56 bg-slate-100 overflow-hidden">
+                <div className="relative h-64 bg-slate-100 overflow-hidden">
                   <Image
-                    src="/images/fotos novas 2026 wind banners em barueri libracom (2).jpeg"
-                    alt="Bandeira avulsa de reposição wind banner"
+                    src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (4).jpg"
+                    alt="Somente Bandeira de reposição reto retangular"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute top-3 right-3 z-20">
                     <span className="bg-emerald-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded">
@@ -341,57 +339,25 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="p-6 space-y-2">
-                  <h3 className="text-lg font-bold text-slate-900 font-heading">Bandeira Avulsa</h3>
+                <div className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold text-slate-900 font-heading">Somente Bandeira</h3>
                   <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Apenas a bandeira impressa em poliéster premium de alta gramatura com costuras reforçadas e proteção UV. Ideal para reposição utilizando sua base e hastes existentes.
+                    Apenas a bandeira impressa em poliéster premium com costuras reforçadas e caimento perfeito. Ideal para reposição utilizando suas hastes e bases existentes.
                   </p>
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1.5">
-                    <li>✓ Tecido Micro-Poliéster impermeável</li>
+
+                  <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+                    <span className="text-[10px] font-black text-slate-400 uppercase block mb-1">Preços da Bandeira:</span>
+                    <ul className="text-xs text-slate-700 space-y-1.5 font-semibold">
+                      <li className="flex justify-between"><span>Altura 2,00m</span> <span className="text-slate-900 font-bold">R$ 150,00</span></li>
+                      <li className="flex justify-between"><span>Altura 2,60m</span> <span className="text-brand-700 font-black">R$ 180,00</span></li>
+                      <li className="flex justify-between"><span>Altura 3,20m</span> <span className="text-slate-900 font-bold">R$ 200,00</span></li>
+                    </ul>
+                  </div>
+
+                  <ul className="text-xs text-slate-400 space-y-1 pt-1">
                     <li>✓ Estampa Ultra HD frente e verso</li>
-                    <li>✓ Encaixe padrão universal</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
-                <div>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">Avulsa por</span>
-                  <span className="text-xl font-black text-brand-700 font-heading">R$ 200<span className="text-xs text-slate-400 font-medium">/un</span></span>
-                </div>
-                <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar a Bandeira Avulsa de reposição a partir de R$ 200,00...")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
-                >
-                  Pedir no WhatsApp
-                </a>
-              </div>
-            </div>
-
-            {/* 3. Roll Up */}
-            <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
-              <div>
-                <div className="relative h-56 bg-slate-100 overflow-hidden">
-                  <Image
-                    src="/images/roll_up_banner_em_barueri_alphaville_sao_paulo_entrega_rapida.png"
-                    alt="Roll Up Banner Retrátil"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
-
-                <div className="p-6 space-y-2">
-                  <h3 className="text-lg font-bold text-slate-900 font-heading">Roll Up Retrátil</h3>
-                  <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Banner retrátil premium montável em 15 segundos. Fabricado em alumínio anodizado leve com mola interna de alta tração. Acompanha bolsa de transporte.
-                  </p>
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1.5">
-                    <li>✓ Acompanha bolsa para transporte</li>
-                    <li>✓ Estrutura de alumínio super leve</li>
-                    <li>✓ Perfeito para feiras e congressos</li>
+                    <li>✓ Tecido especial 20% transparência</li>
+                    <li>✓ Encaixe padrão universal para modelo reto</li>
                   </ul>
                 </div>
               </div>
@@ -399,139 +365,13 @@ export default function Home() {
               <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
                 <div>
                   <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">A partir de</span>
-                  <span className="text-xl font-black text-brand-700 font-heading">R$ 190<span className="text-xs text-slate-400 font-medium">/un</span></span>
+                  <span className="text-xl font-black text-brand-700 font-heading">R$ 150<span className="text-xs text-slate-400 font-medium">/un</span></span>
                 </div>
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de um orçamento do Roll Up Banner retrátil a partir de R$ 190,00...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar a Bandeira Avulsa de reposição do modelo reto...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
-                >
-                  Pedir no WhatsApp
-                </a>
-              </div>
-            </div>
-
-            {/* 4. Adesivos */}
-            <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
-              <div>
-                <div className="relative h-56 bg-slate-100 overflow-hidden">
-                  <Image
-                    src="/images/adesivo_personalizado.jpg"
-                    alt="Adesivos personalizados em vinil impermeável"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
-
-                <div className="p-6 space-y-2">
-                  <h3 className="text-lg font-bold text-slate-900 font-heading">Adesivos Personalizados</h3>
-                  <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Adesivos impressos em vinil de alta fidelidade cromática. Impermeáveis, recortados digitalmente sob qualquer formato para vitrines e embalagens.
-                  </p>
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1.5">
-                    <li>✓ Vinil fosco ou brilhante impermeável</li>
-                    <li>✓ Recorte digital sob medida</li>
-                    <li>✓ Perfeito para vitrines e frotas</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
-                <div>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">A partir de</span>
-                  <span className="text-xl font-black text-brand-700 font-heading">R$ 45<span className="text-xs text-slate-400 font-medium">/m²</span></span>
-                </div>
-                <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar adesivos personalizados em vinil a partir de R$ 45,00/m²...")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
-                >
-                  Pedir no WhatsApp
-                </a>
-              </div>
-            </div>
-
-            {/* 5. Banner & Lona */}
-            <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
-              <div>
-                <div className="relative h-56 bg-slate-100 overflow-hidden">
-                  <Image
-                    src="/images/banner_impressao_digital_cabo_pendurar_barueri_alphaville.png"
-                    alt="Banner e lona com acabamento profissional"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
-
-                <div className="p-6 space-y-2">
-                  <h3 className="text-lg font-bold text-slate-900 font-heading">Banners & Lonas</h3>
-                  <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Impressão digital UV de grande formato em lona brilhante de alta resistência (440g). Excelente para letreiros e coberturas comerciais.
-                  </p>
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1.5">
-                    <li>✓ Lona robusta de alta gramatura</li>
-                    <li>✓ Acabamento com bastão e cordão ou ilhós</li>
-                    <li>✓ Cores vivas de alta durabilidade externa</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
-                <div>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">A partir de</span>
-                  <span className="text-xl font-black text-brand-700 font-heading">R$ 60<span className="text-xs text-slate-400 font-medium">/m²</span></span>
-                </div>
-                <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de um orçamento para banners em lona a partir de R$ 60,00/m²...")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
-                >
-                  Pedir no WhatsApp
-                </a>
-              </div>
-            </div>
-
-            {/* 6. Faixas */}
-            <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
-              <div>
-                <div className="relative h-56 bg-slate-100 overflow-hidden">
-                  <Image
-                    src="/images/faixa_gigantes (1).jpeg"
-                    alt="Faixas promocionais"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
-
-                <div className="p-6 space-y-2">
-                  <h3 className="text-lg font-bold text-slate-900 font-heading">Faixas Promocionais</h3>
-                  <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Comunicação rápida e de alto impacto para calçadas e fachadas de lojas. Acompanha bastão de madeira lateral e fitas de fixação.
-                  </p>
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1.5">
-                    <li>✓ Lona resistente a intempéries</li>
-                    <li>✓ Bastões de madeira inclusos</li>
-                    <li>✓ Altíssimo destaque para inaugurações</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
-                <div>
-                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">A partir de</span>
-                  <span className="text-xl font-black text-brand-700 font-heading">R$ 80<span className="text-xs text-slate-400 font-medium">/un</span></span>
-                </div>
-                <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de solicitar faixas promocionais a partir de R$ 80,00...")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
+                  className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
                 >
                   Pedir no WhatsApp
                 </a>
@@ -554,15 +394,20 @@ export default function Home() {
             Excelência de Fábrica com <span className="text-brand-700">Acabamento Superior</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Diferenciais que nos tornam a maior referência de comunicação rápida em Barueri e Alphaville
+            Diferenciais que nos tornam a maior referência de wind banners no modelo reto na região
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {[
               {
-                icon: "🛡️",
-                title: "Modelo Premium Zero Transparência",
-                desc: "Tecido poliéster de altíssima gramatura com dupla face. As cores não passam para o outro lado, garantindo 100% de leitura de qualquer ângulo."
+                icon: "✨",
+                title: "Bandeira com 20% de Transparência",
+                desc: "Tecido especial com caimento ideal. Garante que a estampa seja legível e perfeitamente visível de ambos os lados mesmo imprimindo uma única face."
+              },
+              {
+                icon: "📐",
+                title: "Modelo Reto (Exclusivo)",
+                desc: "Foco integral em wind banner retangular e quadrado. Maior área de sinalização do mercado para que o seu logo fique sempre esticado e legível."
               },
               {
                 icon: "⏱️",
@@ -573,11 +418,6 @@ export default function Home() {
                 icon: "🎨",
                 title: "Criação de Arte Grátis",
                 desc: "Nossa equipe de criação desenvolve ou ajusta a sua arte comercial sem custos. Você visualiza o layout e aprova antes de produzir!"
-              },
-              {
-                icon: "🏢",
-                title: "Faturamento Corporativo B2B",
-                desc: "Facilitamos as compras para agências e marcas registradas com faturamento corporativo simplificado via boleto bancário bancário."
               }
             ].map((differential, i) => (
               <div
@@ -626,7 +466,7 @@ export default function Home() {
       {/* ===== THE LIVE CONFIGURATOR COMPONENT ===== */}
       <ProductConfigurator />
 
-      {/* ===== PORTFOLIO SHOWCASE (POPULATED WITH 10 NEW 2026 PHOTOS) ===== */}
+      {/* ===== PORTFOLIO SHOWCASE (POPULATED WITH THE 5 NEW HIGH-RES PHOTOS) ===== */}
       <section id="portfolio" className="py-24 bg-slate-50 text-slate-900 border-t border-slate-200 scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-3">
@@ -638,17 +478,17 @@ export default function Home() {
             Trabalhos Realizados na <span className="text-gradient-brand">Região de Barueri</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Veja fotos reais dos nossos wind banners premium zero transparência entregues para clientes e comércios parceiros
+            Veja fotos reais dos nossos wind banners premium retangulares e quadrados entregues para comércios locais parceiros
           </p>
 
-          {/* Grid Portfolio container with the 10 new 2026 photos */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+          {/* Grid Portfolio container with the new photos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
             {new2026Photos.map((item, i) => (
               <div
                 key={i}
                 className="product-card-light bg-white border border-slate-200 relative flex flex-col justify-between overflow-hidden group shadow-xs hover:shadow-md transition-all duration-300"
               >
-                <div className="relative h-64 overflow-hidden w-full bg-slate-100">
+                <div className="relative h-72 overflow-hidden w-full bg-slate-100">
                   <Image
                     src={item.src}
                     alt={item.alt}
@@ -704,7 +544,7 @@ export default function Home() {
             Satisfação em <span className="text-gradient-brand">Primeiro Lugar</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Confira a opinião de quem já comprou e comprova a qualidade superior dos nossos materiais
+            Confira a opinião de quem já comprou e comprova a qualidade superior das nossas bandeiras retas
           </p>
 
           {/* Simple Rating Widget */}
@@ -727,19 +567,19 @@ export default function Home() {
                 name: "Marcos Costa",
                 role: "Organizador de Eventos",
                 initials: "MC",
-                text: "O material é excelente, o wind banner completo vem com haste forte e uma base firme que segura super bem na calçada. O acabamento com zero transparência garante a leitura nítida do nosso logotipo. Atendimento 10!",
+                text: "O material é excelente, o wind banner retangular vem com haste forte e uma base firme que segura super bem na calçada. O acabamento com 20% de transparência garante a leitura nítida do nosso logotipo em ambos os lados.",
               },
               {
                 name: "Ana Silva",
                 role: "Marketing - Tamboré",
                 initials: "AS",
-                text: "Adquirimos os banners roll up e adesivos de vitrine para a nossa marca. A transação comercial via faturamento no boleto foi super rápida e a criação da arte foi 100% gratuita como prometido. Recomendo muito!",
+                text: "Adquirimos os wind banners de modelo reto para a frente da loja. O caimento do tecido retangular é fantástico e a transparência ideal permite visualizar de qualquer sentido da avenida. Excelente atendimento corporativo.",
               },
               {
                 name: "Ricardo Lima",
                 role: "Comércio - Barueri Centro",
                 initials: "RL",
-                text: "Estávamos precisando de wind banners urgentes para a nossa inauguração de calçada. A Libracom produziu e nos entregou tudo em menos de 24h na nossa loja em Barueri. Qualidade premium fantástica!",
+                text: "Estávamos precisando de bandeiras de calçada para a nossa inauguração. O formato quadrado reto chamou muita atenção por ficar esticado mesmo sem vento. Entrega super rápida em Barueri.",
               },
             ].map((t, i) => (
               <div key={i} className="product-card-light p-6 border border-slate-200 bg-white flex flex-col justify-between h-full">
@@ -797,7 +637,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <h3 className="text-lg font-black text-slate-950 font-heading">Informações de Fábrica</h3>
                   
-                  <div className="space-y-3.5 text-xs md:text-sm font-semibold">
+                  <div className="space-y-3.5 text-xs md:text-sm font-semibold text-slate-650">
                     <a href="tel:11954997799" className="flex items-center gap-3 text-slate-600 hover:text-brand-700 transition-colors">
                       <span className="text-base">📞</span> (11) 95499-7799
                     </a>
@@ -839,7 +679,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Estou no site e gostaria de falar com um consultor comercial da promoção 2026...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Estou no site e gostaria de falar com um consultor comercial sobre os Wind Banners Retangulares...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-cta w-full justify-center py-3.5 mt-6 group"
@@ -874,9 +714,10 @@ export default function Home() {
                 height={40}
                 className="brightness-0 invert opacity-90"
                 style={{ width: "auto", height: "auto" }}
+                priority
               />
-              <p className="text-xs leading-relaxed">
-                Referência em Wind Banners completos com base e haste, Roll Ups retráteis, Adesivos vinílicos, Banners e Lonas HD na região de Barueri e Alphaville.
+              <p className="text-xs leading-relaxed text-slate-400">
+                Libracom é referência em fabricação de Wind Banners modelo Reto (Retangular / Quadrado) em Barueri, Alphaville e São Paulo. Entrega rápida de fábrica e tecidos com 20% de transparência.
               </p>
             </div>
 
@@ -884,11 +725,9 @@ export default function Home() {
             <div className="space-y-4">
               <h4 className="text-xs font-black uppercase tracking-wider text-slate-200">Nosso Catálogo</h4>
               <ul className="space-y-2 text-xs md:text-sm">
-                <li><a href="#produtos" className="hover:text-white transition-colors">Wind Banners</a></li>
-                <li><a href="#produtos" className="hover:text-white transition-colors">Bandeiras Avulsas</a></li>
-                <li><a href="#produtos" className="hover:text-white transition-colors">Roll Up Retrátil</a></li>
-                <li><a href="#produtos" className="hover:text-white transition-colors">Adesivos Personalizados</a></li>
-                <li><a href="#produtos" className="hover:text-white transition-colors">Banners & Lonas</a></li>
+                <li><a href="#produtos" className="hover:text-white transition-colors">Wind Banner Completo</a></li>
+                <li><a href="#produtos" className="hover:text-white transition-colors">Somente Bandeira (Reposição)</a></li>
+                <li><a href="#configurador" className="hover:text-white transition-colors">Simulador de Pedido</a></li>
               </ul>
             </div>
 

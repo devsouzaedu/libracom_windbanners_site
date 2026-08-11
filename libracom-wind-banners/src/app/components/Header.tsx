@@ -29,8 +29,8 @@ export default function Header() {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 border-b border-slate-200 shadow-sm py-3.5 backdrop-blur-md"
-          : "bg-white/80 border-b border-slate-100 py-5 backdrop-blur-md"
+          ? "bg-white/95 border-b border-slate-200 shadow-sm py-2 md:py-3.5 backdrop-blur-md"
+          : "bg-white/80 border-b border-slate-100 py-3 md:py-5 backdrop-blur-md"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -68,7 +68,7 @@ export default function Header() {
             href="https://wa.me/5511954997799"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 shadow-sm"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white p-2.5 sm:px-5 sm:py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 shadow-sm"
           >
             <Image
               src="/images/WhatsApp_icon.png"
@@ -78,7 +78,6 @@ export default function Header() {
               className="transition-transform duration-200 group-hover:scale-110"
             />
             <span className="hidden sm:inline">Orçamento Grátis</span>
-            <span className="sm:hidden">WhatsApp</span>
           </a>
 
           {/* Mobile Menu Toggle Button */}

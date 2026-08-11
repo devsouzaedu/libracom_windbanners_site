@@ -83,7 +83,7 @@ export default function ProductConfigurator() {
   }, [product, size, quantity, totalPrice, discountLabel, perUnit]);
 
   return (
-    <section id="configurador" className="py-24 bg-white border-t border-slate-100 scroll-mt-16 text-slate-800">
+    <section id="configurador" className="py-12 md:py-24 bg-white border-t border-slate-100 scroll-mt-16 text-slate-800">
       <div className="container mx-auto px-4">
         {/* Visual Badge Header */}
         <div className="flex justify-center mb-3">

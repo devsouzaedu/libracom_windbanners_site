@@ -12,12 +12,12 @@ import WhatsAppFloat from "./components/WhatsAppFloat";
 // New high-resolution Rectangular/Square product photos database
 const new2026Photos = [
   {
-    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
-    alt: "Wind Banner Retangular Modelo Reto - Libracom Barueri",
-    label: "Wind Banner Retangular 2,60m",
+    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (4).jpg",
+    alt: "Bandeira de Vento Retangular - Libracom",
+    label: "Wind Banner Quadrado Premium",
     loc: "Barueri, SP",
-    desc: "Bandeira retangular premium com cores vivas e caimento impecável.",
-    whatsappText: "Olá! Vi a foto do Wind Banner Retangular de 2,60m no portfólio e gostaria de um orçamento..."
+    desc: "Tecido especial com 20% de transparência para leitura perfeita de ambos os lados.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Quadrado Premium com 20% de transparência e queria um orçamento..."
   },
   {
     src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg",
@@ -36,12 +36,12 @@ const new2026Photos = [
     whatsappText: "Olá! Gostei do Wind Banner Reto de 3,20m completo e gostaria de um orçamento..."
   },
   {
-    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (4).jpg",
-    alt: "Bandeira de Vento Retangular - Libracom",
-    label: "Wind Banner Quadrado Premium",
+    src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
+    alt: "Wind Banner Retangular Modelo Reto - Libracom Barueri",
+    label: "Wind Banner Retangular 2,60m",
     loc: "Barueri, SP",
-    desc: "Tecido especial com 20% de transparência para leitura perfeita de ambos os lados.",
-    whatsappText: "Olá! Vi a foto do Wind Banner Quadrado Premium com 20% de transparência e queria um orçamento..."
+    desc: "Bandeira retangular premium com cores vivas e caimento impecável.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Retangular de 2,60m no portfólio e gostaria de um orçamento..."
   },
   {
     src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (5).jpg",
@@ -67,16 +67,16 @@ export default function Home() {
       <WhatsAppFloat />
 
       {/* ===== HERO SECTION (MINIMALIST & ROYAL BLUE) ===== */}
-      <section className="hero-gradient min-h-screen flex items-center pt-28 pb-16 relative overflow-hidden">
+      <section className="hero-gradient flex items-center pt-24 pb-10 md:pt-32 md:pb-16 relative overflow-hidden">
         {/* Subtle royal blue ambient glow elements */}
         <div className="absolute top-1/3 right-10 w-[350px] h-[350px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none z-0"></div>
         <div className="absolute bottom-1/4 left-10 w-[300px] h-[300px] bg-indigo-500/3 rounded-full blur-3xl pointer-events-none z-0"></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16">
             
             {/* Left Column - Clean high-contrast copy */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
+            <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4 md:space-y-6">
               
               {/* Clean Promo Badge */}
               <div className="inline-flex items-center gap-2 bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-xl border border-blue-100 shadow-sm animate-bounce-subtle">
@@ -85,8 +85,8 @@ export default function Home() {
               </div>
 
               {/* Minimalist Headline */}
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-slate-900 font-heading">
-                Divulgue seu negócio com <br />
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-slate-900 font-heading">
+                Divulgue seu negócio com <br className="hidden sm:inline" />
                 <span className="text-brand-700">Destaque Absoluto</span>
               </h1>
 
@@ -234,7 +234,7 @@ export default function Home() {
       </section>
 
       {/* ===== AVISO PRINCIPAL EM DESTAQUE GERAL ===== */}
-      <section className="py-8 bg-amber-500 text-amber-950 font-black border-y border-amber-600">
+      <section className="py-5 md:py-8 bg-amber-500 text-amber-950 font-black border-y border-amber-600">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-4 text-center md:text-left">
           <span className="text-3xl">⚠️</span>
           <div>
@@ -247,7 +247,7 @@ export default function Home() {
       </section>
 
       {/* ===== PRODUCTS GRID (MINIMALIST & PRICE UPDATE) ===== */}
-      <section id="produtos" className="py-24 bg-slate-50 border-t border-slate-100 scroll-mt-16 text-slate-750">
+      <section id="produtos" className="py-12 md:py-24 bg-slate-50 border-t border-slate-100 scroll-mt-16 text-slate-750">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-3">
             <span className="bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-100">
@@ -383,7 +383,7 @@ export default function Home() {
       </section>
 
       {/* ===== DIFFERENTIALS (MINIMALIST & WHITE) ===== */}
-      <section id="sobre" className="py-24 bg-white text-slate-800 relative">
+      <section id="sobre" className="py-12 md:py-24 bg-white text-slate-800 relative">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-3">
             <span className="bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-100">
@@ -438,7 +438,7 @@ export default function Home() {
           </div>
 
           {/* B2B board simplified */}
-          <div className="mt-16 bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="mt-10 md:mt-16 bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-2.5 max-w-xl text-center md:text-left">
               <span className="bg-blue-100 text-brand-700 text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded">
                 💼 Agências & Compras Corporativas
@@ -467,7 +467,7 @@ export default function Home() {
       <ProductConfigurator />
 
       {/* ===== PORTFOLIO SHOWCASE (POPULATED WITH THE 5 NEW HIGH-RES PHOTOS) ===== */}
-      <section id="portfolio" className="py-24 bg-slate-50 text-slate-900 border-t border-slate-200 scroll-mt-16">
+      <section id="portfolio" className="py-12 md:py-24 bg-slate-50 text-slate-900 border-t border-slate-200 scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-3">
             <span className="bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-100">
@@ -533,7 +533,7 @@ export default function Home() {
       <InfiniteBrandSlider />
 
       {/* ===== SOCIAL PROOF / GOOGLE REVIEWS ===== */}
-      <section className="py-24 bg-white text-slate-900 border-t border-slate-100">
+      <section className="py-12 md:py-24 bg-white text-slate-900 border-t border-slate-100">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-3">
             <span className="bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-100">
@@ -548,7 +548,7 @@ export default function Home() {
           </p>
 
           {/* Simple Rating Widget */}
-          <div className="max-w-md mx-auto bg-slate-50 rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-center gap-5 mb-12">
+          <div className="max-w-md mx-auto bg-slate-50 rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-center gap-5 mb-8 md:mb-12">
             <span className="text-4xl font-black text-slate-950 font-heading">5.0</span>
             <div className="separator-glow h-8 w-0.5 bg-slate-300"></div>
             <div>
@@ -615,7 +615,7 @@ export default function Home() {
       </div>
 
       {/* ===== CONTACT & DETAILS SECTION ===== */}
-      <section id="contato" className="py-24 bg-slate-50 border-t border-slate-200 scroll-mt-16 text-slate-800">
+      <section id="contato" className="py-12 md:py-24 bg-slate-50 border-t border-slate-200 scroll-mt-16 text-slate-800">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-4">
             <div className="flex justify-center">
@@ -701,7 +701,7 @@ export default function Home() {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="bg-slate-900 text-white py-16 border-t border-slate-800 text-slate-400">
+      <footer className="bg-slate-900 text-white py-10 md:py-16 border-t border-slate-800 text-slate-400">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             
@@ -763,7 +763,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="separator-glow mt-12 mb-8 !bg-slate-800"></div>
+          <div className="separator-glow mt-8 mb-6 !bg-slate-800"></div>
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-bold">
             <p>© {new Date().getFullYear()} Libracom Wind Banners. Todos os direitos reservados. CNPJ: 12.345.678/0001-90</p>

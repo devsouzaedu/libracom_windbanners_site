@@ -77,12 +77,6 @@ export default function Home() {
             
             {/* Left Column - Clean high-contrast copy */}
             <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4 md:space-y-6">
-              
-              {/* Clean Promo Badge */}
-              <div className="inline-flex items-center gap-2 bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-xl border border-blue-100 shadow-sm animate-bounce-subtle">
-                <span>🚨 PROMOÇÃO ATIVA:</span>
-                <span className="text-slate-800">Wind Banner Reto a partir de R$ 280,00!</span>
-              </div>
 
               {/* Minimalist Headline */}
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-slate-900 font-heading">
@@ -171,33 +165,7 @@ export default function Home() {
                     priority
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  {/* Info tag overlay */}
-                  <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-3.5 rounded-xl border border-slate-100 flex items-center justify-between shadow-sm z-20">
-                    <div>
-                      <span className="text-[10px] text-brand-700 uppercase tracking-widest font-black block">Foto real do produto reto</span>
-                      <h4 className="font-bold text-slate-800 text-xs md:text-sm">{heroImage.label}</h4>
-                    </div>
-                    <span className="text-[10px] bg-slate-100 text-slate-500 font-bold px-2 py-1 rounded">📍 {heroImage.loc}</span>
-                  </div>
                 </div>
-
-                {/* Left/Right simple buttons */}
-                <button
-                  onClick={() => setActiveHeroImageIndex(prev => (prev === 0 ? new2026Photos.length - 1 : prev - 1))}
-                  className="absolute left-6 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 border border-slate-200 shadow-sm flex items-center justify-center text-slate-700 hover:bg-slate-50 hover:text-brand-700 transition-all z-20"
-                  aria-label="Foto Anterior"
-                  type="button"
-                >
-                  ◀
-                </button>
-                <button
-                  onClick={() => setActiveHeroImageIndex(prev => (prev === new2026Photos.length - 1 ? 0 : prev + 1))}
-                  className="absolute right-6 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 border border-slate-200 shadow-sm flex items-center justify-center text-slate-700 hover:bg-slate-50 hover:text-brand-700 transition-all z-20"
-                  aria-label="Próxima Foto"
-                  type="button"
-                >
-                  ▶
-                </button>
               </div>
 
               {/* Thumbnails indicator list (User photos preview) */}
@@ -225,9 +193,6 @@ export default function Home() {
                   </button>
                 ))}
               </div>
-              <p className="text-center text-[10px] text-slate-400 font-bold uppercase tracking-wider">
-                💡 Clique nos quadradinhos acima para navegar por fotos reais do modelo retangular!
-              </p>
             </div>
           </div>
         </div>

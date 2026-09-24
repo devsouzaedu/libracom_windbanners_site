@@ -24,7 +24,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "Qual a diferença entre impressão Face Única e Dupla Face?",
     answer:
-      "Na Face Única (mais popular e econômica), a impressão digital é feita em tecido com 20% de transparência e vazamento térmico de cor de 100%, permitindo que a imagem seja vista com nitidez em ambos os lados (o verso fica espelhado). Já na Dupla Face, confeccionamos com duas camadas de tecido e uma camada interna de blackout, possibilitando artes diferentes na frente e no verso com leitura direta dos dois lados.",
+      "Na Face Única (mais popular e econômica), a impressão digital é feita em tecido com transparência mínima e vazamento térmico de cor de 100%, permitindo que a imagem seja vista com nitidez em ambos os lados (o verso fica espelhado). Já na Dupla Face, confeccionamos com duas camadas de tecido e uma camada interna de blackout, possibilitando artes diferentes na frente e no verso com leitura direta dos dois lados.",
     icon: "🔄"
   },
   {

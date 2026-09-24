@@ -22,7 +22,7 @@ const products: Product[] = [
     id: "wind-banner-completo",
     name: "Wind Banner Completo",
     icon: "🏳️",
-    description: "Kit completo (modelos gota, faca, pena, vela ou reto): tecido premium com 20% de transparência (estampa visível e legível em ambos os lados), haste flexível de alta durabilidade e base de sustentação inclusas.",
+    description: "Kit completo (modelos gota, faca, pena, vela ou reto): tecido premium com transparência mínima (estampa visível e legível em ambos os lados), haste flexível de alta durabilidade e base de sustentação inclusas.",
     sizes: [
       { label: "2,0m - Pequeno", price: 350 },
       { label: "2,60m - Médio (Mais Vendido)", price: 410 },
@@ -33,7 +33,7 @@ const products: Product[] = [
     id: "bandeira-avulsa",
     name: "Somente Bandeira",
     icon: "🚩",
-    description: "Apenas a bandeira impressa para reposição no formato de sua escolha (gota, faca, pena, vela ou reto). Tecido de alta gramatura com 20% de transparência para cores vibrantes visíveis de ambos os lados. Não acompanha haste nem base.",
+    description: "Apenas a bandeira impressa para reposição no formato de sua escolha (gota, faca, pena, vela ou reto). Tecido de alta gramatura com transparência mínima para cores vibrantes visíveis de ambos os lados. Não acompanha haste nem base.",
     sizes: [
       { label: "2,0m - Pequeno", price: 220 },
       { label: "2,60m - Médio", price: 280 },
@@ -294,7 +294,7 @@ export default function ProductConfigurator() {
                           {size.label.split(" - ")[0]}
                         </span>
                         <span className="text-white/70 text-[5.5px] font-bold mt-2 text-center border-t border-white/20 pt-1">
-                          20% TRANSP.
+                          TRANSP. MÍNIMA
                         </span>
                       </div>
                       
@@ -372,7 +372,7 @@ export default function ProductConfigurator() {
                 </a>
 
                 <p className="text-center text-[9px] text-slate-400 mt-2 font-medium">
-                  * Valores promocionais válidos por tempo limitado. Faturamento corporativo.
+                  * Valores promocionais válidos por tempo limitado. Pagamento via PIX (cartão de crédito a partir de R$ 3.000,00).
                 </p>
               </div>
             </div>

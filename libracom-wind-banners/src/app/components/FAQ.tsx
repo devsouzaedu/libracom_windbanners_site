@@ -22,9 +22,9 @@ const faqs = [
     icon: "⚡"
   },
   {
-    question: "Vocês atendem empresas e fazem faturamento no boleto?",
+    question: "Vocês atendem empresas e agências?",
     answer:
-      "Com certeza! Atendemos empresas de todos os portes e agências de marketing corporativo. Oferecemos faturamento facilitado via boleto bancário para CNPJ sob análise cadastral simplificada. Fale com nossos consultores para habilitar as condições B2B.",
+      "Com certeza! Atendemos empresas de todos os portes e agências de marketing, com descontos progressivos por volume. Pedidos abaixo de R$ 3.000,00 são pagos somente via PIX. A partir de R$ 3.000,00, o pagamento pode ser feito no cartão de crédito. Não trabalhamos com boleto nem faturamento.",
     icon: "🏢"
   },
   {
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "Quais as opções de pagamento disponíveis?",
     answer:
-      "Oferecemos desconto especial para pagamentos via PIX ou transferência. Também parcelamos em até 12x no cartão de crédito corporativo ou pessoal. Para compras recorrentes ou grandes volumes B2B, facilitamos no boleto faturado.",
+      "Pedidos abaixo de R$ 3.000,00 são pagos somente via PIX. A partir de R$ 3.000,00, o pagamento pode ser feito no cartão de crédito. Não trabalhamos com boleto nem faturamento.",
     icon: "💳"
   },
 ];

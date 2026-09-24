@@ -64,8 +64,8 @@ const new2026Photos: Photo[] = [
     alt: "Bandeira de Vento Retangular - Libracom",
     label: "Wind Banner Quadrado Premium",
     loc: "Barueri, SP",
-    desc: "Tecido especial com 20% de transparência para leitura perfeita de ambos os lados.",
-    whatsappText: "Olá! Vi a foto do Wind Banner Quadrado Premium com 20% de transparência e queria um orçamento..."
+    desc: "Tecido especial com transparência mínima para leitura perfeita de ambos os lados.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Quadrado Premium e queria um orçamento..."
   },
   {
     src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg",
@@ -115,7 +115,7 @@ const bannerSizes = [
 ];
 
 const kitComponents = [
-  { icon: "🏳️", title: "Bandeira", desc: "Poliéster premium com 20% de transparência, impressão Ultra HD e costura reforçada." },
+  { icon: "🏳️", title: "Bandeira", desc: "Poliéster premium com transparência mínima, impressão Ultra HD e costura reforçada." },
   { icon: "🎋", title: "Haste", desc: "Fibra de vidro flexível de alta resistência, que mantém a bandeira sempre esticada." },
   { icon: "🧱", title: "Base", desc: "Base reforçada e estável para uso em calçadas, pisos e áreas externas." }
 ];
@@ -238,7 +238,7 @@ export default function Home() {
           <div>
             <h3 className="text-sm md:text-base font-black tracking-wide uppercase">5 modelos: Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado)</h3>
             <p className="text-xs font-bold text-slate-300 mt-0.5 leading-relaxed">
-              Fabricamos todos os formatos. Escolha o ideal para o seu negócio e a gente cuida da arte.
+              Fabricamos todos os formatos, com o mesmo preço para qualquer modelo. Escolha o ideal para o seu negócio e a gente cuida da arte.
             </p>
           </div>
         </div>
@@ -293,7 +293,7 @@ export default function Home() {
             Wind Banners em <span className="text-gradient-brand">5 Modelos</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Estruturas reforçadas e bandeiras com acabamento impecável e 20% de transparência para atrair a atenção do seu público
+            Estruturas reforçadas e bandeiras com acabamento impecável e transparência mínima para atrair a atenção do seu público
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12">
@@ -320,7 +320,7 @@ export default function Home() {
                 <div className="p-6 space-y-3">
                   <h3 className="text-xl font-bold text-slate-900 font-heading">Wind Banner Completo</h3>
                   <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Kit completo contendo haste flexível em fibra de vidro de alta resistência, base reforçada estável e bandeira impressa em poliéster premium com 20% de transparência.
+                    Kit completo contendo haste flexível em fibra de vidro de alta resistência, base reforçada estável e bandeira impressa em poliéster premium com transparência mínima.
                   </p>
                   
                   <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/80">
@@ -334,7 +334,7 @@ export default function Home() {
 
                   <ul className="text-xs text-slate-400 space-y-1 pt-1">
                     <li>✓ Modelos Gota, Faca, Pena, Vela ou Reto</li>
-                    <li>✓ Tecido especial 20% de transparência</li>
+                    <li>✓ Tecido especial com transparência mínima</li>
                     <li>✓ Haste reforçada e Base inclusas</li>
                   </ul>
                 </div>
@@ -391,7 +391,7 @@ export default function Home() {
 
                   <ul className="text-xs text-slate-400 space-y-1 pt-1">
                     <li>✓ Estampa Ultra HD frente e verso</li>
-                    <li>✓ Tecido especial 20% transparência</li>
+                    <li>✓ Tecido especial com transparência mínima</li>
                     <li>✓ Encaixe padrão universal para todos os modelos</li>
                   </ul>
                 </div>
@@ -429,7 +429,7 @@ export default function Home() {
             Tamanhos dos <span className="text-gradient-brand">Wind Banners</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Três alturas para cada tipo de espaço. Nos 5 modelos (gota, faca, pena, vela e reto), com a mesma qualidade de acabamento
+            Três alturas para cada tipo de espaço. Nos 5 modelos (gota, faca, pena, vela e reto), com o mesmo preço e a mesma qualidade de acabamento
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
@@ -529,7 +529,7 @@ export default function Home() {
             {[
               {
                 icon: "✨",
-                title: "Bandeira com 20% de Transparência",
+                title: "Bandeira com Transparência Mínima",
                 desc: "Tecido especial com caimento ideal. Garante que a estampa seja legível e perfeitamente visível de ambos os lados mesmo imprimindo uma única face."
               },
               {
@@ -572,10 +572,10 @@ export default function Home() {
                 💼 Agências & Compras Corporativas
               </span>
               <h3 className="text-xl md:text-2xl font-black text-slate-950 font-heading">
-                Faturamento no Boleto para sua Empresa
+                Atendimento para Empresas e Agências
               </h3>
               <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                Adquira materiais promocionais para feiras, redes de franquia ou lojas de rua com a maior facilidade do mercado. Descontos progressivos por volume.
+                Materiais promocionais para feiras, redes de franquia ou lojas de rua, com descontos progressivos por volume. Pagamento via PIX ou, a partir de R$ 3.000,00, no cartão de crédito.
               </p>
             </div>
 
@@ -697,7 +697,7 @@ export default function Home() {
                 name: "Marcos Costa",
                 role: "Organizador de Eventos",
                 initials: "MC",
-                text: "O material é excelente, o wind banner retangular vem com haste forte e uma base firme que segura super bem na calçada. O acabamento com 20% de transparência garante a leitura nítida do nosso logotipo em ambos os lados.",
+                text: "O material é excelente, o wind banner retangular vem com haste forte e uma base firme que segura super bem na calçada. O acabamento com transparência mínima garante a leitura nítida do nosso logotipo em ambos os lados.",
               },
               {
                 name: "Ana Silva",

@@ -154,7 +154,7 @@ export default function WindBannerBarueri() {
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Tecido premium 20% transparência
+                    Tecido premium com transparência mínima
                   </li>
                   <li className="flex items-center text-slate-300">
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -195,7 +195,7 @@ export default function WindBannerBarueri() {
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Tecido premium 20% transparência
+                    Tecido premium com transparência mínima
                   </li>
                   <li className="flex items-center text-slate-300">
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -231,7 +231,7 @@ export default function WindBannerBarueri() {
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    Tecido premium 20% transparência
+                    Tecido premium com transparência mínima
                   </li>
                   <li className="flex items-center text-slate-300">
                     <svg className="w-5 h-5 mr-3 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -203,7 +203,7 @@ export default function EntregaRapida24h() {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner 2,0m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                  Wind banner de 2 metros de altura, em qualquer um dos 5 modelos, ideal para calçadas e eventos internos. Tecido 20% transparência.
+                  Wind banner de 2 metros de altura, em qualquer um dos 5 modelos, ideal para calçadas e eventos internos. Tecido com transparência mínima.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>

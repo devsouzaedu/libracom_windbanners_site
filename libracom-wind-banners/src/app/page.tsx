@@ -845,7 +845,7 @@ export default function Home() {
           <div className="separator-glow mt-8 mb-6 !bg-slate-800"></div>
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-bold">
-            <p>© {new Date().getFullYear()} Libracom Wind Banners. Todos os direitos reservados. CNPJ: 12.345.678/0001-90</p>
+            <p>© {new Date().getFullYear()} Libracom Wind Banners. Todos os direitos reservados. CNPJ: 58.260.224/0001-12</p>
             <div className="flex gap-4">
               <a
                 href="https://wa.me/5511954997799"

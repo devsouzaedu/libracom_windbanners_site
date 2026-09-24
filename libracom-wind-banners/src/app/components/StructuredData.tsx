@@ -42,7 +42,7 @@ export default function StructuredData() {
       "Wind Banner Reto",
       "Bandeira de Vento"
     ],
-    "priceRange": "R$ 150 - R$ 360",
+    "priceRange": "R$ 220 - R$ 480",
     "openingHours": "Mo-Fr 08:00-18:00",
     "sameAs": [
       "https://wa.me/5511954997799"
@@ -64,7 +64,7 @@ export default function StructuredData() {
     },
     "offers": {
       "@type": "Offer",
-      "price": "280",
+      "price": "350",
       "priceCurrency": "BRL",
       "availability": "https://schema.org/InStock",
       "seller": {

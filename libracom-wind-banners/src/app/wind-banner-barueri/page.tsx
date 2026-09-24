@@ -63,7 +63,7 @@ export default function WindBannerBarueri() {
                 <p className="text-slate-400 text-sm mb-2">Wind Banner Reto a partir de</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-emerald-400 text-lg font-semibold">R$</span>
-                  <span className="text-white text-4xl font-black font-heading">280</span>
+                  <span className="text-white text-4xl font-black font-heading">350</span>
                   <span className="text-slate-400 text-sm">,00 / unidade</span>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function WindBannerBarueri() {
                 </ul>
                 <div className="text-center">
                   <span className="text-xs text-slate-500">Kit Completo</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 280,00</div>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 350,00</div>
                 </div>
               </div>
             </div>
@@ -206,15 +206,15 @@ export default function WindBannerBarueri() {
                 </ul>
                 <div className="text-center">
                   <span className="text-xs text-slate-500">Kit Completo</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 320,00</div>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 410,00</div>
                 </div>
               </div>
             </div>
 
-            {/* Wind Banner 3,20m */}
+            {/* Wind Banner 3,00m */}
             <div className="product-card group">
               <div className="p-8 text-center">
-                <span className="text-5xl font-black text-white font-heading">3,20m</span>
+                <span className="text-5xl font-black text-white font-heading">3,00m</span>
                 <h3 className="text-2xl font-bold mt-3 text-white font-heading">Wind Banner Grande</h3>
                 <p className="text-slate-400 mt-1">Máximo impacto visual</p>
               </div>
@@ -242,7 +242,7 @@ export default function WindBannerBarueri() {
                 </ul>
                 <div className="text-center">
                   <span className="text-xs text-slate-500">Kit Completo</span>
-                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 360,00</div>
+                  <div className="text-3xl font-black text-emerald-400 font-heading">R$ 480,00</div>
                 </div>
               </div>
             </div>
@@ -493,6 +493,7 @@ export default function WindBannerBarueri() {
               <h4 className="text-sm font-bold uppercase tracking-wider text-slate-300 mb-5">Links Rápidos</h4>
               <ul className="space-y-3">
                 <li><Link href="/" className="text-slate-400 hover:text-white transition-colors text-sm">Página Inicial</Link></li>
+                <li><Link href="/somente-bandeira-wind-banner" className="text-emerald-400 hover:text-white transition-colors text-sm font-semibold">Somente Bandeira (Refil)</Link></li>
                 <li><Link href="/wind-banner-personalizado-eventos" className="text-slate-400 hover:text-white transition-colors text-sm">Wind Banner para Eventos</Link></li>
                 <li><Link href="/wind-banner-vs-bandeira-comum" className="text-slate-400 hover:text-white transition-colors text-sm">Wind Banner vs Bandeira</Link></li>
                 <li><Link href="/entrega-rapida-24h" className="text-slate-400 hover:text-white transition-colors text-sm">Entrega em 24h</Link></li>

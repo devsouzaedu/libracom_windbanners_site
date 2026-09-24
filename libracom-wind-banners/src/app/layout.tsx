@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://libracomwindbanner.com.br'),
   title: "Wind Banner Retangular e Quadrado em Barueri | Libracom - Modelo Reto",
   description: "Especialistas em Wind Banner Retangular e Quadrado (Modelo Reto) em Barueri e Alphaville. Tecido premium com 20% de transparência, haste e base inclusas. Arte grátis e entrega rápida!",
-  keywords: "wind banner retangular, wind banner quadrado, wind banner reto, wind banner em barueri, wind banner personalizado, bandeira de vento, comprar wind banner barueri, wind banner alphaville, preço wind banner reto, wind banner completo, wind banner 2m, wind banner 2.6m, wind banner 3.2m, libracom wind banners, bandeira personalizada barueri, wind banner são paulo, wind banner barueri, wind banner reto",
+  keywords: "wind banner retangular, wind banner quadrado, wind banner reto, wind banner em barueri, wind banner personalizado, bandeira de vento, comprar wind banner barueri, wind banner alphaville, preço wind banner reto, wind banner completo, wind banner 2m, wind banner 2.6m, wind banner 3m, libracom wind banners, bandeira personalizada barueri, wind banner são paulo, wind banner barueri, wind banner reto",
   openGraph: {
     title: "Wind Banner Retangular e Quadrado | Libracom Barueri - Modelo Reto",
     description: "Wind Banners Retangulares e Quadrados (Modelo Reto) para destacar o seu comércio ou evento. Impressão Ultra HD direto de fábrica. Tecido premium 20% de transparência.",

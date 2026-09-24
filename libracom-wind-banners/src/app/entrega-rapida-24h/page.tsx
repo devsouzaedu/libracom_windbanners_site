@@ -208,7 +208,7 @@ export default function EntregaRapida24h() {
                 <div className="flex justify-between items-center">
                   <div>
                     <span className="text-xs text-slate-500">Kit Completo</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 280</div>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 350</div>
                   </div>
                   <a
                     href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%202m%20com%20entrega%20em%2024h"
@@ -252,7 +252,7 @@ export default function EntregaRapida24h() {
                 <div className="flex justify-between items-center">
                   <div>
                     <span className="text-xs text-slate-500">Kit Completo</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 320</div>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 410</div>
                   </div>
                   <a
                     href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%202,60m%20com%20entrega%20em%2024h"
@@ -266,12 +266,12 @@ export default function EntregaRapida24h() {
               </div>
             </div>
 
-            {/* Wind Banner 3,20m */}
+            {/* Wind Banner 3,00m */}
             <div className="product-card-light group overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (3).jpg"
-                  alt="Wind Banner Reto 3,20m com entrega em 24h"
+                  alt="Wind Banner Reto 3,00m com entrega em 24h"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -284,17 +284,17 @@ export default function EntregaRapida24h() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 3,20m</h3>
+                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 3,00m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
                   Wind banner grande retangular com máximo impacto visual para feiras e frentes de comércios.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
                     <span className="text-xs text-slate-500">Kit Completo</span>
-                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 360</div>
+                    <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 480</div>
                   </div>
                   <a
-                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%203,20m%20com%20entrega%20em%2024h"
+                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%203,00m%20com%20entrega%20em%2024h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary text-sm"

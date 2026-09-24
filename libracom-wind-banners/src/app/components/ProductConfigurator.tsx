@@ -24,9 +24,9 @@ const products: Product[] = [
     icon: "🏳️",
     description: "Kit completo (modelo retangular/quadrado): tecido premium com 20% de transparência (estampa visível e legível em ambos os lados), haste flexível de alta durabilidade e base de sustentação inclusas.",
     sizes: [
-      { label: "2,0m - Pequeno", price: 280 },
-      { label: "2,60m - Médio (Mais Vendido)", price: 320 },
-      { label: "3,20m - Grande", price: 360 },
+      { label: "2,0m - Pequeno", price: 350 },
+      { label: "2,60m - Médio (Mais Vendido)", price: 410 },
+      { label: "3,00m - Grande", price: 480 },
     ],
   },
   {
@@ -35,9 +35,9 @@ const products: Product[] = [
     icon: "🚩",
     description: "Apenas a bandeira impressa para reposição no formato retangular/quadrado. Tecido de alta gramatura com 20% de transparência para cores vibrantes visíveis de ambos os lados. Não acompanha haste nem base.",
     sizes: [
-      { label: "2,0m - Pequeno", price: 150 },
-      { label: "2,60m - Médio", price: 180 },
-      { label: "3,20m - Grande", price: 200 },
+      { label: "2,0m - Pequeno", price: 220 },
+      { label: "2,60m - Médio", price: 280 },
+      { label: "3,00m - Grande", price: 320 },
     ],
   },
 ];

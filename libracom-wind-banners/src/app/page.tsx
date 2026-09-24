@@ -9,8 +9,56 @@ import InfiniteBrandSlider from "./components/InfiniteBrandSlider";
 import FAQ from "./components/FAQ";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 
-// New high-resolution Rectangular/Square product photos database
-const new2026Photos = [
+type Photo = {
+  src: string;
+  alt: string;
+  label: string;
+  loc?: string;
+  desc: string;
+  whatsappText: string;
+};
+
+// Preferred homepage photos (Faca/Pena model). Used by the hero carousel and shown first in the portfolio
+const heroPhotos: Photo[] = [
+  {
+    src: "/images/imagens_2026_wind_banner_personalizado_barueri_osasco_sao_paulo_sp (1).jpg",
+    alt: "Wind Banner Faca personalizado com QR Code - Libracom",
+    label: "Wind Banner Faca com QR Code",
+    desc: "Bandeira faca com QR Code impresso para levar o cliente direto ao seu Instagram ou site.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Faca com QR Code e gostaria de um orçamento..."
+  },
+  {
+    src: "/images/imagens_2026_wind_banner_personalizado_barueri_osasco_sao_paulo_sp (2).jpg",
+    alt: "Wind Banner Faca com cardápio de restaurante - Libracom",
+    label: "Wind Banner Faca Cardápio",
+    desc: "Ideal para restaurantes: logo e principais pratos visíveis de longe.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Faca com cardápio e gostaria de um orçamento..."
+  },
+  {
+    src: "/images/imagens_2026_wind_banner_personalizado_barueri_osasco_sao_paulo_sp (3).jpg",
+    alt: "Kit com três Wind Banners Faca personalizados - Libracom",
+    label: "Kit com 3 Wind Banners Faca",
+    desc: "Conjunto padronizado para fachadas, lojas e concessionárias.",
+    whatsappText: "Olá! Vi a foto do kit com 3 Wind Banners Faca e gostaria de um orçamento..."
+  },
+  {
+    src: "/images/imagens_2026_wind_banner_personalizado_barueri_osasco_sao_paulo_sp (1).jpeg",
+    alt: "Par de Wind Banners Faca personalizados - Libracom",
+    label: "Par de Wind Banners Faca",
+    desc: "Dupla de bandeiras faca com impressão em cores vivas.",
+    whatsappText: "Olá! Vi a foto do par de Wind Banners Faca e gostaria de um orçamento..."
+  },
+  {
+    src: "/images/imagens_2026_wind_banner_personalizado_barueri_osasco_sao_paulo_sp (2).jpeg",
+    alt: "Wind Banners Faca com logo em estilo minimalista - Libracom",
+    label: "Wind Banner Faca Minimalista",
+    desc: "Visual elegante para marcas de moda, estética e decoração.",
+    whatsappText: "Olá! Vi a foto do Wind Banner Faca minimalista e gostaria de um orçamento..."
+  }
+];
+
+// Rectangular/Square (Reto) product photos
+const new2026Photos: Photo[] = [
   {
     src: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (4).jpg",
     alt: "Bandeira de Vento Retangular - Libracom",
@@ -68,7 +116,7 @@ const bannerSizes = [
 
 const kitComponents = [
   { icon: "🏳️", title: "Bandeira", desc: "Poliéster premium com 20% de transparência, impressão Ultra HD e costura reforçada." },
-  { icon: "🎋", title: "Haste", desc: "Fibra de vidro flexível de alta resistência, que mantém a bandeira reta e esticada." },
+  { icon: "🎋", title: "Haste", desc: "Fibra de vidro flexível de alta resistência, que mantém a bandeira sempre esticada." },
   { icon: "🧱", title: "Base", desc: "Base reforçada e estável para uso em calçadas, pisos e áreas externas." }
 ];
 
@@ -85,7 +133,7 @@ export default function Home() {
   // Auto-advance the hero carousel; restarting on index change keeps manual picks on screen for a full cycle
   useEffect(() => {
     const timer = setTimeout(() => {
-      setActiveHeroImageIndex((i) => (i + 1) % new2026Photos.length);
+      setActiveHeroImageIndex((i) => (i + 1) % heroPhotos.length);
     }, 5000);
     return () => clearTimeout(timer);
   }, [activeHeroImageIndex]);
@@ -98,26 +146,28 @@ export default function Home() {
       {/* Floating WhatsApp */}
       <WhatsAppFloat />
 
-      {/* ===== HERO CAROUSEL (FULL-WIDTH PHOTOS) ===== */}
-      <section className="relative min-h-[600px] h-[90vh] max-h-[860px] flex items-end overflow-hidden bg-slate-900">
-        {new2026Photos.map((photo, index) => (
-          <Image
-            key={photo.src}
-            src={photo.src}
-            alt={photo.alt}
-            fill
-            priority={index === 0}
-            sizes="100vw"
-            className={`object-cover transition-opacity duration-1000 ${index === activeHeroImageIndex ? "opacity-100" : "opacity-0"}`}
-          />
-        ))}
-        {/* Dark gradient to keep the copy legible over any photo */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/55 to-slate-950/20 z-10"></div>
+      {/* ===== HERO CAROUSEL (PORTRAIT PHOTOS: FULL-BLEED ON MOBILE, FRAMED ON DESKTOP) ===== */}
+      <section className="relative overflow-hidden bg-slate-950">
+        <div className="container mx-auto px-4 min-h-[640px] flex items-end lg:grid lg:grid-cols-2 lg:items-center lg:gap-16 lg:min-h-0 lg:pt-32 lg:pb-20">
+          <div className="absolute inset-0 lg:relative lg:inset-auto lg:order-2 lg:w-full lg:max-w-md lg:justify-self-center lg:aspect-[3/4] lg:rounded-3xl lg:overflow-hidden lg:border lg:border-white/10 lg:shadow-2xl">
+            {heroPhotos.map((photo, index) => (
+              <Image
+                key={photo.src}
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                priority={index === 0}
+                sizes="(max-width: 1024px) 100vw, 448px"
+                className={`object-cover transition-opacity duration-1000 ${index === activeHeroImageIndex ? "opacity-100" : "opacity-0"}`}
+              />
+            ))}
+            {/* Mobile-only gradient keeps the copy legible over the photo */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/10 lg:hidden"></div>
+          </div>
 
-        <div className="container mx-auto px-4 relative z-20 pb-14 md:pb-20 pt-28">
-          <div className="max-w-2xl text-center md:text-left mx-auto md:mx-0 space-y-4 md:space-y-6">
+          <div className="relative z-10 w-full max-w-2xl text-center lg:text-left mx-auto lg:mx-0 space-y-4 md:space-y-6 pb-14 pt-28 lg:p-0">
             <span className="inline-block bg-white/10 backdrop-blur text-white text-[10px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-white/20">
-              Fábrica própria em Barueri · Modelo Reto
+              Fábrica própria em Barueri · Faca/Pena e Reto
             </span>
 
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-white font-heading">
@@ -125,12 +175,12 @@ export default function Home() {
             </h1>
 
             <p className="text-sm md:text-lg text-slate-200 leading-relaxed font-medium">
-              Wind Banners Retangulares e Quadrados com tecido premium de <strong className="text-white">20% de transparência</strong>: sua marca legível dos dois lados, cores vivas e produção expressa em 24h.
+              Wind Banners personalizados nos modelos <strong className="text-white">Faca/Pena</strong> e <strong className="text-white">Reto (Retangular/Quadrado)</strong>, com impressão em cores vivas, arte grátis e produção expressa em 24h.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 pt-2 justify-center md:justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
               <a
-                href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá, Libracom! Gostaria de um orçamento do Wind Banner Retangular Modelo Reto a partir de R$ 350,00. Podem me ajudar com a arte?")}`}
+                href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá, Libracom! Gostaria de um orçamento de Wind Banner a partir de R$ 350,00. Podem me ajudar com a arte?")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-cta px-8 py-4 text-sm font-bold uppercase tracking-wider relative overflow-hidden group shadow-md"
@@ -154,8 +204,8 @@ export default function Home() {
             </div>
 
             {/* Carousel position indicators */}
-            <div className="flex gap-2 pt-4 justify-center md:justify-start">
-              {new2026Photos.map((photo, index) => (
+            <div className="flex gap-2 pt-4 justify-center lg:justify-start">
+              {heroPhotos.map((photo, index) => (
                 <button
                   key={photo.src}
                   type="button"
@@ -181,14 +231,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== AVISO PRINCIPAL EM DESTAQUE GERAL ===== */}
-      <section className="py-5 md:py-8 bg-amber-500 text-amber-950 font-black border-y border-amber-600">
+      {/* ===== MODELOS DISPONIVEIS ===== */}
+      <section className="py-5 md:py-8 bg-slate-900 text-white font-black border-y border-slate-800">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-4 text-center md:text-left">
-          <span className="text-3xl">⚠️</span>
+          <span className="text-3xl">🚩</span>
           <div>
-            <h3 className="text-sm md:text-base font-black tracking-wide uppercase">SOMENTE MODELO RETO (RETANGULAR / QUADRADO)</h3>
-            <p className="text-xs font-bold text-amber-900 mt-0.5 leading-relaxed">
-              Não trabalhamos com wind banner modelos Faca, Pena, Vela ou Gota. Nosso foco é 100% no modelo reto, garantindo maior durabilidade e área de exibição da sua marca.
+            <h3 className="text-sm md:text-base font-black tracking-wide uppercase">Dois modelos: Faca/Pena e Reto (Retangular / Quadrado)</h3>
+            <p className="text-xs font-bold text-slate-300 mt-0.5 leading-relaxed">
+              Escolha o formato ideal para o seu negócio. Os preços são os mesmos para os dois modelos, em qualquer altura.
             </p>
           </div>
         </div>
@@ -198,10 +248,10 @@ export default function Home() {
       <section id="o-que-e" className="py-12 md:py-24 bg-white scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-6xl mx-auto">
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-slate-100 border border-slate-200 shadow-md">
+            <div className="relative aspect-[3/4] max-w-sm w-full mx-auto rounded-3xl overflow-hidden bg-slate-100 border border-slate-200 shadow-md">
               <Image
-                src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (3).jpg"
-                alt="Wind Banner retangular instalado em frente a comércio"
+                src="/images/imagens_2026_wind_banner_personalizado_barueri_osasco_sao_paulo_sp (2).jpg"
+                alt="Wind Banner Faca personalizado para restaurante"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -218,7 +268,7 @@ export default function Home() {
                 O wind banner, também chamado de <strong>bandeira de vento</strong> ou bandeira de calçada, é uma peça de comunicação visual formada por uma bandeira impressa presa a uma haste flexível e fixada em uma base. Com o vento, ela se movimenta e chama a atenção de quem passa, a pé ou de carro.
               </p>
               <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                No <strong>modelo reto (retangular ou quadrado)</strong>, a bandeira fica sempre esticada, oferecendo a maior área útil para o seu logo e sua oferta. É ideal para fachadas de lojas, inaugurações, feiras, postos, eventos e ações promocionais, e pode ser montado e desmontado em minutos.
+                O <strong>modelo faca/pena</strong> tem o formato curvo e dinâmico que se destaca na calçada, e o <strong>modelo reto (retangular ou quadrado)</strong> fica sempre esticado, oferecendo a maior área útil para o seu logo e sua oferta. É ideal para fachadas de lojas, inaugurações, feiras, postos, eventos e ações promocionais, e pode ser montado e desmontado em minutos.
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm font-semibold text-slate-700 pt-2 text-left max-w-md mx-auto lg:mx-0">
                 <li>✓ Alta visibilidade o dia inteiro</li>
@@ -240,7 +290,7 @@ export default function Home() {
             </span>
           </div>
           <h2 className="section-title text-slate-950 font-heading">
-            Sinalização no <span className="text-gradient-brand">Modelo Reto Premium</span>
+            Wind Banners <span className="text-gradient-brand">Faca/Pena e Reto</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
             Estruturas reforçadas e bandeiras com acabamento impecável e 20% de transparência para atrair a atenção do seu público
@@ -283,7 +333,7 @@ export default function Home() {
                   </div>
 
                   <ul className="text-xs text-slate-400 space-y-1 pt-1">
-                    <li>✓ Modelo Retangular/Quadrado Reto</li>
+                    <li>✓ Modelo Faca/Pena ou Reto</li>
                     <li>✓ Tecido especial 20% de transparência</li>
                     <li>✓ Haste reforçada e Base inclusas</li>
                   </ul>
@@ -296,7 +346,7 @@ export default function Home() {
                   <span className="text-xl font-black text-brand-700 font-heading">R$ 350<span className="text-xs text-slate-400 font-medium">/un</span></span>
                 </div>
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar o Kit Wind Banner Completo Modelo Reto da promoção...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar o Kit Wind Banner Completo da promoção...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
@@ -342,7 +392,7 @@ export default function Home() {
                   <ul className="text-xs text-slate-400 space-y-1 pt-1">
                     <li>✓ Estampa Ultra HD frente e verso</li>
                     <li>✓ Tecido especial 20% transparência</li>
-                    <li>✓ Encaixe padrão universal para modelo reto</li>
+                    <li>✓ Encaixe padrão universal (faca/pena ou reto)</li>
                   </ul>
                 </div>
               </div>
@@ -353,7 +403,7 @@ export default function Home() {
                   <span className="text-xl font-black text-brand-700 font-heading">R$ 220<span className="text-xs text-slate-400 font-medium">/un</span></span>
                 </div>
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar a Bandeira Avulsa de reposição do modelo reto...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar a Bandeira Avulsa de reposição...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
@@ -379,7 +429,7 @@ export default function Home() {
             Tamanhos dos <span className="text-gradient-brand">Wind Banners</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Três alturas para cada tipo de espaço. Todas no modelo reto, com a mesma qualidade de acabamento
+            Três alturas para cada tipo de espaço. Nos modelos faca/pena e reto, com o mesmo preço e a mesma qualidade de acabamento
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
@@ -472,7 +522,7 @@ export default function Home() {
             Excelência de Fábrica com <span className="text-brand-700">Acabamento Superior</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Diferenciais que nos tornam a maior referência de wind banners no modelo reto na região
+            Diferenciais que nos tornam referência em wind banners na região
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -484,8 +534,8 @@ export default function Home() {
               },
               {
                 icon: "📐",
-                title: "Modelo Reto (Exclusivo)",
-                desc: "Foco integral em wind banner retangular e quadrado. Maior área de sinalização do mercado para que o seu logo fique sempre esticado e legível."
+                title: "Faca/Pena ou Reto",
+                desc: "Escolha entre o formato faca/pena, dinâmico e chamativo, ou o reto, com a maior área de sinalização para o seu logo ficar sempre legível."
               },
               {
                 icon: "⏱️",
@@ -556,12 +606,12 @@ export default function Home() {
             Trabalhos Realizados na <span className="text-gradient-brand">Região de Barueri</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Veja fotos reais dos nossos wind banners premium retangulares e quadrados entregues para comércios locais parceiros
+            Veja fotos reais dos nossos wind banners faca/pena e retos entregues para comércios locais parceiros
           </p>
 
           {/* Grid Portfolio container with the new photos */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
-            {new2026Photos.map((item, i) => (
+            {[...heroPhotos, ...new2026Photos].map((item, i) => (
               <div
                 key={i}
                 className="product-card-light bg-white border border-slate-200 relative flex flex-col justify-between overflow-hidden group shadow-xs hover:shadow-md transition-all duration-300"
@@ -596,10 +646,12 @@ export default function Home() {
                     </h3>
                     <span className="text-[10px] text-slate-400 font-bold block uppercase tracking-wider">Libracom 2026</span>
                   </div>
-                  <p className="text-[10px] text-slate-500 flex items-center gap-1 font-bold bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                    <span>📍</span>
-                    {item.loc}
-                  </p>
+                  {item.loc && (
+                    <p className="text-[10px] text-slate-500 flex items-center gap-1 font-bold bg-slate-50 px-2 py-1 rounded border border-slate-200">
+                      <span>📍</span>
+                      {item.loc}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
@@ -757,7 +809,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Estou no site e gostaria de falar com um consultor comercial sobre os Wind Banners Retangulares...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Estou no site e gostaria de falar com um consultor comercial sobre os Wind Banners...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-cta w-full justify-center py-3.5 mt-6 group"
@@ -795,7 +847,7 @@ export default function Home() {
                 priority
               />
               <p className="text-xs leading-relaxed text-slate-400">
-                Libracom é referência em fabricação de Wind Banners modelo Reto (Retangular / Quadrado) em Barueri, Alphaville e São Paulo. Entrega rápida de fábrica e tecidos com 20% de transparência.
+                Libracom é referência em fabricação de Wind Banners nos modelos Faca/Pena e Reto (Retangular / Quadrado) em Barueri, Alphaville e São Paulo. Entrega rápida direto de fábrica.
               </p>
             </div>
 

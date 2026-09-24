@@ -45,20 +45,20 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-glow-grid border-t border-white/5 scroll-mt-16">
+    <section className="py-12 md:py-24 bg-white border-t border-slate-100 scroll-mt-16">
       <div className="container mx-auto px-4">
         
         {/* visual Badge */}
         <div className="flex justify-center mb-4">
-          <span className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 text-cyan-400 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full border border-cyan-500/20 backdrop-blur-sm">
+          <span className="bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-100">
             💬 Respostas Rápidas
           </span>
         </div>
 
-        <h2 className="section-title text-white">
+        <h2 className="section-title text-slate-950 font-heading">
           Dúvidas <span className="text-gradient-brand">Frequentes</span>
         </h2>
-        <p className="section-subtitle">
+        <p className="section-subtitle !text-slate-500">
           Tudo o que você precisa saber para comprar com total segurança e receber o melhor material promocional
         </p>
 
@@ -71,8 +71,8 @@ export default function FAQ() {
                 className={`
                   rounded-2xl transition-all duration-500 border overflow-hidden
                   ${isOpen
-                    ? "bg-slate-900/80 border-blue-500/40 shadow-lg shadow-blue-500/5"
-                    : "glass-card border-white/5 hover:border-white/10"
+                    ? "bg-white border-brand-700 shadow-md"
+                    : "bg-white border-slate-200 hover:border-slate-300 shadow-xs"
                   }
                 `}
               >
@@ -82,7 +82,7 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                   type="button"
                 >
-                  <span className="font-bold text-sm md:text-base text-white flex items-center gap-3 font-heading leading-tight">
+                  <span className="font-bold text-sm md:text-base text-slate-900 flex items-center gap-3 font-heading leading-tight">
                     <span className="text-lg md:text-xl shrink-0 opacity-80">{faq.icon}</span>
                     {faq.question}
                   </span>
@@ -92,8 +92,8 @@ export default function FAQ() {
                     className={`
                       w-7 h-7 rounded-lg flex items-center justify-center transition-all duration-300 shrink-0 ml-4
                       ${isOpen
-                        ? "bg-blue-500/20 text-blue-400 rotate-180"
-                        : "bg-white/5 text-slate-500 group-hover:bg-white/10"
+                        ? "bg-blue-50 text-brand-700 rotate-180"
+                        : "bg-slate-100 text-slate-500"
                       }
                     `}
                   >
@@ -107,10 +107,10 @@ export default function FAQ() {
                 <div
                   className={`
                     transition-all duration-500 ease-in-out overflow-hidden
-                    ${isOpen ? "max-h-[300px] opacity-100 border-t border-white/5 bg-slate-950/20" : "max-h-0 opacity-0"}
+                    ${isOpen ? "max-h-[300px] opacity-100 border-t border-slate-100 bg-slate-50" : "max-h-0 opacity-0"}
                   `}
                 >
-                  <p className="p-6 text-slate-400 text-xs md:text-sm leading-relaxed">
+                  <p className="p-6 text-slate-600 text-xs md:text-sm leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

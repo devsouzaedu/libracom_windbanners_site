@@ -2,9 +2,9 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://libracomwindbanner.com.br/sitemap.xml
+Sitemap: https://www.libracomwindbanner.com.br/sitemap.xml
 
-# Disallow admin areas if any
+# Disallow admin & internal areas
 Disallow: /admin/
 Disallow: /_next/
 Disallow: /api/
@@ -15,4 +15,4 @@ Allow: /*.jpg
 Allow: /*.jpeg
 Allow: /*.png
 Allow: /*.webp
-Allow: /*.svg 
+Allow: /*.svg

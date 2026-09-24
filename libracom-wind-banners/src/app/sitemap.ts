@@ -1,14 +1,20 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://libracomwindbanner.com.br'
+  const baseUrl = 'https://www.libracomwindbanner.com.br'
   
   return [
     {
       url: baseUrl,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 1,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/somente-bandeira-wind-banner`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/wind-banner-barueri`,
@@ -35,4 +41,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
   ]
-} 
+}

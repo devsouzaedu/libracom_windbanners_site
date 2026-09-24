@@ -201,9 +201,9 @@ export default function EntregaRapida24h() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 2,0m</h3>
+                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner 2,0m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                  Wind banner reto de 2 metros de altura, ideal para calçadas e eventos internos. Tecido 20% transparência.
+                  Wind banner de 2 metros de altura, em qualquer um dos 5 modelos, ideal para calçadas e eventos internos. Tecido 20% transparência.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
@@ -211,7 +211,7 @@ export default function EntregaRapida24h() {
                     <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 350</div>
                   </div>
                   <a
-                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%202m%20com%20entrega%20em%2024h"
+                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%202m%20com%20entrega%20em%2024h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary text-sm"
@@ -245,9 +245,9 @@ export default function EntregaRapida24h() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 2,60m</h3>
+                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner 2,60m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                  Tamanho médio retangular com excelente visibilidade e caimento perfeito de tecido. O mais popular.
+                  Tamanho médio com excelente visibilidade e caimento perfeito de tecido. O mais popular.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
@@ -255,7 +255,7 @@ export default function EntregaRapida24h() {
                     <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 410</div>
                   </div>
                   <a
-                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%202,60m%20com%20entrega%20em%2024h"
+                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%202,60m%20com%20entrega%20em%2024h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary text-sm"
@@ -284,9 +284,9 @@ export default function EntregaRapida24h() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner Reto 3,00m</h3>
+                <h3 className="text-xl font-bold mb-2 text-slate-900 font-heading">Wind Banner 3,00m</h3>
                 <p className="text-slate-500 text-sm mb-4 leading-relaxed">
-                  Wind banner grande retangular com máximo impacto visual para feiras e frentes de comércios.
+                  Wind banner grande com máximo impacto visual para feiras e frentes de comércios.
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
@@ -294,7 +294,7 @@ export default function EntregaRapida24h() {
                     <div className="text-2xl font-bold text-emerald-500 font-heading">R$ 480</div>
                   </div>
                   <a
-                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20Reto%20de%203,00m%20com%20entrega%20em%2024h"
+                    href="https://wa.me/5511954997799?text=Olá,%20tenho%20interesse%20no%20Wind%20Banner%20de%203,00m%20com%20entrega%20em%2024h"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-secondary text-sm"

@@ -18,7 +18,7 @@ type Photo = {
   whatsappText: string;
 };
 
-// Preferred homepage photos (Faca/Pena model). Used by the hero carousel and shown first in the portfolio
+// Preferred homepage photos. Used by the hero carousel and shown first in the portfolio
 const heroPhotos: Photo[] = [
   {
     src: "/images/imagens_2026_wind_banner_personalizado_barueri_osasco_sao_paulo_sp (1).jpg",
@@ -167,7 +167,7 @@ export default function Home() {
 
           <div className="relative z-10 w-full max-w-2xl text-center lg:text-left mx-auto lg:mx-0 space-y-4 md:space-y-6 pb-14 pt-28 lg:p-0">
             <span className="inline-block bg-white/10 backdrop-blur text-white text-[10px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-white/20">
-              Fábrica própria em Barueri · Faca/Pena e Reto
+              Fábrica própria em Barueri · 5 modelos
             </span>
 
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-white font-heading">
@@ -175,7 +175,7 @@ export default function Home() {
             </h1>
 
             <p className="text-sm md:text-lg text-slate-200 leading-relaxed font-medium">
-              Wind Banners personalizados nos modelos <strong className="text-white">Faca/Pena</strong> e <strong className="text-white">Reto (Retangular/Quadrado)</strong>, com impressão em cores vivas, arte grátis e produção expressa em 24h.
+              Wind Banners personalizados nos modelos <strong className="text-white">Gota, Faca, Pena, Vela e Reto</strong>, com impressão em cores vivas, arte grátis e produção expressa em 24h.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
@@ -236,9 +236,9 @@ export default function Home() {
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-4 text-center md:text-left">
           <span className="text-3xl">🚩</span>
           <div>
-            <h3 className="text-sm md:text-base font-black tracking-wide uppercase">Dois modelos: Faca/Pena e Reto (Retangular / Quadrado)</h3>
+            <h3 className="text-sm md:text-base font-black tracking-wide uppercase">5 modelos: Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado)</h3>
             <p className="text-xs font-bold text-slate-300 mt-0.5 leading-relaxed">
-              Escolha o formato ideal para o seu negócio. Os preços são os mesmos para os dois modelos, em qualquer altura.
+              Fabricamos todos os formatos. Escolha o ideal para o seu negócio e a gente cuida da arte.
             </p>
           </div>
         </div>
@@ -268,7 +268,7 @@ export default function Home() {
                 O wind banner, também chamado de <strong>bandeira de vento</strong> ou bandeira de calçada, é uma peça de comunicação visual formada por uma bandeira impressa presa a uma haste flexível e fixada em uma base. Com o vento, ela se movimenta e chama a atenção de quem passa, a pé ou de carro.
               </p>
               <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                O <strong>modelo faca/pena</strong> tem o formato curvo e dinâmico que se destaca na calçada, e o <strong>modelo reto (retangular ou quadrado)</strong> fica sempre esticado, oferecendo a maior área útil para o seu logo e sua oferta. É ideal para fachadas de lojas, inaugurações, feiras, postos, eventos e ações promocionais, e pode ser montado e desmontado em minutos.
+                Fabricamos os 5 modelos: <strong>gota</strong>, <strong>faca</strong>, <strong>pena</strong> e <strong>vela</strong>, com formatos curvos e dinâmicos que se destacam na calçada, e o <strong>reto (retangular ou quadrado)</strong>, que oferece a maior área útil para o seu logo e sua oferta. É ideal para fachadas de lojas, inaugurações, feiras, postos, eventos e ações promocionais, e pode ser montado e desmontado em minutos.
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm font-semibold text-slate-700 pt-2 text-left max-w-md mx-auto lg:mx-0">
                 <li>✓ Alta visibilidade o dia inteiro</li>
@@ -290,7 +290,7 @@ export default function Home() {
             </span>
           </div>
           <h2 className="section-title text-slate-950 font-heading">
-            Wind Banners <span className="text-gradient-brand">Faca/Pena e Reto</span>
+            Wind Banners em <span className="text-gradient-brand">5 Modelos</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
             Estruturas reforçadas e bandeiras com acabamento impecável e 20% de transparência para atrair a atenção do seu público
@@ -333,7 +333,7 @@ export default function Home() {
                   </div>
 
                   <ul className="text-xs text-slate-400 space-y-1 pt-1">
-                    <li>✓ Modelo Faca/Pena ou Reto</li>
+                    <li>✓ Modelos Gota, Faca, Pena, Vela ou Reto</li>
                     <li>✓ Tecido especial 20% de transparência</li>
                     <li>✓ Haste reforçada e Base inclusas</li>
                   </ul>
@@ -392,7 +392,7 @@ export default function Home() {
                   <ul className="text-xs text-slate-400 space-y-1 pt-1">
                     <li>✓ Estampa Ultra HD frente e verso</li>
                     <li>✓ Tecido especial 20% transparência</li>
-                    <li>✓ Encaixe padrão universal (faca/pena ou reto)</li>
+                    <li>✓ Encaixe padrão universal para todos os modelos</li>
                   </ul>
                 </div>
               </div>
@@ -429,7 +429,7 @@ export default function Home() {
             Tamanhos dos <span className="text-gradient-brand">Wind Banners</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Três alturas para cada tipo de espaço. Nos modelos faca/pena e reto, com o mesmo preço e a mesma qualidade de acabamento
+            Três alturas para cada tipo de espaço. Nos 5 modelos (gota, faca, pena, vela e reto), com a mesma qualidade de acabamento
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
@@ -534,8 +534,8 @@ export default function Home() {
               },
               {
                 icon: "📐",
-                title: "Faca/Pena ou Reto",
-                desc: "Escolha entre o formato faca/pena, dinâmico e chamativo, ou o reto, com a maior área de sinalização para o seu logo ficar sempre legível."
+                title: "5 Modelos de Bandeira",
+                desc: "Gota, faca, pena, vela ou reto: escolha o formato que mais combina com a sua marca e com o seu espaço."
               },
               {
                 icon: "⏱️",
@@ -606,7 +606,7 @@ export default function Home() {
             Trabalhos Realizados na <span className="text-gradient-brand">Região de Barueri</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Veja fotos reais dos nossos wind banners faca/pena e retos entregues para comércios locais parceiros
+            Veja fotos reais dos nossos wind banners entregues para comércios locais parceiros
           </p>
 
           {/* Grid Portfolio container with the new photos */}
@@ -847,7 +847,7 @@ export default function Home() {
                 priority
               />
               <p className="text-xs leading-relaxed text-slate-400">
-                Libracom é referência em fabricação de Wind Banners nos modelos Faca/Pena e Reto (Retangular / Quadrado) em Barueri, Alphaville e São Paulo. Entrega rápida direto de fábrica.
+                Libracom é referência em fabricação de Wind Banners nos modelos Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado) em Barueri, Alphaville e São Paulo. Entrega rápida direto de fábrica.
               </p>
             </div>
 

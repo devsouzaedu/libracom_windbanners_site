@@ -60,7 +60,7 @@ export default function WindBannerBarueri() {
 
               {/* Price highlight */}
               <div className="glass-card inline-block px-6 py-4 mb-8">
-                <p className="text-slate-400 text-sm mb-2">Wind Banner Reto a partir de</p>
+                <p className="text-slate-400 text-sm mb-2">Wind Banner a partir de</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-emerald-400 text-lg font-semibold">R$</span>
                   <span className="text-white text-4xl font-black font-heading">350</span>

@@ -3,7 +3,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Libracom Wind Banners",
-    "description": "Especialistas em Wind Banner Retangular e Quadrado (Modelo Reto) personalizado em Barueri e Alphaville. Bandeiras com 20% de transparência, hastes e bases.",
+    "description": "Fábrica de Wind Banner personalizado nos modelos Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado) em Barueri e Alphaville. Bandeiras, hastes e bases.",
     "url": "https://libracomwindbanner.com.br",
     "logo": "https://libracomwindbanner.com.br/images/libracom_logo_preto_navbar.png",
     "image": [
@@ -37,6 +37,10 @@ export default function StructuredData() {
       }
     ],
     "serviceType": [
+      "Wind Banner Gota",
+      "Wind Banner Faca",
+      "Wind Banner Pena",
+      "Wind Banner Vela",
       "Wind Banner Retangular",
       "Wind Banner Quadrado",
       "Wind Banner Reto",
@@ -52,8 +56,8 @@ export default function StructuredData() {
   const productData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Wind Banner Retangular e Quadrado (Modelo Reto)",
-    "description": "Wind Banner Modelo Reto (Retangular / Quadrado) personalizado de alta qualidade, completo com base e haste ou somente bandeira avulsa.",
+    "name": "Wind Banner Personalizado (Gota, Faca, Pena, Vela e Reto)",
+    "description": "Wind Banner personalizado nos modelos Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado), de alta qualidade, completo com base e haste ou somente bandeira avulsa.",
     "image": [
       "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
       "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg"

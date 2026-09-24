@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "Como funciona a entrega expressa em 24 horas?",
     answer:
-      "Temos fabricação própria local em Barueri. Para pedidos aprovados (arte e pagamento) até as 12:00, produzimos e despachamos seu Wind Banner Reto (Retangular / Quadrado) no mesmo dia, realizando a entrega em até 24 horas em Barueri, Alphaville, Tamboré, Santana de Parnaíba e região Oeste de São Paulo.",
+      "Temos fabricação própria local em Barueri. Para pedidos aprovados (arte e pagamento) até as 12:00, produzimos e despachamos seu Wind Banner no mesmo dia, realizando a entrega em até 24 horas em Barueri, Alphaville, Tamboré, Santana de Parnaíba e região Oeste de São Paulo.",
     icon: "⚡"
   },
   {
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "Os Wind Banners resistem bem a chuva e ventos fortes?",
     answer:
-      "Sim! Nossos Wind Banners Retos são fabricados com tecido micro-poliéster de alta resistência e costuras industriais reforçadas. A haste é feita de fibra de vidro flexível de alta tração, que verga mas não quebra. A base de suporte robusta garante máxima estabilidade em calçadas e ações externas.",
+      "Sim! Nossos Wind Banners são fabricados com tecido micro-poliéster de alta resistência e costuras industriais reforçadas. A haste é feita de fibra de vidro flexível de alta tração, que verga mas não quebra. A base de suporte robusta garante máxima estabilidade em calçadas e ações externas.",
     icon: "🌪️"
   },
   {

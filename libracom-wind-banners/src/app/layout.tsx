@@ -18,12 +18,12 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://libracomwindbanner.com.br'),
-  title: "Wind Banner Retangular e Quadrado em Barueri | Libracom - Modelo Reto",
-  description: "Especialistas em Wind Banner Retangular e Quadrado (Modelo Reto) em Barueri e Alphaville. Tecido premium com 20% de transparência, haste e base inclusas. Arte grátis e entrega rápida!",
-  keywords: "wind banner retangular, wind banner quadrado, wind banner reto, wind banner em barueri, wind banner personalizado, bandeira de vento, comprar wind banner barueri, wind banner alphaville, preço wind banner reto, wind banner completo, wind banner 2m, wind banner 2.6m, wind banner 3m, libracom wind banners, bandeira personalizada barueri, wind banner são paulo, wind banner barueri, wind banner reto",
+  title: "Wind Banner Personalizado em Barueri | Libracom - Gota, Faca, Pena, Vela e Reto",
+  description: "Fábrica de Wind Banner personalizado em Barueri e Alphaville nos modelos Gota, Faca, Pena, Vela e Reto (Retangular/Quadrado). Haste e base inclusas, arte grátis e entrega rápida!",
+  keywords: "wind banner gota, wind banner faca, wind banner pena, wind banner vela, wind banner retangular, wind banner quadrado, wind banner reto, wind banner em barueri, wind banner personalizado, bandeira de vento, comprar wind banner barueri, wind banner alphaville, preço wind banner reto, wind banner completo, wind banner 2m, wind banner 2.6m, wind banner 3m, libracom wind banners, bandeira personalizada barueri, wind banner são paulo, wind banner barueri, wind banner reto",
   openGraph: {
-    title: "Wind Banner Retangular e Quadrado | Libracom Barueri - Modelo Reto",
-    description: "Wind Banners Retangulares e Quadrados (Modelo Reto) para destacar o seu comércio ou evento. Impressão Ultra HD direto de fábrica. Tecido premium 20% de transparência.",
+    title: "Wind Banner Personalizado | Libracom Barueri - 5 Modelos",
+    description: "Wind Banners nos modelos Gota, Faca, Pena, Vela e Reto para destacar o seu comércio ou evento. Impressão Ultra HD direto de fábrica.",
     url: 'https://libracomwindbanner.com.br',
     siteName: 'Libracom - Wind Banners',
     images: [
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
         url: '/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png',
         width: 1200,
         height: 630,
-        alt: 'Wind Banner Retangular e Quadrado em Barueri e Alphaville - Libracom',
+        alt: 'Wind Banner personalizado em Barueri e Alphaville - Libracom',
       },
       {
         url: '/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg',
         width: 1200,
         height: 630,
-        alt: 'Wind Banner Modelo Reto para eventos e empresas',
+        alt: 'Wind Banner para eventos e empresas',
       },
     ],
     locale: 'pt_BR',
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Wind Banner Retangular e Quadrado | Libracom Barueri",
-    description: "Modelos Retos de Wind Banner (Retangular/Quadrado) personalizados com alta definição de cores e entrega rápida.",
+    title: "Wind Banner Personalizado | Libracom Barueri",
+    description: "Wind Banners personalizados nos modelos Gota, Faca, Pena, Vela e Reto, com alta definição de cores e entrega rápida.",
     images: ['/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png'],
     creator: '@libracom',
   },

@@ -1,44 +1,22 @@
 import { MetadataRoute } from 'next'
+import { cities, products, SITE_URL } from './lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.libracomwindbanner.com.br'
-  
+  const lastModified = new Date()
+  const page = (path: string, priority: number): MetadataRoute.Sitemap[number] => ({
+    url: path === '/' ? SITE_URL : `${SITE_URL}${path}`,
+    lastModified,
+    changeFrequency: 'weekly',
+    priority,
+  })
+
   return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/somente-bandeira-wind-banner`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/wind-banner-barueri`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/wind-banner-personalizado-eventos`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/wind-banner-vs-bandeira-comum`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/entrega-rapida-24h`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
+    page('/', 1),
+    ...products.filter((p) => p.slug !== '/').map((p) => page(p.slug, 0.9)),
+    page('/wind-banner-barueri', 0.9),
+    ...cities.map((c) => page(`/wind-banner/${c.slug}`, 0.8)),
+    page('/entrega-rapida-24h', 0.8),
+    page('/wind-banner-personalizado-eventos', 0.8),
+    page('/wind-banner-vs-bandeira-comum', 0.6),
   ]
 }

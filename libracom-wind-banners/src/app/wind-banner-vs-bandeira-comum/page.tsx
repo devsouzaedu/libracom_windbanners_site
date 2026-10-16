@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/wind-banner-vs-bandeira-comum" },
   title: "Wind Banner ou Bandeira Tradicional? Saiba Qual Chama Mais Atenção | Libracom",
   description: "Compare wind banner e bandeira tradicional. Descubra qual é mais resistente, visível e prático para sua divulgação. Guia completo com vantagens e desvantagens.",
   keywords: "diferença entre wind banner e bandeira, qual wind banner dura mais, melhor tipo de banner para eventos externos, wind banner resistente ao vento, divulgação com bandeiras de vento",

@@ -17,12 +17,12 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: "#produtos", label: "Produtos" },
-    { href: "#configurador", label: "Simulador" },
-    { href: "#portfolio", label: "Portfólio" },
-    { href: "#sobre", label: "Sobre Nós" },
-    { href: "#faq", label: "Dúvidas" },
-    { href: "#contato", label: "Contato" },
+    { href: "/#produtos", label: "Produtos" },
+    { href: "/#configurador", label: "Simulador" },
+    { href: "/#portfolio", label: "Portfólio" },
+    { href: "/#sobre", label: "Sobre Nós" },
+    { href: "/#faq", label: "Dúvidas" },
+    { href: "/#contato", label: "Contato" },
   ];
 
   return (

@@ -1,14 +1,17 @@
+import { cities, products, SITE_URL } from "../lib/site";
+
 export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `${SITE_URL}/#business`,
     "name": "Libracom Wind Banners",
     "description": "Fábrica de Wind Banner personalizado nos modelos Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado) em Barueri e Alphaville. Bandeiras, hastes e bases.",
-    "url": "https://libracomwindbanner.com.br",
-    "logo": "https://libracomwindbanner.com.br/images/libracom_logo_preto_navbar.png",
+    "url": "https://www.libracomwindbanner.com.br",
+    "logo": "https://www.libracomwindbanner.com.br/images/libracom_logo_preto_navbar.png",
     "image": [
-      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
-      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg"
+      "https://www.libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
+      "https://www.libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg"
     ],
     "telephone": "+55 11 95499-7799",
     "address": {
@@ -22,20 +25,7 @@ export default function StructuredData() {
       "latitude": -23.5107,
       "longitude": -46.8761
     },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Barueri"
-      },
-      {
-        "@type": "City", 
-        "name": "Alphaville"
-      },
-      {
-        "@type": "City",
-        "name": "São Paulo"
-      }
-    ],
+    "areaServed": ["Barueri", ...cities.map((c) => c.name)].map((name) => ({ "@type": "City", name })),
     "serviceType": [
       "Wind Banner Gota",
       "Wind Banner Faca",
@@ -48,9 +38,15 @@ export default function StructuredData() {
     ],
     "priceRange": "R$ 220 - R$ 480",
     "openingHours": "Mo-Fr 08:00-18:00",
-    "sameAs": [
-      "https://wa.me/5511954997799"
-    ]
+    "email": "contato.libracom@gmail.com",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Comunicação visual",
+      "itemListElement": products.map((p) => ({
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": p.name, "url": `${SITE_URL}${p.slug === "/" ? "" : p.slug}` },
+      })),
+    }
   };
 
   const productData = {
@@ -59,8 +55,8 @@ export default function StructuredData() {
     "name": "Wind Banner Personalizado (Gota, Faca, Pena, Vela e Reto)",
     "description": "Wind Banner personalizado nos modelos Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado), de alta qualidade, completo com base e haste ou somente bandeira avulsa.",
     "image": [
-      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
-      "https://libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg"
+      "https://www.libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
+      "https://www.libracomwindbanner.com.br/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (2).jpg"
     ],
     "brand": {
       "@type": "Brand",
@@ -71,10 +67,7 @@ export default function StructuredData() {
       "price": "350",
       "priceCurrency": "BRL",
       "availability": "https://schema.org/InStock",
-      "seller": {
-        "@type": "Organization",
-        "name": "Libracom Wind Banners"
-      }
+      "seller": { "@id": `${SITE_URL}/#business` }
     },
     "category": "Marketing Materials"
   };

@@ -17,14 +17,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://libracomwindbanner.com.br'),
+  metadataBase: new URL('https://www.libracomwindbanner.com.br'),
   title: "Wind Banner Personalizado em Barueri | Libracom - Gota, Faca, Pena, Vela e Reto",
   description: "Fábrica de Wind Banner personalizado em Barueri e Alphaville nos modelos Gota, Faca, Pena, Vela e Reto (Retangular/Quadrado). Haste e base inclusas, arte grátis e entrega rápida!",
   keywords: "wind banner gota, wind banner faca, wind banner pena, wind banner vela, wind banner retangular, wind banner quadrado, wind banner reto, wind banner em barueri, wind banner personalizado, bandeira de vento, comprar wind banner barueri, wind banner alphaville, preço wind banner reto, wind banner completo, wind banner 2m, wind banner 2.6m, wind banner 3m, libracom wind banners, bandeira personalizada barueri, wind banner são paulo, wind banner barueri, wind banner reto",
   openGraph: {
     title: "Wind Banner Personalizado | Libracom Barueri - 5 Modelos",
     description: "Wind Banners nos modelos Gota, Faca, Pena, Vela e Reto para destacar o seu comércio ou evento. Impressão Ultra HD direto de fábrica.",
-    url: 'https://libracomwindbanner.com.br',
+    url: '/',
     siteName: 'Libracom - Wind Banners',
     images: [
       {
@@ -66,14 +66,13 @@ export const metadata: Metadata = {
       { url: '/favicon.ico', type: 'image/x-icon' },
     ],
     shortcut: ['/favicon.ico'],
-    apple: '/apple-icon.png',
+    apple: '/images/favicon.png',
   },
-  verification: {
-    google: 'google-site-verification',
-  },
-  alternates: {
-    canonical: 'https://libracomwindbanner.com.br',
-  },
+  // Canonical fica em cada página (aqui seria herdado por todas e apontaria tudo para a home).
+  // Código do Google Search Console: variável GOOGLE_SITE_VERIFICATION na Vercel.
+  ...(process.env.GOOGLE_SITE_VERIFICATION && {
+    verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+  }),
 };
 
 export default function RootLayout({

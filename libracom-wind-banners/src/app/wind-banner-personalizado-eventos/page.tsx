@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/wind-banner-personalizado-eventos" },
   title: "Wind Banner Personalizado para Eventos, Feiras e Ações de Rua | Libracom",
   description: "Wind banners personalizados para eventos, feiras e ações promocionais. Bandeiras de vento resistentes para ambientes externos. Entrega rápida em Barueri e região.",
   keywords: "wind banner para eventos barueri, banner de tecido para feiras, divulgação com bandeiras de vento, wind banner resistente ao vento, melhor tipo de banner para eventos externos",

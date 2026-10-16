@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/wind-banner-barueri" },
   title: "Wind Banner em Barueri – Personalizado e com Entrega Rápida | Libracom",
   description: "Compre Wind Banner em Barueri com a melhor qualidade e preço. Bandeira de vento personalizada com entrega rápida em toda região. Orçamento via WhatsApp.",
   keywords: "wind banner em barueri, bandeira de vento barueri, comprar wind banner barueri, impressão de wind banner barueri, empresa de wind banner barueri, onde comprar wind banner em barueri",

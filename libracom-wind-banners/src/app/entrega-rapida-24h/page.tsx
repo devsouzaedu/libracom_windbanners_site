@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/entrega-rapida-24h" },
   title: "Wind Banner com Entrega em 24h em Barueri e Alphaville | Libracom",
   description: "Precisa de wind banner com urgência? Entregamos em 24 horas em Barueri, Alphaville e região. Wind banners personalizados com impressão de alta qualidade.",
   keywords: "wind banner entrega rápida, wind banner 24h, entrega de wind banner barueri, wind banner alphaville entrega rápida, wind banner urgente, impressão rápida wind banner",

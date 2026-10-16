@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     siteName: "Libracom - Wind Banners",
     images: [
       {
-        url: "/images/bandeira_impressao.jpg",
-        width: 1200,
-        height: 630,
+        url: "/images/wind_banner_somente_bandeira_refil.png",
+        width: 960,
+        height: 1280,
         alt: "Somente bandeira wind banner - Refil avulso em tecido sublimático Libracom",
       },
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Somente Bandeira Wind Banner | Refil Avulso em Tecido",
     description:
       "Compre somente a bandeira do seu wind banner. Tecido 100% poliéster de alta durabilidade, impressão sublimática frente e verso com envio rápido.",
-    images: ["/images/bandeira_impressao.jpg"],
+    images: ["/images/wind_banner_somente_bandeira_refil.png"],
     creator: "@libracom",
   },
   robots: {
@@ -67,7 +67,7 @@ export default function SomenteBandeiraWindBannerPage() {
     "@type": "Product",
     name: "Somente Bandeira Wind Banner - Refil Avulso em Tecido",
     image: [
-      "https://www.libracomwindbanner.com.br/images/bandeira_impressao.jpg",
+      "https://www.libracomwindbanner.com.br/images/wind_banner_somente_bandeira_refil.png",
       "https://www.libracomwindbanner.com.br/images/wind_banner_mpd.jpeg",
     ],
     description:
@@ -313,11 +313,12 @@ export default function SomenteBandeiraWindBannerPage() {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden border border-slate-200/80 shadow-2xl bg-slate-900 group">
                   <Image
-                    src="/images/bandeira_impressao.jpg"
+                    src="/images/wind_banner_somente_bandeira_refil.png"
                     alt="Somente bandeira wind banner - Tecido avulso impresso em sublimação de alta resolução"
-                    width={640}
-                    height={720}
-                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                    width={960}
+                    height={1280}
+                    sizes="(max-width: 1024px) 100vw, 42vw"
+                    className="w-full h-[460px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-105"
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
@@ -868,7 +869,7 @@ export default function SomenteBandeiraWindBannerPage() {
             <div className="product-card group overflow-hidden bg-white">
               <div className="relative h-72 w-full overflow-hidden bg-slate-100">
                 <Image
-                  src="/images/bandeira_impressao.jpg"
+                  src="/images/wind_banner_somente_bandeira_refil.png"
                   alt="Somente bandeira wind banner - Tecido avulso sublimado com alta definição de cores"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

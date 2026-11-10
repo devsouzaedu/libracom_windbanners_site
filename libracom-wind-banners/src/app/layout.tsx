@@ -96,6 +96,48 @@ export default function RootLayout({
               gtag('js', new Date());
 
               gtag('config', 'AW-16570590311');
+
+              // Event snippet for Contato conversion
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                if (typeof gtag === 'function') {
+                  gtag('event', 'conversion', {
+                    'send_to': 'AW-16570590311/hp2jCJXm7bUdEOfIvN09',
+                    'event_callback': callback
+                  });
+                } else if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+                return false;
+              }
+              window.gtag_report_conversion = gtag_report_conversion;
+
+              // Rastreamento automatico para todos os cliques em links de WhatsApp do site
+              (function() {
+                var lastTracked = 0;
+                document.addEventListener('click', function(e) {
+                  var target = e.target;
+                  var link = target && target.closest ? target.closest('a') : null;
+                  if (!link || !link.href) return;
+
+                  var href = link.href.toLowerCase();
+                  if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
+                    var now = Date.now();
+                    if (now - lastTracked > 1500) {
+                      lastTracked = now;
+                      if (typeof gtag === 'function') {
+                        gtag('event', 'conversion', {
+                          'send_to': 'AW-16570590311/hp2jCJXm7bUdEOfIvN09'
+                        });
+                      }
+                    }
+                  }
+                }, true);
+              })();
             `,
           }}
         />

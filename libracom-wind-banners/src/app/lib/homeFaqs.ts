@@ -31,6 +31,24 @@ export const homeFaqs = [
     icon: "🌪️"
   },
   {
+    question: "Vocês fabricam Roll Up Banner? Quais os tamanhos disponíveis?",
+    answer:
+      "Sim! Fabricamos Roll Up Banners completos com estrutura retrátil em alumínio e bolsa de transporte nos tamanhos 80cm x 220cm, 100cm x 220cm e 120cm x 220cm. A montagem é rápida (menos de 1 minuto sem ferramentas) e a impressão tem cores vibrantes em alta resolução. Também trocamos apenas a lona/tecido para quem já tem a estrutura.",
+    icon: "📜"
+  },
+  {
+    question: "Posso comprar somente o tecido da bandeira do wind banner (refil)?",
+    answer:
+      "Com certeza! Se você já possui a haste e a base, vendemos somente a bandeira avulsa em tecido 100% poliéster náutico com costura reforçada e estampa Ultra HD frente e verso. É ideal para economizar ao atualizar campanhas, logos ou promoções. Atendemos todos os modelos (Gota, Faca, Pena, Vela e Reto) nas alturas de 2,00m, 2,60m e 3,00m.",
+    icon: "🔄"
+  },
+  {
+    question: "Vocês fazem Bandeiras de Mão Retangulares para eventos?",
+    answer:
+      "Sim! Produzimos bandeiras de mão no formato retangular em tecido poliéster personalizado por sublimação digital de alta durabilidade, acompanhadas de haste/bastão de mão para fácil empunhadura. São perfeitas para eventos corporativos, feiras, congressos, manifestações, igrejas, escolas e torcidas.",
+    icon: "🏳️"
+  },
+  {
     question: "Quais as opções de pagamento disponíveis?",
     answer:
       "Pedidos abaixo de R$ 3.000,00 são pagos somente via PIX. A partir de R$ 3.000,00, o pagamento pode ser feito no cartão de crédito. Não trabalhamos com boleto nem faturamento.",

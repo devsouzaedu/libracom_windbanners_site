@@ -167,21 +167,26 @@ export default function HomeContent() {
           </div>
 
           <div className="relative z-10 w-full max-w-2xl text-center lg:text-left mx-auto lg:mx-0 space-y-4 md:space-y-6 pb-14 pt-28 lg:p-0">
-            <span className="inline-block bg-white/10 backdrop-blur text-white text-[10px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-white/20">
-              Fábrica própria em Barueri · 5 modelos
-            </span>
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
+              <span className="inline-block bg-white/10 backdrop-blur text-white text-[10px] md:text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-white/20">
+                Fábrica própria em Barueri
+              </span>
+              <span className="inline-block bg-emerald-500/20 text-emerald-300 text-[10px] md:text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-emerald-400/30">
+                Produção em até 24h
+              </span>
+            </div>
 
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-white font-heading">
-              Venda mais com Wind Banners de <span className="text-blue-300">Destaque Absoluto</span>
+              Wind Banners, Roll Up Banners e <span className="text-blue-300">Comunicação Visual</span>
             </h1>
 
             <p className="text-sm md:text-lg text-slate-200 leading-relaxed font-medium">
-              Wind Banners personalizados nos modelos <strong className="text-white">Gota, Faca, Pena, Vela e Reto</strong>, com impressão em cores vivas, arte grátis e produção expressa em 24h.
+              Fabricação própria de <strong className="text-white">Wind Banners</strong> (5 modelos), <strong className="text-white">Roll Up Banners</strong> (80x220, 100x220 e 120x220), <strong className="text-white">Somente Tecido de Bandeira (Refil)</strong> e <strong className="text-white">Bandeiras de Mão Retangulares</strong> com arte grátis e entrega expressa.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
               <a
-                href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá, Libracom! Gostaria de um orçamento de Wind Banner a partir de R$ 350,00. Podem me ajudar com a arte?")}`}
+                href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá, Libracom! Gostaria de um orçamento de Wind Banner, Roll Up ou Bandeira. Podem me ajudar com a arte?")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-cta px-8 py-4 text-sm font-bold uppercase tracking-wider relative overflow-hidden group shadow-md"
@@ -200,12 +205,45 @@ export default function HomeContent() {
                 href="#produtos"
                 className="btn-outline px-6 py-4 text-xs font-bold uppercase tracking-wider bg-transparent border-white/30 text-white hover:bg-white hover:text-slate-900"
               >
-                Kits a partir de R$ 350
+                Ver Linha de Produtos
               </a>
             </div>
 
+            {/* Quick anchors for direct ad visitors */}
+            <div className="pt-2">
+              <span className="text-[11px] font-bold text-slate-300 uppercase tracking-wider block mb-2">
+                Produtos mais pedidos na fábrica:
+              </span>
+              <div className="flex flex-wrap gap-2 justify-center lg:justify-start text-xs">
+                <a
+                  href="#produtos"
+                  className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-medium px-3 py-1.5 rounded-full border border-white/15 backdrop-blur-sm transition-colors"
+                >
+                  <span>🚩</span> Wind Banners (5 Modelos)
+                </a>
+                <a
+                  href="#roll-up-banner"
+                  className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-medium px-3 py-1.5 rounded-full border border-white/15 backdrop-blur-sm transition-colors"
+                >
+                  <span>📜</span> Roll Up (80x220, 100x220, 120x220)
+                </a>
+                <a
+                  href="#somente-tecido"
+                  className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-medium px-3 py-1.5 rounded-full border border-white/15 backdrop-blur-sm transition-colors"
+                >
+                  <span>🔄</span> Somente Tecido (Refil)
+                </a>
+                <a
+                  href="#bandeira-de-mao"
+                  className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white font-medium px-3 py-1.5 rounded-full border border-white/15 backdrop-blur-sm transition-colors"
+                >
+                  <span>🏳️</span> Bandeira de Mão Retangular
+                </a>
+              </div>
+            </div>
+
             {/* Carousel position indicators */}
-            <div className="flex gap-2 pt-4 justify-center lg:justify-start">
+            <div className="flex gap-2 pt-2 justify-center lg:justify-start">
               {heroPhotos.map((photo, index) => (
                 <button
                   key={photo.src}
@@ -235,11 +273,13 @@ export default function HomeContent() {
       {/* ===== MODELOS DISPONIVEIS ===== */}
       <section className="py-5 md:py-8 bg-slate-900 text-white font-black border-y border-slate-800">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center gap-4 text-center md:text-left">
-          <span className="text-3xl">🚩</span>
+          <span className="text-3xl">🏭</span>
           <div>
-            <h3 className="text-sm md:text-base font-black tracking-wide uppercase">5 modelos: Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado)</h3>
+            <h3 className="text-sm md:text-base font-black tracking-wide uppercase">
+              Linha Completa de Comunicação Visual Direto de Fábrica
+            </h3>
             <p className="text-xs font-bold text-slate-300 mt-0.5 leading-relaxed">
-              Fabricamos todos os formatos, com o mesmo preço para qualquer modelo. Escolha o ideal para o seu negócio e a gente cuida da arte.
+              Wind Banners (5 modelos), Roll Up Banners Retráteis (80x220, 100x220, 120x220), Somente Tecido da Bandeira (Refil) e Bandeiras de Mão Retangulares. Produção rápida em Barueri com envio para todo o Brasil.
             </p>
           </div>
         </div>
@@ -282,22 +322,22 @@ export default function HomeContent() {
         </div>
       </section>
 
-      {/* ===== PRODUCTS GRID (MINIMALIST & PRICE UPDATE) ===== */}
+      {/* ===== PRODUCTS GRID ===== */}
       <section id="produtos" className="py-12 md:py-24 bg-slate-50 border-t border-slate-100 scroll-mt-16 text-slate-750">
         <div className="container mx-auto px-4">
           <div className="flex justify-center mb-3">
             <span className="bg-blue-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-100">
-              💎 Modelos Disponíveis
+              💎 Catálogo de Produtos
             </span>
           </div>
           <h2 className="section-title text-slate-950 font-heading">
-            Wind Banners em <span className="text-gradient-brand">5 Modelos</span>
+            Nossa Linha em <span className="text-gradient-brand">Destaque</span>
           </h2>
           <p className="section-subtitle !text-slate-500">
-            Estruturas reforçadas e bandeiras com acabamento impecável e transparência mínima para atrair a atenção do seu público
+            Fabricação própria com materiais premium, acabamento reforçado e impressão de alta definição para o seu negócio
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
             
             {/* 1. Wind Banner Completo */}
             <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
@@ -305,7 +345,7 @@ export default function HomeContent() {
                 <div className="relative h-64 bg-slate-100 overflow-hidden">
                   <Image
                     src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png"
-                    alt="Wind Banner Completo - Bandeira Retangular, Haste e Base"
+                    alt="Wind Banner Completo - Bandeira, Haste e Base"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -313,7 +353,7 @@ export default function HomeContent() {
                   />
                   <div className="absolute top-3 right-3 z-20">
                     <span className="bg-brand-700 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded">
-                      Completo
+                      Kit Completo
                     </span>
                   </div>
                 </div>
@@ -321,19 +361,19 @@ export default function HomeContent() {
                 <div className="p-6 space-y-3">
                   <h3 className="text-xl font-bold text-slate-900 font-heading">Wind Banner Completo</h3>
                   <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Kit completo contendo haste flexível em fibra de vidro de alta resistência, base reforçada estável e bandeira impressa em poliéster premium com transparência mínima.
+                    Kit completo com haste flexível em fibra de vidro de alta resistência, base reforçada estável e bandeira impressa em poliéster premium com transparência mínima.
                   </p>
                   
                   <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/80">
                     <span className="text-[10px] font-black text-slate-400 uppercase block mb-1">Preços dos Kits:</span>
                     <ul className="text-xs text-slate-700 space-y-1.5 font-semibold">
                       <li className="flex justify-between"><span>Altura 2,00m</span> <span className="text-slate-900 font-bold">R$ 350,00</span></li>
-                      <li className="flex justify-between"><span>Altura 2,60m</span> <span className="text-brand-700 font-black">R$ 410,00 (Destaque)</span></li>
+                      <li className="flex justify-between"><span>Altura 2,60m</span> <span className="text-brand-700 font-black">R$ 410,00 (Mais vendido)</span></li>
                       <li className="flex justify-between"><span>Altura 3,00m</span> <span className="text-slate-900 font-bold">R$ 480,00</span></li>
                     </ul>
                   </div>
 
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1">
+                  <ul className="text-xs text-slate-500 space-y-1 pt-1 font-medium">
                     <li>✓ Modelos Gota, Faca, Pena, Vela ou Reto</li>
                     <li>✓ Tecido especial com transparência mínima</li>
                     <li>✓ Haste reforçada e Base inclusas</li>
@@ -347,7 +387,7 @@ export default function HomeContent() {
                   <span className="text-xl font-black text-brand-700 font-heading">R$ 350<span className="text-xs text-slate-400 font-medium">/un</span></span>
                 </div>
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar o Kit Wind Banner Completo da promoção...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar o Kit Wind Banner Completo...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
@@ -357,32 +397,32 @@ export default function HomeContent() {
               </div>
             </div>
 
-            {/* 2. Bandeira Avulsa */}
-            <div className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200">
+            {/* 2. Somente Tecido da Bandeira (Refil) */}
+            <div id="somente-tecido" className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200 scroll-mt-24">
               <div>
                 <div className="relative h-64 bg-slate-100 overflow-hidden">
                   <Image
-                    src="/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (4).jpg"
-                    alt="Somente Bandeira de reposição reto retangular"
+                    src="/images/wind_banner_somente_bandeira_refil.png"
+                    alt="Somente Tecido da Bandeira do Wind Banner - Refil avulso"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute top-3 right-3 z-20">
                     <span className="bg-emerald-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded">
-                      Reposição
+                      Refil Avulso
                     </span>
                   </div>
                 </div>
 
                 <div className="p-6 space-y-3">
-                  <h3 className="text-xl font-bold text-slate-900 font-heading">Somente Bandeira</h3>
+                  <h3 className="text-xl font-bold text-slate-900 font-heading">Somente Tecido do Wind Banner</h3>
                   <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
-                    Apenas a bandeira impressa em poliéster premium com costuras reforçadas e caimento perfeito. Ideal para reposição utilizando suas hastes e bases existentes.
+                    Já possui a haste e a base? Economize trocando apenas o tecido da bandeira! Impressão sublimática Ultra HD frente e verso em poliéster náutico de alta durabilidade.
                   </p>
 
                   <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/80">
-                    <span className="text-[10px] font-black text-slate-400 uppercase block mb-1">Preços da Bandeira:</span>
+                    <span className="text-[10px] font-black text-slate-400 uppercase block mb-1">Preços Somente Tecido (Refil):</span>
                     <ul className="text-xs text-slate-700 space-y-1.5 font-semibold">
                       <li className="flex justify-between"><span>Altura 2,00m</span> <span className="text-slate-900 font-bold">R$ 220,00</span></li>
                       <li className="flex justify-between"><span>Altura 2,60m</span> <span className="text-brand-700 font-black">R$ 280,00</span></li>
@@ -390,26 +430,172 @@ export default function HomeContent() {
                     </ul>
                   </div>
 
-                  <ul className="text-xs text-slate-400 space-y-1 pt-1">
-                    <li>✓ Estampa Ultra HD frente e verso</li>
-                    <li>✓ Tecido especial com transparência mínima</li>
-                    <li>✓ Encaixe padrão universal para todos os modelos</li>
+                  <ul className="text-xs text-slate-500 space-y-1 pt-1 font-medium">
+                    <li>✓ Compatível com modelos Gota, Faca, Pena, Vela e Reto</li>
+                    <li>✓ Encaixe universal para qualquer mastro de fibra</li>
+                    <li>✓ Costura industrial reforçada e ilhós de fixação</li>
                   </ul>
+
+                  <div className="pt-1">
+                    <Link
+                      href="/somente-bandeira-wind-banner"
+                      className="text-xs text-brand-700 hover:text-brand-800 font-bold inline-flex items-center gap-1 group"
+                    >
+                      <span>Ver página completa do Refil de Tecido</span>
+                      <span className="transition-transform group-hover:translate-x-1">→</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
 
               <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
                 <div>
                   <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">A partir de</span>
-                  <span className="text-xl font-black text-brand-700 font-heading">R$ 220<span className="text-xs text-slate-400 font-medium">/un</span></span>
+                  <span className="text-xl font-black text-emerald-600 font-heading">R$ 220<span className="text-xs text-slate-400 font-medium">/un</span></span>
                 </div>
                 <a
-                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar a Bandeira Avulsa de reposição...")}`}
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de encomendar somente o tecido da bandeira do wind banner (refil)...")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"
+                >
+                  Pedir Refil no WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* 3. Roll Up Banner Retrátil */}
+            <div id="roll-up-banner" className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200 scroll-mt-24">
+              <div>
+                <div className="relative h-64 bg-slate-100 overflow-hidden">
+                  <Image
+                    src="/images/roll_up_banner_em_barueri_alphaville_sao_paulo_entrega_rapida.png"
+                    alt="Roll Up Banner Retrátil com estrutura de alumínio e bolsa"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute top-3 right-3 z-20">
+                    <span className="bg-blue-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded">
+                      Eventos & Feiras
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold text-slate-900 font-heading">Roll Up Banner Retrátil</h3>
+                  <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
+                    Banner retrátil com estrutura em alumínio e bolsa de transporte inclusa. A impressão fica enrolada e protegida, subindo em segundos. Montagem em menos de 1 minuto sem ferramentas.
+                  </p>
+
+                  <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+                    <span className="text-[10px] font-black text-slate-400 uppercase block mb-1">Tamanhos Disponíveis:</span>
+                    <ul className="text-xs text-slate-700 space-y-1.5 font-semibold">
+                      <li className="flex justify-between"><span>80cm x 220cm</span> <span className="text-slate-900 font-bold">Compacto & Versátil</span></li>
+                      <li className="flex justify-between"><span>100cm x 220cm</span> <span className="text-brand-700 font-black">Destaque para Feiras</span></li>
+                      <li className="flex justify-between"><span>120cm x 220cm</span> <span className="text-slate-900 font-bold">Grande Formato</span></li>
+                    </ul>
+                  </div>
+
+                  <ul className="text-xs text-slate-500 space-y-1 pt-1 font-medium">
+                    <li>✓ Estrutura retrátil de alumínio com pés de sustentação</li>
+                    <li>✓ Acompanha bolsa de transporte acolchoada</li>
+                    <li>✓ Impressão fotográfica de alta nitidez (lona ou tecido)</li>
+                    <li>✓ Fazemos também a troca só da impressão para quem já tem a base</li>
+                  </ul>
+
+                  <div className="pt-1">
+                    <Link
+                      href="/roll-up-banner"
+                      className="text-xs text-brand-700 hover:text-brand-800 font-bold inline-flex items-center gap-1 group"
+                    >
+                      <span>Ver página completa do Roll Up Banner</span>
+                      <span className="transition-transform group-hover:translate-x-1">→</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
+                <div>
+                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">Sob consulta</span>
+                  <span className="text-xl font-black text-brand-700 font-heading">Direto de Fábrica</span>
+                </div>
+                <a
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de um orçamento para Roll Up Banner nos tamanhos 80x220, 100x220 ou 120x220...")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
                 >
-                  Pedir no WhatsApp
+                  Cotar Roll Up no WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* 4. Bandeira de Mão Retangular */}
+            <div id="bandeira-de-mao" className="product-card group flex flex-col justify-between h-full bg-white border border-slate-200 scroll-mt-24">
+              <div>
+                <div className="relative h-64 bg-slate-100 overflow-hidden">
+                  <Image
+                    src="/images/bandeira_impressao.jpg"
+                    alt="Bandeira de Mão Retangular personalizada para eventos e ações"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute top-3 right-3 z-20">
+                    <span className="bg-amber-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded">
+                      Eventos & Ações
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-6 space-y-3">
+                  <h3 className="text-xl font-bold text-slate-900 font-heading">Bandeira de Mão Retangular</h3>
+                  <p className="text-slate-500 text-xs md:text-sm leading-relaxed">
+                    Bandeira de mão personalizada em formato retangular clássico. Impressa em tecido poliéster por sublimação com cores intensas. Acompanha haste/bastão de mão para fácil empunhadura.
+                  </p>
+
+                  <div className="bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+                    <span className="text-[10px] font-black text-slate-400 uppercase block mb-1">Aplicações Mais Comuns:</span>
+                    <ul className="text-xs text-slate-700 space-y-1 font-semibold">
+                      <li>• Ações promocionais, lançamentos e inaugurações</li>
+                      <li>• Congressos, convenções corporativas e feiras</li>
+                      <li>• Eventos esportivos, passeatas, igrejas e torcidas</li>
+                    </ul>
+                  </div>
+
+                  <ul className="text-xs text-slate-500 space-y-1 pt-1 font-medium">
+                    <li>✓ Tecido leve, toque suave e lavável sem desbotar</li>
+                    <li>✓ Acabamento com costura reforçada e haste de mão</li>
+                    <li>✓ Fabricação sob medida ou em medidas padrão</li>
+                    <li>✓ Condições especiais para pequenas e grandes quantidades</li>
+                  </ul>
+
+                  <div className="pt-1">
+                    <Link
+                      href="/bandeira-de-tecido"
+                      className="text-xs text-brand-700 hover:text-brand-800 font-bold inline-flex items-center gap-1 group"
+                    >
+                      <span>Ver página completa de Bandeiras de Tecido</span>
+                      <span className="transition-transform group-hover:translate-x-1">→</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
+                <div>
+                  <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-bold">Sob consulta</span>
+                  <span className="text-xl font-black text-brand-700 font-heading">Direto de Fábrica</span>
+                </div>
+                <a
+                  href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de um orçamento para Bandeira de Mão Retangular...")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors"
+                >
+                  Cotar Bandeira no WhatsApp
                 </a>
               </div>
             </div>
@@ -469,6 +655,121 @@ export default function HomeContent() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== ROLL UP BANNER SIZES & SPECS SHOWCASE ===== */}
+      <section className="py-12 md:py-20 bg-slate-900 text-white border-t border-slate-800">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-3 mb-12">
+            <span className="bg-white/10 text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-white/20">
+              📜 Roll Up Banners em Alumínio
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-white font-heading">
+              Tamanhos de <span className="text-blue-300">Roll Up Banner</span>
+            </h2>
+            <p className="text-sm md:text-base text-slate-300 max-w-2xl mx-auto">
+              Estrutura retrátil de alumínio premium, montagem em 60 segundos e bolsa de transporte inclusa. Escolha a medida ideal para o seu espaço ou evento:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* 80x220 */}
+            <div className="bg-slate-800/80 rounded-2xl p-6 border border-slate-700 text-center flex flex-col justify-between">
+              <div>
+                <span className="bg-blue-900/60 text-blue-300 text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full border border-blue-700/50">
+                  Prático & Compacto
+                </span>
+                <div className="text-3xl md:text-4xl font-black text-white font-heading mt-4">
+                  80 x 220 cm
+                </div>
+                <p className="text-xs text-slate-300 mt-2">
+                  Perfeito para recepções, entradas de lojas, clínicas e pontos de venda com espaço otimizado.
+                </p>
+                <ul className="text-xs text-slate-400 space-y-1.5 mt-5 text-left border-t border-slate-700/70 pt-4 font-medium">
+                  <li>✓ Largura: 80 cm · Altura: 2,20 m</li>
+                  <li>✓ Base retrátil em alumínio</li>
+                  <li>✓ Bolsa de transporte com alça</li>
+                  <li>✓ Montagem rápida sem ferramentas</li>
+                </ul>
+              </div>
+              <a
+                href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de um orçamento para Roll Up Banner no tamanho 80x220 cm...")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 bg-brand-700 hover:bg-brand-600 text-white font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-xl transition-colors"
+              >
+                Cotar 80x220 no WhatsApp
+              </a>
+            </div>
+
+            {/* 100x220 */}
+            <div className="bg-slate-800 rounded-2xl p-6 border-2 border-brand-500 shadow-xl text-center flex flex-col justify-between relative">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
+                Mais Vendido em Feiras
+              </span>
+              <div>
+                <span className="bg-brand-900/60 text-blue-200 text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full border border-brand-700/50">
+                  Equilíbrio Ideal
+                </span>
+                <div className="text-3xl md:text-4xl font-black text-white font-heading mt-4">
+                  100 x 220 cm
+                </div>
+                <p className="text-xs text-slate-300 mt-2">
+                  Formato intermediário de grande sucesso em feiras comerciais, congressos e estandes corporativos.
+                </p>
+                <ul className="text-xs text-slate-300 space-y-1.5 mt-5 text-left border-t border-slate-700/70 pt-4 font-medium">
+                  <li>✓ Largura: 1,00 m · Altura: 2,20 m</li>
+                  <li>✓ Excelente área para logo e texto</li>
+                  <li>✓ Base estável com pés de apoio</li>
+                  <li>✓ Bolsa de transporte acolchoada</li>
+                </ul>
+              </div>
+              <a
+                href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de um orçamento para Roll Up Banner no tamanho 100x220 cm...")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-xl transition-colors shadow-md"
+              >
+                Cotar 100x220 no WhatsApp
+              </a>
+            </div>
+
+            {/* 120x220 */}
+            <div className="bg-slate-800/80 rounded-2xl p-6 border border-slate-700 text-center flex flex-col justify-between">
+              <div>
+                <span className="bg-purple-900/60 text-purple-300 text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full border border-purple-700/50">
+                  Máximo Impacto
+                </span>
+                <div className="text-3xl md:text-4xl font-black text-white font-heading mt-4">
+                  120 x 220 cm
+                </div>
+                <p className="text-xs text-slate-300 mt-2">
+                  Grande formato com ampla visibilidade para palcos, fundos de fotos, lançamentos e convenções.
+                </p>
+                <ul className="text-xs text-slate-400 space-y-1.5 mt-5 text-left border-t border-slate-700/70 pt-4 font-medium">
+                  <li>✓ Largura: 1,20 m · Altura: 2,20 m</li>
+                  <li>✓ Máxima leitura a longa distância</li>
+                  <li>✓ Estrutura de alumínio reforçada</li>
+                  <li>✓ Bolsa de transporte inclusa</li>
+                </ul>
+              </div>
+              <a
+                href={`https://wa.me/5511954997799?text=${encodeURIComponent("Olá! Gostaria de um orçamento para Roll Up Banner no tamanho 120x220 cm...")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 bg-brand-700 hover:bg-brand-600 text-white font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-xl transition-colors"
+              >
+                Cotar 120x220 no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-xs md:text-sm text-slate-300">
+              💡 Já tem a base de alumínio? <strong className="text-white">Trocamos apenas a impressão</strong> do seu Roll Up com encaixe perfeito.
+            </p>
           </div>
         </div>
       </section>
@@ -848,7 +1149,7 @@ export default function HomeContent() {
                 priority
               />
               <p className="text-xs leading-relaxed text-slate-400">
-                Libracom é referência em fabricação de Wind Banners nos modelos Gota, Faca, Pena, Vela e Reto (Retangular / Quadrado) em Barueri, Alphaville e São Paulo. Entrega rápida direto de fábrica.
+                Libracom é referência na fabricação de Wind Banners (5 modelos), Roll Up Banners retráteis (80x220, 100x220, 120x220), refil somente tecido e bandeiras de mão retangulares em Barueri, Alphaville e São Paulo. Entrega rápida direto de fábrica.
               </p>
             </div>
 
@@ -857,7 +1158,9 @@ export default function HomeContent() {
               <h4 className="text-xs font-black uppercase tracking-wider text-slate-200">Nosso Catálogo</h4>
               <ul className="space-y-2 text-xs md:text-sm">
                 <li><a href="#produtos" className="hover:text-white transition-colors">Wind Banner Completo</a></li>
-                <li><a href="#produtos" className="hover:text-white transition-colors">Somente Bandeira (Reposição)</a></li>
+                <li><a href="#somente-tecido" className="hover:text-white transition-colors text-emerald-400 font-semibold">Somente Tecido (Refil)</a></li>
+                <li><a href="#roll-up-banner" className="hover:text-white transition-colors text-blue-300 font-semibold">Roll Up Banner (80x220, 100x220, 120x220)</a></li>
+                <li><a href="#bandeira-de-mao" className="hover:text-white transition-colors">Bandeira de Mão Retangular</a></li>
                 <li><a href="#configurador" className="hover:text-white transition-colors">Simulador de Pedido</a></li>
               </ul>
             </div>
@@ -866,10 +1169,11 @@ export default function HomeContent() {
             <div className="space-y-4">
               <h4 className="text-xs font-black uppercase tracking-wider text-slate-200">Rotas e Destaques</h4>
               <ul className="space-y-2 text-xs md:text-sm">
+                <li><Link href="/roll-up-banner" className="hover:text-white transition-colors text-blue-300 font-semibold">Roll Up Banner em Alumínio</Link></li>
                 <li><Link href="/somente-bandeira-wind-banner" className="hover:text-white transition-colors text-emerald-400 font-semibold">Somente Bandeira (Refil)</Link></li>
+                <li><Link href="/bandeira-de-tecido" className="hover:text-white transition-colors">Bandeira de Tecido Personalizada</Link></li>
                 <li><Link href="/wind-banner-barueri" className="hover:text-white transition-colors">Wind Banner em Barueri</Link></li>
                 <li><Link href="/wind-banner-personalizado-eventos" className="hover:text-white transition-colors">Wind Banner para Eventos</Link></li>
-                <li><Link href="/wind-banner-vs-bandeira-comum" className="hover:text-white transition-colors">Wind Banner vs Bandeira Comum</Link></li>
                 <li><Link href="/entrega-rapida-24h" className="hover:text-white transition-colors">Entrega Rápida em 24h</Link></li>
               </ul>
             </div>

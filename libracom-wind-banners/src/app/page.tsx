@@ -4,12 +4,12 @@ import { homeFaqs } from "./lib/homeFaqs";
 import { pageMetadata } from "./lib/site";
 
 export const metadata = pageMetadata({
-  title: "Wind Banner Personalizado em Barueri | Libracom - Gota, Faca, Pena, Vela e Reto",
+  title: "Wind Banners, Roll Up Banners e Bandeiras em Barueri | Libracom",
   description:
-    "Fábrica de wind banner personalizado em Barueri e Alphaville nos modelos gota, faca, pena, vela e reto. Kit com haste e base a partir de R$ 350, arte grátis e entrega em 24h em Barueri e região.",
+    "Fábrica de Wind Banners (Gota, Faca, Vela, Reto), Roll Up Banners (80x220, 100x220, 120x220), refil somente tecido e bandeiras de mão retangulares em Barueri e Alphaville. Arte grátis e entrega expressa.",
   path: "/",
   image: "/images/wind_banner_reto_retangular_quadrado_24hrs_sao_paulo_barueri (1).png",
-  imageAlt: "Wind banner personalizado em Barueri e Alphaville - Libracom",
+  imageAlt: "Wind banner, roll up banner e bandeiras personalizadas - Libracom",
 });
 
 export default function Home() {
